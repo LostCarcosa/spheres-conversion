@@ -3,46 +3,30 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "SterlingVermin",
-				"abbreviation": "SVM",
-				"full": "The Pugilist Class",
+				"json": "spheres-of-might",
+				"abbreviation": "SoM",
+				"full": "Armiger",
 				"authors": [
-					"Benjamin Huffman"
+					"Drop Dead Studios"
 				],
 				"convertedBy": [
-					"MrVauxs",
-					"dmsguild",
-					"foreveryone"
+					"me"
 				],
 				"version": "3.5.2",
-				"url": "http://www.dmsguild.com/product/184921/the-Pugilist-Class",
-				"color": "cc6600"
-			},
-			{
-				"json": "SterlingVermin:Patreon",
-				"abbreviation": "SVMP",
-				"full": "Patreon Subclasses for the Pugilist",
-				"authors": [
-					"Benjamin Huffman"
-				],
-				"convertedBy": [
-					"cam443"
-				],
-				"version": "1.0.0",
-				"url": "https://www.patreon.com/m/272280/posts?filters[tag]=the%20Pugilist",
-				"color": "cc6600"
+				"url": "url to original source",
+				"color": "cc6600 go update version, date mod, etc"
 			}
-		],
+		]
 		"dateAdded": 1516994880,
 		"dateLastModified": 1614777170
 	},
 	"class": [
 		{
-			"name": "Pugilist",
-			"source": "SterlingVermin",
+			"name": "Armiger",
+			"source": "spheres-of-might",
 			"hd": {
 				"number": 1,
-				"faces": 8
+				"faces": 10
 			},
 			"proficiency": [
 				"str",
@@ -51,20 +35,12 @@
 			"classTableGroups": [
 				{
 					"colLabels": [
-						"Fisticuffs",
-						"Moxie Points"
+						"Martial Talents",
+						"Customization Talents"
 					],
 					"rows": [
 						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 6
-									}
-								]
-							},
+							0,
 							0
 						],
 						[
