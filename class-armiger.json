@@ -127,25 +127,33 @@
 					"light"
 				],
 				"weapons": [
-					"simple",
-					"improvised weapons",
-					"{@item whip|phb|whip}",
-					"{@item hand crossbow|phb|hand crossbow}"
+					"simple"
 				],
 				"tools": [
-					"your choice of one artisan's tools, gaming set, or thieves' tools"
+					"Choose one type of artisan's tools or one musical instrument"
 				],
 				"skills": [
 					{
 						"choose": {
 							"from": [
-								"acrobatics",
 								"athletics",
+								"acrobatics",
+								"sleight of hand",
+								"stealth",
+								"arcana",
+								"history",
+								"investigation",
+								"nature",
+								"religion",
+								"animal handling",
+								"insight",
+								"medicine",
+								"perception",
+								"survival",
 								"deception",
 								"intimidation",
-								"perception",
-								"sleight of hand",
-								"stealth"
+								"performance",
+								"persuasion"
 							],
 							"count": 2
 						}
@@ -156,8 +164,8 @@
 				"additionalFromBackground": true,
 				"default": [
 					"(a) {@item leather armor|phb} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
-					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
-					"(a) a set of {@item artisan's tools|phb} or (b) a {@filter gaming set|items|source=phb|miscellaneous=mundane|type=gaming set} or (c) {@item thieves' tools|phb}"
+					"(a) a {@item burglar's pack|phb}, (b) a {@item dungeoneer's pack}, or (c) an {@item explorer's pack|phb}",
+					"(a) two {@filter martial weapon|items|source=phb|category=basic|type=martial weapon}s or {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}s, or (b) a shield and a martial or simple weapon"
 				],
 				"defaultData": [
 					{
