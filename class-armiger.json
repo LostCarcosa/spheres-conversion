@@ -16,7 +16,7 @@
 				"url": "url to original source",
 				"color": "cc6600 go update version, date mod, etc"
 			}
-		],
+		]
 		"dateAdded": 1516994880,
 		"dateLastModified": 1614777170
 	},
@@ -41,7 +41,7 @@
 					"rows": [
 						[
 							0,
-							1
+							0
 						],
 						[
 							{
