@@ -1,0 +1,373 @@
+		{
+			"name": "Warleader Sphere",
+			"source": "spheres-of-might",
+			"type": "D",
+			"order": "Warleader",
+			"entries": [
+				"Practitioners of the Warleader sphere learn techniques for organizing, rallying, and directing their allies in battle. Regardless of whether they are charismatic warriors leading from the front or canny tacticians directing their troops from a secure position overlooking the battlefield, their superior talent for directing their troops makes them invaluable forces on the battlefield.",
+				"Practitioners of the Warleader sphere gain the following abilities:"
+			],
+			"modes": [
+				{
+					"name": "Tactics",
+					"entries": [
+						"Tactics are coordinated battle plans that require continuing direction from the practitioner to maintain. Starting and maintaining a tactic each round costs a bonus action.",
+						"While a tactic is active, you and all allies within 20 feet of you who can see and hear you gain its benefits so long as you aren’t helpless, killed, paralyzed, rendered unconscious, or stunned. A creature cannot benefit from more than one tactic at a time.",
+						"When you first gain the Warleader sphere, you gain the Aggressive Flanking talent as a bonus talent."
+					]
+				},
+				{
+					"name": "Shouts",
+					"entries": [
+						"Shouts are sound-based effects you can perform as an action that affect creatures within 10 feet of you. You may choose whether or not to include yourself in the effects of your shout. Allies must be able to hear you to gain a shout’s benefits, and characters who cannot hear gain advantage on all saves against a harmful shout’s effects.",
+						"While some shouts only affect allies or enemies, others affect all targets within their area of effect. When performing such a shout, you may spend a bonus action to warn your allies to cover their ears and negate the effects, but doing so gives enemies within the area of effect advantage on their saving throw against the shout’s effects.",
+						"When you first gain the Warleader sphere, you gain the Fierce Shout talent as a bonus talent."
+					]
+				}
+			]
+		},
+		{
+			"name": "Aggressive Flanking (tactic)",
+			"source": "spheres-of-might",
+			"type": "D",
+			"order": "Warleader",
+			"entries": [
+				"When two allied creatures affected by this tactic both have the same hostile creature within their reach, they gain a +2 bonus to attack rolls against them."
+			]
+		},
+		{
+			"name": "Fierce Shout (shout)",
+			"source": "spheres-of-might",
+			"type": "D",
+			"order": "Warleader",
+			"entries": [
+				"When you use this shout, affected allies gain a bonus equal to your proficiency bonus on the damage roll of the first attack they make within 1 round."
+			]
+		},
+		{
+			"name": "Call Attention (shout)",
+			"source": "spheres-of-might",
+			"type": "D",
+			"order": "Warleader",
+			"entries": [
+				"When you use this shout, your opponents’ attention is drawn to you for its duration, making it hard for them to focus on your allies. Allies within the shout’s affected area have advantage on Dexterity (Stealth) checks for 1 round, but you automatically fail any Dexterity (Stealth) checks for the shout’s duration."
+			]
+		},
+		{
+			"name": "Focusing Cry (shout)",
+			"source": "spheres-of-might",
+			"type": "D",
+			"order": "Warleader",
+			"entries": [
+				"You may expend your martial focus to use this shout to restore the martial focus of a number of creatures equal to half your proficiency bonus other than yourself within the shout’s affected area."
+			]
+		},
+		{
+			"name": "Frightful Roar (shout)",
+			"source": "spheres-of-might",
+			"type": "D",
+			"order": "Warleader",
+			"entries": [
+				"You may expend your martial focus to use this shout to demoralize enemies, forcing hostile creatures within its radius to succeed on a Wisdom saving throw or be frightened for 1 round. While frightened by this shout, a creature must take the Dash action and move away from you by the safest available route on each of its turns, unless there is nowhere to move. If the creature ends its turn in a location where it doesn’t have line of sight to you, the creature can make a Wisdom saving throw. On a successful save, the frightened condition ends for that creature. This talent may be taken up to twice; the second time this talent is taken, any creature affected by this shout who is already frightened is instead frightened for 1 minute."
+			]
+		},
+		{
+			"name": "Harangue (shout)",
+			"source": "spheres-of-might",
+			"type": "D",
+			"order": "Warleader",
+			"entries": [
+				"You may expend your martial focus to use this shout, allowing all allies within its area to make a new saving throw against any ongoing effect they are currently suffering from that normally grants a saving throw using the original DC, even if they have already failed the initial save and would not normally be granted another. Effects that can worsen on a failed saving throw do not count this saving throw as a failure when determining such effects if it is unsuccessful. A creature can only benefit from this shout once per short rest."
+			]
+		},
+		{
+			"name": "Rallying Speech (shout)",
+			"source": "spheres-of-might",
+			"type": "D",
+			"order": "Warleader",
+			"entries": [
+				"You may expend your martial focus to rally your allies and empower their minds. Affected allies have advantage on all saving throws against effects that would make them charmed or frightened for 1 minute."
+			]
+		},
+		{
+			"name": "Rousing Claxon (shout)",
+			"source": "spheres-of-might",
+			"type": "D",
+			"order": "Warleader",
+			"entries": [
+				"You may expend your martial focus to grant all affected allies a number of temporary hit points equal to your proficiency bonus and let them treat their exhaustion as 1 level lower for 1 hour. A target cannot regain this talent’s benefits until they finish a short or long rest."
+			]
+		},
+		{
+			"name": "Battlefield Coordination (tactic)",
+			"source": "spheres-of-might",
+			"type": "D",
+			"order": "Warleader",
+			"entries": [
+				"One creature affected by this tactic may use a Reaction to allow another affected ally to ignore one source of disadvantage on any roll."
+			]
+		},
+		{
+			"name": "Couriers Dash (tactic)",
+			"source": "spheres-of-might",
+			"type": "D",
+			"order": "Warleader",
+			"entries": [
+				"Creatures affected by this tactic that start their turn within its radius gain a +10 foot bonus to their speeds for that round."
+			]
+		},
+		{
+			"name": "Coordinated Aid (tactic)",
+			"source": "spheres-of-might",
+			"type": "D",
+			"order": "Warleader",
+			"entries": [
+				"Creatures affected by this tactic can use the Help action to aid another affected ally within their reach on an ability check as a reaction."
+			]
+		},
+		{
+			"name": "Coordinated Reflexes (tactic)",
+			"source": "spheres-of-might",
+			"type": "D",
+			"order": "Warleader",
+			"entries": [
+				"Creatures affected by this tactic that are within range gain a +2 bonus on Dexterity saving throws to avoid damage from attacks and effects that target an area, such as a fireball spell, so long as they are adjacent to another creature benefitting from this tactic.",
+				"When a creature affected by this tactic fails their Dexterity saving throw against such an effect, you may spend a reaction to allow them to reroll the saving throw."
+			]
+		},
+		{
+			"name": "Deadly Herdsman (tactic)",
+			"source": "spheres-of-might",
+			"type": "D",
+			"order": "Warleader",
+			"entries": [
+				"Whenever a creature benefiting from this tactic successfully deals damage to an enemy with an attack, they may shove the target as a bonus action. The forced movement can provoke an opportunity attack from allies other than the one initiating the movement."
+			]
+		},
+		{
+			"name": "Fortifying Phalanx (tactic)",
+			"source": "spheres-of-might",
+			"type": "D",
+			"order": "Warleader",
+			"entries": [
+				"Creatures affected by this tactic that are within range gain a +2 bonus on Constitution saving throws to avoid damage from attacks and effects that target an area, such as a stinking cloud spell, so long as they are adjacent to another creature benefitting from this tactic.",
+				"When a creature affected by this tactic fails a Constitution saving throw, you may spend a reaction to allow them to reroll the save."
+			]
+		},
+		{
+			"name": "Ironclad (tactic)",
+			"source": "spheres-of-might",
+			"type": "D",
+			"order": "Warleader",
+			"entries": [
+				"Creatures affected by this tactic that are within range reduce bludgeoning, piercing, and slashing damage from non-magical sources by an amount equal to your proficiency bonus."
+			]
+		},
+		{
+			"name": "Militant Will (tactic)",
+			"source": "spheres-of-might",
+			"type": "D",
+			"order": "Warleader",
+			"entries": [
+				"Creatures affected by this tactic that are within range gain a +2 bonus on saving throws against the charmed and frightened conditions.",
+				"When a creature affected by this tactic fails their saving throw against such an effect, you may spend a reaction to allow them to reroll the save."
+			]
+		},
+		{
+			"name": "Preparation (tactic)",
+			"source": "spheres-of-might",
+			"type": "D",
+			"order": "Warleader",
+			"entries": [
+				"Creatures affected by this tactic that are within range gain a bonus to their initiative checks equal to your proficiency bonus. A creature cannot benefit from this tactic for more than an hour in total. The ability to benefit from it is regained after completing a long rest."
+			]
+		},
+		{
+			"name": "Reactive Position (tactic)",
+			"source": "spheres-of-might",
+			"type": "D",
+			"order": "Warleader",
+			"entries": [
+				"A creature affected by this tactic may swap places with another affected adjacent ally as a reaction. This movement does not provoke opportunity attacks."
+			]
+		},
+		{
+			"name": "Shieldbrothers (tactic)",
+			"source": "spheres-of-might",
+			"type": "D",
+			"order": "Warleader",
+			"entries": [
+				"As long as a creature affected by this tactic is adjacent to at least one other affected ally, they gain a +2 bonus to AC."
+			]
+		},
+		{
+			"name": "Breath Support",
+			"source": "spheres-of-might",
+			"type": "D",
+			"order": "Warleader",
+			"entries": [
+				"When performing a shout, you may change the area of effect to a 15-foot cone. The size of the cone increases by 5 feet at 5th level (20-foot cone), 11th level (25-foot cone), and 17th level (30-foot cone)."
+			]
+		},
+		{
+			"name": "Focusing Tactics",
+			"source": "spheres-of-might",
+			"type": "D",
+			"order": "Warleader",
+			"entries": [
+				"Any ally currently affected by one of your shouts or tactics may spend an action to restore your martial focus."
+			]
+		},
+		{
+			"name": "Quick Commands",
+			"source": "spheres-of-might",
+			"type": "D",
+			"order": "Warleader",
+			"entries": [
+				"You may expend your martial focus to perform a shout as a bonus action or allow a tactic to continue for 1 minute without requiring you to spend a bonus action to maintain it each round."
+			]
+		},
+		{
+			"name": "Roaring Reservoir",
+			"source": "spheres-of-might",
+			"type": "D",
+			"order": "Warleader",
+			"entries": [
+				"You may use a shout that normally requires you to expend your martial focus without expending your martial focus, but doing so increases your exhaustion level by 1 for 1 minute."
+			]
+		},
+		{
+			"name": "Verbal Commands",
+			"source": "spheres-of-might",
+			"type": "D",
+			"order": "Warleader",
+			"entries": [
+				"Creatures may benefit from your tactics even if they cannot see you, as long as they can hear your instructions; this allows creatures who are blind, but not deaf, to benefit from your tactics. You may also center the area of your tactic away from yourself; instead of affecting creatures within 20 feet of you, it instead affects creatures within a 20-foot radius circle, centered anywhere within the sound of your voice. You could even center your tactics far away from yourself, so long as you have a magical or mundane method of seeing what is happening and communicating with the allies in the area."
+			]
+		},
+		{
+			"name": "Darklands Cry (legendary, shout)",
+			"source": "spheres-of-might",
+			"type": "D",
+			"order": "Warleader",
+			"entries": [
+				"Prerequisites: 11th level or higher.",
+				"Duration: Instantaneous",
+				"Saving Throw: Constitution",
+				"You may expend your martial focus to perform a shout that saps the very life and will to live from a creature. Any creature within this shout’s radius who fails a Constitution saving throw increases their exhaustion by 1. This is a magical effect."
+			]
+		},
+		{
+			"name": "Explosive Ululation (legendary, shout)",
+			"source": "spheres-of-might",
+			"type": "D",
+			"order": "Warleader",
+			"entries": [
+				"Duration: see text",
+				"Saving Throw: Constitution",
+				"You may expend your martial focus to perform an ear-splitting scream. All targets within the area of effect suffer 1d8 thunder damage, increasing by 1d8 at 5th (2d8), 11th (3d8), and 17th (4d8) levels. In addition, the targets are pushed 10 feet directly away from you and become deafened for 1 minute. Targets are allowed a Constitution saving throw to halve the damage and negate the pushed and deafened effect."
+			]
+		},
+		
+{
+			"name": "Legion Unending (legendary, tactic)",
+			"source": "spheres-of-might",
+			"type": "D",
+			"order": "Warleader",
+			"entries": [
+				"Prerequisites: Warleader sphere (Rousing Claxon), 11th level or higher.",
+				"Whenever a creature affected by this tactic would be reduced to 0 hit points, you may spend a reaction to grant them a number of temporary hit points equal to twice your level. These temporary hit points are applied before the damage from the triggering attack. These temporary hit points expire at the start of your turn.",
+				"You may expend martial focus to use this ability without using your reaction, but doing so ends the tactic."
+			]
+		},
+		
+{
+			"name": "Masters Aura (legendary, tactic)",
+			"source": "spheres-of-might",
+			"type": "D",
+			"order": "Warleader",
+			"entries": [
+				"Prerequisites: 11th level or higher.",
+				"Target: self",
+				"Any creature who comes into physical contact with you while this tactic is active must succeed on a Wisdom saving throw or be charmed for 1 hour. Once a given creature has attempted a saving throw against this effect (whether they succeed or not), they cannot be affected by it again until you complete a long rest."
+			]
+		},
+		
+{
+			"name": "Recall Spirit (legendary, shout)",
+			"source": "spheres-of-might",
+			"type": "D",
+			"order": "Warleader",
+			"entries": [
+				"Prerequisites: Warleader sphere (Rousing Claxon), 11th level or higher.",
+				"You may expend your martial focus to recall the spirit of a creature within range of your shout that has died within 1 round. The target is healed for an amount equal to your level + your key ability modifier. The target’s exhaust level increases by 2, to a maximum of 5, and cannot be reduced below exhaustion level 1 by any means until completing a long rest."
+			]
+		},
+		
+{
+			"name": "Unending Loyalty (legendary)",
+			"source": "spheres-of-might",
+			"type": "D",
+			"order": "Warleader",
+			"entries": [
+				"Prerequisites: Warleader sphere (Legion Unending, Recall Spirit, Rousing Claxon), 15th level or higher.",
+				"You may use your Recall Spirit shout on a target that has died within 1 minute rather than 1 round. The target is returned to life with a number of hit points equal to twice your level + your key ability modifier and no exhaustion (if this would grant them more hit points than they would normally have, they gain any excess as temporary hit points). After one hour, the creature dies regardless of its hit points and may not be affected with this talent a second time unless they are returned to life by other means. This is a magical effect."
+			]
+		},
+		{
+			"name": "Barbarism (variant)",
+			"source": "spheres-of-might",
+			"type": "D",
+			"order": "Warleader",
+			"entries": [
+				"You do not gain the tactics ability. You cannot take (tactics) talents. You gain the Frightful Roar talent as a bonus talent. You cannot possess this and Meek Leader."
+			]
+		},
+		{
+			"name": "Meek Leader (variant)",
+			"source": "spheres-of-might",
+			"type": "D",
+			"order": "Warleader",
+			"entries": [
+				"You do not gain the shout ability. You cannot take (shout) talents. You gain the Courier’s Dash talent as a bonus talent. You cannot possess this and Barbarism."
+			]
+		},
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,82 +1,51 @@
 {
+	"$schema": "../schema.json",
 	"_meta": {
 		"sources": [
 			{
-				"json": "Spheres_Of_Might HEY BOYO GO THROUGH AND ACTUALLY FINISH THIS SECTION AT SOME POINT",
+				"json": "spheres-of-might",
 				"abbreviation": "SoM",
-				"full": "Spheres of Might",
+				"full": "Alter Ego",
 				"authors": [
-					"First Author",
-					"Second Author"
+					"Drop Dead Studios"
 				],
 				"convertedBy": [
-					"StarsofCarcosa"
+					"me"
 				],
-				"version": "1.0.8",
-				"url": "https://server.domain",
-				"targetSchema": "1.0.8"
+				"version": "3.5.2",
+				"url": "url to original source",
+				"color": "cc6600 go update version, date mod, etc, maybe play with the color too"
 			}
 		],
-		"dateAdded": 1549715846, 
-		"dateLastModified": 1549715846
+		"dateAdded": 1516994880,
+		"dateLastModified": 1614777170
 	},
 	"class": [
 		{
 			"name": "Alter Ego",
-			"source": "Spheres of Might",
+			"source": "spheres-of-might",
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
 			"proficiency": [
 				"con",
 				"cha"
 			],
-			"startingProficiencies": {
-				"armor": [
-					"light"
-				],
-				"weapons": [
-					"simple"
-				],
-				"skills": [
-					{
-						"choose": {
-							"from": [
-								"athletics",
-								"acrobatics",
-								"sleight of hand",
-								"stealth",
-								"arcana",
-								"history",
-								"investigation",
-								"nature",
-								"religion",
-								"animal handling",
-								"insight",
-								"medicine",
-								"perception",
-								"survival",
-								"deception",
-								"intimidation",
-								"performance",
-								"persuasion"
-							],
-							"count": 3
-						}
-					}
-				]
-			},
-			"classTableGroups":[
+			"classTableGroups": [
 				{
-					"colLabels":[
-						"Martial Talents ADD LINK",
-						"Persona Talents ADD LINK"
+					"colLabels": [
+						"Martial Talents",
+						"Persona Talents"
 					],
 					"rows": [
 						[
 							0,
-							"-"
+							0
 						],
 						[
 							1,
-							"-"
+							0
 						],
 						[
 							1,
@@ -150,269 +119,8 @@
 							10,
 							6
 						]
-					
 					]
 				}
-			],
-			"classFeatures": [
-				"Persona|Alter Ego|SoM|1",
-				"Persona Trope|Alter Ego|SoM|1",
-				{
-					"classFeature": "Alter Ego Archetype|Alter Ego|SoM|1",
-					"gainSubclassFeature": true
-				},
-				"Persona Talents|Alter Ego|SoM|3",
-				"Ability Score Improvement|Alter Ego|SoM|4",
-				"Extra Attack|Alter Ego|SoM|5",
-				{
-					"classFeature": "Archetype Power|Alter Ego|SoM|6",
-					"gainSubclassFeature": true
-				},
-				"Trope Benefit|Alter Ego|SoM|7",
-				"Ability Score Improvement|Alter Ego|SoM|8",
-				"Quick Change|Alter Ego|SoM|10",
-				{
-					"classFeature": "Archetype Power|Alter Ego|SoM|11",
-					"gainSubclassFeature": true
-				},
-				"Ability Score Improvement|Alter Ego|SoM|12",
-				{
-					"classFeature": "Archetype Power|Alter Ego|SoM|14",
-					"gainSubclassFeature": true
-				},
-				"Trope Benefit|Alter Ego|SoM|15",
-				"Ability Score Improvement|Alter Ego|SoM|16",
-				"Quick Change (2)|Alter Ego|SoM|18",
-				"Ability Score Improvement|Alter Ego|SoM|19",
-				{
-					"classFeature": "Archetype Power|Alter Ego|SoM|20",
-					"gainSubclassFeature": true
-				}
-			]
-		}
-	],
-	"classFeature": [
-		{
-			"name": "Persona",
-			"source": "SoM",
-			"className": "Alter Ego",
-			"classSource": "SoM",
-			"level": 1,
-			"entries": [
-				"class description here"
-			]
-		},
-		{
-			"name": "Alter Ego Archetype",
-			"source": "SoM",
-			"className": "Alter Ego",
-			"classSource": "SoM",
-			"level": 1,
-			"entries": [
-				"class description here"
-			]
-		},
-		{
-			"name": "Persona Trope",
-			"source": "SoM",
-			"className": "Alter Ego",
-			"classSource": "SoM",
-			"level": 1,
-			"entries": [
-				"class description here"
-			]
-		},
-		{
-			"name": "Persona Talents",
-			"source": "SoM",
-			"className": "Alter Ego",
-			"classSource": "SoM",
-			"level": 3,
-			"entries": [
-				"class description here"
-			]
-		},
-		{
-			"name": "Ability Score Improvement",
-			"source": "SoM",
-			"className": "Alter Ego",
-			"classSource": "SoM",
-			"level": 4,
-			"entries": [
-				"class description here"
-			]
-		},
-		{
-			"name": "Extra Attack",
-			"source": "SoM",
-			"className": "Alter Ego",
-			"classSource": "SoM",
-			"level": 5,
-			"entries": [
-				"class description here"
-			]
-		},
-		{
-			"name": "Archetype Power",
-			"source": "SoM",
-			"className": "Alter Ego",
-			"classSource": "SoM",
-			"level": 6,
-			"entries": [
-				"class description here"
-			]
-		},
-		{
-			"name": "Trope Benefit",
-			"source": "SoM",
-			"className": "Alter Ego",
-			"classSource": "SoM",
-			"level": 7,
-			"entries": [
-				"class description here"
-			]
-		},
-		{
-			"name": "Ability Score Improvement",
-			"source": "SoM",
-			"className": "Alter Ego",
-			"classSource": "SoM",
-			"level": 8,
-			"entries": [
-				"class description here"
-			]
-		},
-		{
-			"name": "Quick Change",
-			"source": "SoM",
-			"className": "Alter Ego",
-			"classSource": "SoM",
-			"level": 10,
-			"entries": [
-				"class description here"
-			]
-		},
-		{
-			"name": "Archetype Power",
-			"source": "SoM",
-			"className": "Alter Ego",
-			"classSource": "SoM",
-			"level": 11,
-			"entries": [
-				"class description here"
-			]
-		},
-		{
-			"name": "Ability Score Improvement",
-			"source": "SoM",
-			"className": "Alter Ego",
-			"classSource": "SoM",
-			"level": 12,
-			"entries": [
-				"class description here"
-			]
-		},
-		{
-			"name": "Archetype Power",
-			"source": "SoM",
-			"className": "Alter Ego",
-			"classSource": "SoM",
-			"level": 14,
-			"entries": [
-				"class description here"
-			]
-		},
-		{
-			"name": "Trope Benefit",
-			"source": "SoM",
-			"className": "Alter Ego",
-			"classSource": "SoM",
-			"level": 15,
-			"entries": [
-				"class description here"
-			]
-		},
-		{
-			"name": "Ability Score Improvement",
-			"source": "SoM",
-			"className": "Alter Ego",
-			"classSource": "SoM",
-			"level": 16,
-			"entries": [
-				"class description here"
-			]
-		},
-		{
-			"name": "Quick Change (2)",
-			"source": "SoM",
-			"className": "Alter Ego",
-			"classSource": "SoM",
-			"level": 18,
-			"entries": [
-				"class description here"
-			]
-		},
-		{
-			"name": "Ability Score Improvement",
-			"source": "SoM",
-			"className": "Alter Ego",
-			"classSource": "SoM",
-			"level": 19,
-			"entries": [
-				"class description here"
-			]
-		},
-		{
-			"name": "Archetype Power",
-			"source": "SoM",
-			"className": "Alter Ego",
-			"classSource": "SoM",
-			"level": 20,
-			"entries": [
-				"class description here"
-			]
-		}
-		
-	]
-
-
-
-
-
-
-
-
-
-=======
-{
-	"_meta": {
-		"sources": [
-			{
-				"json": "Spheres_Of_Might HEY BOYO GO THROUGH AND ACTUALLY FINISH THIS SECTION AT SOME POINT",
-				"abbreviation": "SoM",
-				"full": "Spheres of Might",
-				"authors": [
-					"First Author",
-					"Second Author"
-				],
-				"convertedBy": [
-					"StarsofCarcosa"
-				],
-				"version": "1.0.8",
-				"url": "https://server.domain",
-				"targetSchema": "1.0.8"
-			}
-		],
-		"dateAdded": 1549715846, 
-		"dateLastModified": 1549715846
-	},
-	"class": [
-		{
-			"name": "Alter Ego",
-			"source": "Spheres of Might",
-			"proficiency": [
-				"con",
-				"cha"
 			],
 			"startingProficiencies": {
 				"armor": [
@@ -420,6 +128,9 @@
 				],
 				"weapons": [
 					"simple"
+				],
+				"tools": [
+					"None"
 				],
 				"skills": [
 					{
@@ -449,325 +160,473 @@
 					}
 				]
 			},
-			"classTableGroups":[
-				{
-					"colLabels":[
-						"Martial Talents ADD LINK",
-						"Persona Talents ADD LINK"
-					],
-					"rows": [
-						[
-							0,
-							"-"
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) a {@item burglar's pack|phb}, (b) a {@item dungeoneer's pack}, or (c) an {@item explorer's pack|phb}",
+					"(a) a {@filter martial weapons|items|source=phb|category=basic|type=martial weapon},  (b) a {@filter simple weapons|items|source=phb|category=basic|type=simple weapon}, or (c) a {@item shield|phb}"
+				],
+				"defaultData": [
+					{
+						"a": [
+							"scholar's pack|phb"
 						],
-						[
-							1,
-							"-"
+						"b": [
+							"diplomat's pack|phb"
 						],
-						[
-							1,
-							2
-						],
-						[
-							2,
-							2
-						],
-						[
-							2,
-							3
-						],
-						[
-							3,
-							3
-						],
-						[
-							3,
-							3
-						],
-						[
-							4,
-							3
-						],
-						[
-							4,
-							4
-						],
-						[
-							5,
-							4
-						],
-						[
-							5,
-							4
-						],
-						[
-							6,
-							4
-						],
-						[
-							6,
-							5
-						],
-						[
-							7,
-							5
-						],
-						[
-							7,
-							5
-						],
-						[
-							8,
-							5
-						],
-						[
-							8,
-							6
-						],
-						[
-							9,
-							6
-						],
-						[
-							9,
-							6
-						],
-						[
-							10,
-							6
+						"c": [
+							"explorer's pack|phb"
 						]
-					
-					]
+					},
+					{
+						"a": [
+							{
+								"equipmentType": "weaponMartial",
+								"quantity": 1
+							}
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple",
+								"quantity": 1
+							}
+						],
+						"c": [
+							"shield|phb"
+						]
+					}
+				]
+			},
+			"classFeatures": [
+				{
+					"classFeature": "Alter Ego Archetype|Alter Ego|spheres-of-might|1",
+					"gainSubclassFeature": true
+				},
+				"Persona|Alter Ego|spheres-of-might|1",
+				"Persona Trope|Alter Ego|spheres-of-might|1",
+				"Martial Training|Alter Ego|spheres-of-might|2",
+				"Persona Talents|Alter Ego|spheres-of-might|3",
+				"Ability Score Improvement|Alter Ego|spheres-of-might|4",
+				"Extra Attack|Alter Ego|spheres-of-might|5",
+				{
+					"classFeature": "Archetype Power|Alter Ego|spheres-of-might|6",
+					"gainSubclassFeature": true
+				},
+				"Trope Benefit|Alter Ego|spheres-of-might|7",
+				"Ability Score Improvement|Alter Ego|spheres-of-might|8",
+				"Quick Change|Alter Ego|spheres-of-might|10",
+				{
+					"classFeature": "Archetype Power|Alter Ego|spheres-of-might|11",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Alter Ego|spheres-of-might|12",
+				{
+					"classFeature": "Archetype Power|Alter Ego|spheres-of-might|14",
+					"gainSubclassFeature": true
+				},
+				"Trope Benefit|Alter Ego|spheres-of-might|15",
+				"Ability Score Improvement|Alter Ego|spheres-of-might|16",
+				"Quick Change (2)|Alter Ego|spheres-of-might|18",
+				"Ability Score Improvement|Alter Ego|spheres-of-might|19",
+				{
+					"classFeature": "Archetype Power|Alter Ego|spheres-of-might|20",
+					"gainSubclassFeature": true
 				}
 			],
-			"classFeatures": [
-				"Persona|Alter Ego|SoM|1",
-				"Persona Trope|Alter Ego|SoM|1",
+			"multiclassing": {
+				"requirements": {
+					"or": [
+						{
+							"str": 13,
+							"dex": 13
+						}
+					]
+				}
+			},
+			"subclassTitle": "Archetype",
+			"subclasses": [
 				{
-					"classFeature": "Alter Ego Archetype|Alter Ego|SoM|1",
-					"gainSubclassFeature": true
-				},
-				"Persona Talents|Alter Ego|SoM|3",
-				"Ability Score Improvement|Alter Ego|SoM|4",
-				"Extra Attack|Alter Ego|SoM|5",
+					"name": "The Chemist",
+					"subclassFeatures": [
+						"The Chemist|Alter Ego|spheres-of-might|The Chemist|spheres-of-might|1",
+						"Concoctions (3)|Alter Ego|spheres-of-might|The Chemist|spheres-of-might|6",
+						"Concoctions (4)|Alter Ego|spheres-of-might|The Chemist|spheres-of-might|11",
+						"Concoctions (5)|Alter Ego|spheres-of-might|The Chemist|spheres-of-might|14",
+						"Concoctions (6)|Alter Ego|spheres-of-might|The Chemist|spheres-of-might|20"
+					],
+					"source": "spheres-of-might",
+					"shortName": "Chemist"
+				}
+			],
+			"fluff": [
 				{
-					"classFeature": "Archetype Power|Alter Ego|SoM|6",
-					"gainSubclassFeature": true
-				},
-				"Trope Benefit|Alter Ego|SoM|7",
-				"Ability Score Improvement|Alter Ego|SoM|8",
-				"Quick Change|Alter Ego|SoM|10",
-				{
-					"classFeature": "Archetype Power|Alter Ego|SoM|11",
-					"gainSubclassFeature": true
-				},
-				"Ability Score Improvement|Alter Ego|SoM|12",
-				{
-					"classFeature": "Archetype Power|Alter Ego|SoM|14",
-					"gainSubclassFeature": true
-				},
-				"Trope Benefit|Alter Ego|SoM|15",
-				"Ability Score Improvement|Alter Ego|SoM|16",
-				"Quick Change (2)|Alter Ego|SoM|18",
-				"Ability Score Improvement|Alter Ego|SoM|19",
-				{
-					"classFeature": "Archetype Power|Alter Ego|SoM|20",
-					"gainSubclassFeature": true
+					"name": "Alter Ego",
+					"type": "section",
+					"entries": [
+						"The alter ego is multiple people in one. Just as there is a difference between someone with a sword and a real fighter, there is a difference between someone with a mask and an alter ego.",
+						"Whether through possession, transformation, or acting so good it can even fool magic, an alter ego is at least two people in one shared body. Even the great divinations of powerful mages treat an alter-ego’s hidden identities as separate people, and it is this ability that allows the alter ego to adapt to any situation."
+					]
 				}
 			]
 		}
 	],
 	"classFeature": [
 		{
-			"name": "Persona",
-			"source": "SoM",
+			"name": "Alter Ego Archetype",
+			"source": "spheres-of-might",
 			"className": "Alter Ego",
-			"classSource": "SoM",
+			"classSource": "spheres-of-might",
 			"level": 1,
 			"entries": [
-				"class description here"
+				"Every alter ego walks the path of a particular archetype, which determines what type of personas they possess. Your choice of archetype grants you benefits at levels 1, 6, 11, 14, and 20."
 			]
 		},
 		{
-			"name": "Alter Ego Archetype",
-			"source": "SoM",
+			"name": "Persona",
+			"source": "spheres-of-might",
 			"className": "Alter Ego",
-			"classSource": "SoM",
+			"classSource": "spheres-of-might",
 			"level": 1,
 			"entries": [
-				"class description here"
+				"As an alter ego, you have multiple identities so distinct that, for most intents and purposes, they are different people. This might be as simple as having a second personality inside you or as elaborate as sharing a body with a separate entity with its own name and its own appearance (which could be accomplished through a costume or a full-body change). The archetype you choose will determine more about the nature of this change, as well as determine how many personas you ultimately have.",
+				"An alter ego has at least two personas. Only one persona can be active at a time, and switching between them requires some form of action on your part (changing form, putting on makeup and costumes, etc.), as outlined in your archetype.", 
+				"While each of your personas is an extension of you, each persona is, in many ways, treated like a completely different being; personas may be of different alignments, and so long as a magic-user does not know that various personas are all part of the same being, any attempts they make to scry on or locate one of your personas with magic only functions when that persona is currently active. Likewise, attempts to divine information about one persona does not reveal information about any others."
 			]
 		},
 		{
 			"name": "Persona Trope",
-			"source": "SoM",
+			"source": "spheres-of-might",
 			"className": "Alter Ego",
-			"classSource": "SoM",
+			"classSource": "spheres-of-might",
 			"level": 1,
 			"entries": [
-				"class description here"
+				"Every persona has its own powers, perspectives, and capabilities that make it distinct from its fellows. Each persona you possess gains at least one trope listed below, along with its associated benefits. Your archetype might allow a persona to gain more than one trope. - HEY SELF- get persona tropes set up as optional features."
+			]
+		},
+		{
+			"name": "Martial Training",
+			"source": "spheres-of-might",
+			"className": "Alter Ego",
+			"classSource": "spheres-of-might",
+			"level": 2,
+			"entries": [
+				"You gain a martial talent (ADD LINK) at 2nd level and every 2 levels after that, as shown in the Martial Talents column of the Alter Ego table."
 			]
 		},
 		{
 			"name": "Persona Talents",
-			"source": "SoM",
+			"source": "spheres-of-might",
 			"className": "Alter Ego",
-			"classSource": "SoM",
+			"classSource": "spheres-of-might",
 			"level": 3,
 			"entries": [
-				"class description here"
-			]
+				"At 3rd level, each of your personas gain two martial talents. These talents are unique to each persona. For example, if one persona chooses Warleader talents and your other persona chooses Barroom talents, you would only have access to the Warleader talents in the first persona and the Barroom talents in the other persona.",
+				"If you gain a talent that applies to all personas that one of your personas already possesses as a persona talent, you may immediately retrain that persona talent.",
+				"You gain additional persona talents, as listed on the Persona Talents column of the Alter Ego table."
+				]
 		},
 		{
 			"name": "Ability Score Improvement",
-			"source": "SoM",
+			"source": "spheres-of-might",
 			"className": "Alter Ego",
-			"classSource": "SoM",
+			"classSource": "spheres-of-might",
 			"level": 4,
 			"entries": [
-				"class description here"
+				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
 			]
 		},
 		{
 			"name": "Extra Attack",
-			"source": "SoM",
+			"source": "spheres-of-might",
 			"className": "Alter Ego",
-			"classSource": "SoM",
+			"classSource": "spheres-of-might",
 			"level": 5,
 			"entries": [
-				"class description here"
+				"Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
 			]
 		},
 		{
 			"name": "Archetype Power",
-			"source": "SoM",
+			"source": "spheres-of-might",
 			"className": "Alter Ego",
-			"classSource": "SoM",
+			"classSource": "spheres-of-might",
 			"level": 6,
 			"entries": [
-				"class description here"
-			]
+				"At 6th level, you gain an ability from your Archetype."
+			],
+			"gainSubclassFeature": true
 		},
 		{
 			"name": "Trope Benefit",
-			"source": "SoM",
+			"source": "spheres-of-might",
 			"className": "Alter Ego",
-			"classSource": "SoM",
+			"classSource": "spheres-of-might",
 			"level": 7,
 			"entries": [
-				"class description here"
+				"At 7th level, each of your Persona Tropes improves."
 			]
 		},
 		{
 			"name": "Ability Score Improvement",
-			"source": "SoM",
+			"source": "spheres-of-might",
 			"className": "Alter Ego",
-			"classSource": "SoM",
+			"classSource": "spheres-of-might",
 			"level": 8,
 			"entries": [
-				"class description here"
+				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
 			]
 		},
 		{
 			"name": "Quick Change",
-			"source": "SoM",
+			"source": "spheres-of-might",
 			"className": "Alter Ego",
-			"classSource": "SoM",
+			"classSource": "spheres-of-might",
 			"level": 10,
 			"entries": [
-				"class description here"
+				"At 10th level, you have enough experience changing your persona that you can sometimes change much quicker than normal. A minute change is reduced to an Action, an Action is reduced to a bonus action, and a bonus action is reduced to no action at all. You may do this once, but regain this use after a long rest. At 18th level, you may do this twice instead of once."
 			]
 		},
 		{
 			"name": "Archetype Power",
-			"source": "SoM",
+			"source": "spheres-of-might",
 			"className": "Alter Ego",
-			"classSource": "SoM",
+			"classSource": "spheres-of-might",
 			"level": 11,
 			"entries": [
-				"class description here"
-			]
+				"At 11th level, you gain an ability from your Archetype."
+			],
+			"gainSubclassFeature": true
 		},
 		{
 			"name": "Ability Score Improvement",
-			"source": "SoM",
+			"source": "spheres-of-might",
 			"className": "Alter Ego",
-			"classSource": "SoM",
+			"classSource": "spheres-of-might",
 			"level": 12,
 			"entries": [
-				"class description here"
+				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
 			]
 		},
 		{
 			"name": "Archetype Power",
-			"source": "SoM",
+			"source": "spheres-of-might",
 			"className": "Alter Ego",
-			"classSource": "SoM",
+			"classSource": "spheres-of-might",
 			"level": 14,
 			"entries": [
-				"class description here"
-			]
+				"At 14th level, you gain an ability from your Archetype."
+			],
+			"gainSubclassFeature": true
 		},
 		{
 			"name": "Trope Benefit",
-			"source": "SoM",
+			"source": "spheres-of-might",
 			"className": "Alter Ego",
-			"classSource": "SoM",
+			"classSource": "spheres-of-might",
 			"level": 15,
 			"entries": [
-				"class description here"
+				"At 15th level, each of your Persona Tropes improves further."
 			]
 		},
 		{
 			"name": "Ability Score Improvement",
-			"source": "SoM",
+			"source": "spheres-of-might",
 			"className": "Alter Ego",
-			"classSource": "SoM",
+			"classSource": "spheres-of-might",
 			"level": 16,
 			"entries": [
-				"class description here"
+				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
 			]
 		},
 		{
 			"name": "Quick Change (2)",
-			"source": "SoM",
+			"source": "spheres-of-might",
 			"className": "Alter Ego",
-			"classSource": "SoM",
+			"classSource": "spheres-of-might",
 			"level": 18,
 			"entries": [
-				"class description here"
+				"When you reach 18th level, you may use your Quick Change feature twice between long rests instead of once. "
 			]
 		},
 		{
 			"name": "Ability Score Improvement",
-			"source": "SoM",
+			"source": "spheres-of-might",
 			"className": "Alter Ego",
-			"classSource": "SoM",
+			"classSource": "spheres-of-might",
 			"level": 19,
 			"entries": [
-				"class description here"
+				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
 			]
 		},
 		{
 			"name": "Archetype Power",
-			"source": "SoM",
+			"source": "spheres-of-might",
 			"className": "Alter Ego",
-			"classSource": "SoM",
+			"classSource": "spheres-of-might",
 			"level": 20,
 			"entries": [
-				"class description here"
+				"At 20th level, you gain an ability from your Archetype."
+			],
+			"gainSubclassFeature": true
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "The Chemist",
+			"source": "spheres-of-might",
+			"className": "Alter Ego",
+			"classSource": "spheres-of-might",
+			"subclassShortName": "The Chemist",
+			"subclassSource": "spheres-of-might",
+			"level": 1,
+			"entries": [
+				"A chemist uses applied magic and chemical mysteries to enact their transformation, drinking a concoction and transforming physically into a completely different person.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Alter Ego|spheres-of-might|The Chemist|spheres-of-might|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Switching Personas|Alter Ego|spheres-of-might|The Chemist|spheres-of-might|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Changing a Persona|Alter Ego|spheres-of-might|The Chemist|spheres-of-might|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Concoctions|Alter Ego|spheres-of-might|The Chemist|spheres-of-might|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Bonus Proficiencies",
+			"entries": [
+				"You gain proficiency with alchemist supplies and poisoner’s kits."
+			],
+			"source": "spheres-of-might",
+			"className": "Alter Ego",
+			"classSource": "spheres-of-might",
+			"subclassShortName": "The Chemist",
+			"subclassSource": "spheres-of-might",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Switching Personas",
+			"entries": [
+				"You possess two personas; one when you are transformed and one when you are not. Changing your personas requires an Action as you drink the concoction that enacts the switch and go through a quick transformation. You switch back to your untransformed persona after a short or long rest, but you may also drink another concoction to switch back at any time. The appearance of your transformed persona is up to you: you but taller, a demonic monster, a giant animal, etc.. However, it cannot mimic the appearance of another, specific creature of your choice, and once decided your transformed appearance cannot change. Unless your transformed persona appears similar to your untransformed persona, it is only through intense investigation or seeing a transformation take place that anyone can tell that your different personas are all different sides of the same person."
+			],
+			"source": "spheres-of-might",
+			"className": "Alter Ego",
+			"classSource": "spheres-of-might",
+			"subclassShortName": "The Chemist",
+			"subclassSource": "spheres-of-might",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Changing a Persona",
+			"entries": [
+				"Abandoning a transformed persona and creating a new one in its place usually requires a week of downtime, as you experiment with different chemicals to enact an entirely new change."
+			],
+			"source": "spheres-of-might",
+			"className": "Alter Ego",
+			"classSource": "spheres-of-might",
+			"subclassShortName": "The Chemist",
+			"subclassSource": "spheres-of-might",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Concoctions",
+			"entries": [
+				"Your change is enacted through drinking small vials of your creation as an Action, known as concoctions. Because concoctions are as much applied magic as unstable science, you can only keep a few of them active at any one time; brewing new ones causes any old ones to go inert. Anyone other than you who drinks a concoction is poisoned for 1 hour. During a long rest you can brew up to your maximum.",
+				"You can maintain up to two concoctions at once. You may brew an additional concoction at 6th (3), 11th (4), 14th (5), and 20th levels (6).",
+				"In addition to changing your persona, you can brew one benefit into each concoction. If you use the concoction to adopt your transformed persona (instead of using it to return to your untransformed persona) you gain that benefit for as long as you are in your transformed persona. If you drink one while in your transformed persona, you may choose to stay in your transformed persona and switch the benefits rather than change back to your untransformed persona.",
+				"You may choose any of the following benefits. At 11th level, you may give a concoction two benefits instead of one. At 20th level, you may have three benefits instead of two. You may choose different benefits for each concoction you brew. DEAR SELF - COME BACK AND ADD A LIST AND A TABLE"
+			],
+			"source": "spheres-of-might",
+			"className": "Alter Ego",
+			"classSource": "spheres-of-might",
+			"subclassShortName": "The Chemist",
+			"subclassSource": "spheres-of-might",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Concoctions (3)",
+			"source": "spheres-of-might",
+			"className": "Alter Ego",
+			"classSource": "spheres-of-might",
+			"subclassShortName": "The Chemist",
+			"subclassSource": "spheres-of-might",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, you can maintain up to three concoctions at once."
+			]
+		},
+		{
+			"name": "Concoctions (4)",
+			"source": "spheres-of-might",
+			"className": "Alter Ego",
+			"classSource": "spheres-of-might",
+			"subclassShortName": "The Chemist",
+			"subclassSource": "spheres-of-might",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"At 11th level, you can maintain up to four concoctions at once. Additionally, you may give each concoction two benefits instead of one."
+			]
+		},
+		{
+			"name": "Concoctions (5)",
+			"source": "spheres-of-might",
+			"className": "Alter Ego",
+			"classSource": "spheres-of-might",
+			"subclassShortName": "The Chemist",
+			"subclassSource": "spheres-of-might",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"At 14th level, you can maintain up to five concoctions at once."
+			]
+		},
+		{
+			"name": "Concoctions (6)",
+			"source": "spheres-of-might",
+			"className": "Alter Ego",
+			"classSource": "spheres-of-might",
+			"subclassShortName": "The Chemist",
+			"subclassSource": "spheres-of-might",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"At 20th level, you can maintain up to six concoctions at once. Additionally, you may give each concoction three benefits instead of two."
 			]
 		}
-		
+	],
+	"optionalfeature": [
+		{
+			"name": "The Antihero",
+			"entries": [
+				"The antihero is willing to use all manner of secret and underhanded tricks to accomplish their goals and prefers to keep themselves ambiguous and in the shadows.", 
+				"Antiheroes deal 1d6 sneak attack like a 1st level rogue. This increases by +1d6 at 6th (2d6), 10th, (3d6), 14th levels (4d6), and 18th levels (5d6). If you already possess sneak attack, you may instead add half your alter ego levels to your rogue level to determine your total sneak attack."
+			],
+			"source": "spheres-of-might",
+			"featureType": [
+				"PT"
+			]
+		}
 	]
-
-
-
-
-
-
-
-
-
->>>>>>> 6854b159e708ff2bcb4055820fe5f71611bc62bd
 }
