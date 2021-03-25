@@ -2,22 +2,22 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "GiddyOptionalfeature",
-				"abbreviation": "Brew",
-				"full": "TheGiddyLimit",
+				"json": "spheres-of-might",
+				"abbreviation": "SoM",
+				"full": "Spheres of Might",
 				"authors": [
-					"TheGiddyLimit"
+					"Drop Dead Studios"
 				],
-				"version": "1.0.0",
-				"url": "https://github.com/TheGiddyLimit/homebrew",
-				"targetSchema": "1.0.0"
+				"convertedBy": [
+					"me"
+				],
+				"version": "3.5.2",
+				"url": "url to original source",
+				"color": "cc6600 go update version, date mod, etc, maybe play with the color too"
 			}
 		],
-		"optionalFeatureTypes": {
-			"MM:D": "Metamagic, Draconic"
-		},
-		"dateAdded": 0,
-		"dateLastModified": 0
+		"dateAdded": 1516994880,
+		"dateLastModified": 1614777170
 	},
 	"optionalfeature": [
 		{
@@ -25,11 +25,11 @@
 			"prerequisite": [
 				{
 					"level": {
-						"level": 2,
-						"class": {
-							"name": "Armiger"
-						}
-					}
+						"level": 2
+					},
+					"feature": [
+						"BLAAAANK"
+					]
 				}
 			],
 			"entries": [
@@ -436,8 +436,14 @@
 			"name": "Bomb (legendary, formula)",
 			"source": "spheres-of-might",
 			"featureType": "Alchemy",
+			"prerequisite": [
+				{
+					"feature": [
+						"Renaissance Era"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Renaissance Era",
 				"You create a bomb that you can light and throw at a point within 60 feet. Each creature within 5 feet of that point must succeed on a Dexterity saving throw or take 3d6 fire damage. Each bomb counts as two formulae for the purpose of determining how many you may have created at one time.",
 				"{@b Potency:} If you expend your martial focus when throwing a bomb, creatures still take half damage on a successful Dexterity saving throw, and the fire damage increases by an additional 1d6 when you reach 5th level (4d6), 11th level (5d6), and 17th level (6d6)."
 			]
@@ -446,8 +452,14 @@
 			"name": "Dynamite (legendary, formula)",
 			"source": "spheres-of-might",
 			"featureType": "Alchemy",
+			"prerequisite": [
+				{
+					"feature": [
+						"Modern Era"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Modern Era",
 				"You create a stick of dynamite that you can light and throw at a point within 60 feet. Each creature within 5 feet of that point must succeed on a Dexterity saving throw or take 3d6 bludgeoning damage on a failed save, or half as much on a successful one. A character can bind sticks of dynamite together so they explode at the same time. Each additional stick increases the damage by 1d6 (to a maximum of 10d6) and the burst radius by 5 feet (to a maximum of 20 feet).",
 				"Dynamite can be rigged with a longer fuse to explode after a set amount of time, usually 1 to 6 rounds. Roll initiative for the dynamite. After the specified number of rounds goes by, the dynamite explodes on that initiative.",
 				"Each stick of dynamite counts as two formulae for the purpose of determining how many you may have created at one time."
@@ -457,8 +469,14 @@
 			"name": "Elixir of Immortality (legendary, formula, medic)",
 			"source": "spheres-of-might",
 			"featureType": "Alchemy",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} 15th Level",
 				"You may create a special elixir that restores a creature to its starting age as a young adult. Unlike a standard formula, it takes 1 month to brew an elixir of immortality, and it costs an additional 50,000 gp in materials to create."
 			]
 		},
@@ -475,8 +493,17 @@
 			"name": "Glue and Solvent (legendary, formula, poison)",
 			"source": "spheres-of-might",
 			"featureType": "Alchemy",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15
+					},
+					"feature": [
+						"Alchemy (Acid Flask)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Alchemy sphere (Acid Flask), 15th level", 
 				"You can create sovereign glue or universal solvent as a formula. A formula of sovereign glue or universal solvent requires 10,000 gp in materials to create and counts as ten formulae for the purpose of determining how many you may have created at one time."
 			]
 		},
@@ -743,8 +770,17 @@
 			"name": "Air Stunt (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Athletics",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					},
+					"feature": [
+						"Athletics (Wall Stunt)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Athletics sphere (Wall Stunt), 5th level or higher",
 				"You may treat the air as if it were a wall for the Wall Stunt talent."
 			]
 		},
@@ -752,8 +788,14 @@
 			"name": "Flash Step (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Athletics",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} 11th level or higher.",
 				"When you take the Dash action, you may expend martial focus to magically teleport to your final destination without passing through any intervening squares. The place you end must be within sight and must be within the range of your movement speed."
 			]
 		},
@@ -761,8 +803,14 @@
 			"name": "Helicopter Descent (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Athletics",
+			"prerequisite": [
+				{
+					"feature": [
+						"Athletics (Polearm Vaulter or Rope Swing)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Athletics sphere (Polearm Vaulter or Rope Swing).",
 				"If you end your turn in the air while wielding a Polearm Vaulter or Rope Swing item, you may as a Reaction expend your martial focus to slow the descent of your fall to 60 feet for a number of rounds equal to your proficiency bonus. If you land before the slow descent ends, you take no falling damage and can land on your feet."
 			]
 		},
@@ -778,8 +826,17 @@
 			"name": "Sparrows Path (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Athletics",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					},
+					"feature": [
+						"Athletics (Air Stunt, Wall Stunt)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Athletics sphere (Air Stunt, Wall Stunt), 5th level or higher.",
 				"You gain a fly speed equal to half your base land speed."
 			]
 		},
@@ -803,8 +860,14 @@
 			"name": "Terrain Glide (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Athletics",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} 11th level or higher.",
 				"Your skills and muscles honed by swimming allow you to cleave through soil and snow with ease. You can swim through dirt and sand as if it were water. This counts as swimming through difficult terrain (each foot of movement costs 2 extra feet, or 1 if you possess a swim speed). This does not grant you the ability to see or breathe through dirt, meaning you are effectively blind while swimming in this fashion and might run out of air if you spend too long underground."
 			]
 		},
@@ -904,8 +967,17 @@
 			"name": "Cone of Death (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Barrage",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					},
+					"feature": [
+						"Barrage (Spinning Shot)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Barrage sphere (Spinning Shot), 5th level or higher.",
 				"As an action, you may expend your martial focus to make one attack against every creature within a 30-foot cone. You must have a piece of ammunition for each target, as normal, and make a separate attack roll for each target."
 			]
 		},
@@ -1192,8 +1264,14 @@
 			"name": "Alchemical Dragon (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Barroom",
+			"prerequisite": [
+				{
+					"feature": [
+						"Alchemy Sphere"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Alchemy sphere, Barroom sphere.",
 				"As an action, you can imbibe any liquid alchemical weapon such as alchemist’s fire, some formulae, or acid, and then spit it out in a 15-foot cone. All creatures within that cone must make a successful Dexterity saving throw or suffer the alchemical item’s effects."
 			]
 		},
@@ -1201,8 +1279,14 @@
 			"name": "Blazewater (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Barroom",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} 7th level or higher.",
 				"Whenever you would be able to imbibe an alcoholic beverage, you can instead pour it onto a weapon you or an adjacent ally is wielding and set it ablaze. For one minute, that weapon deals an additional 1d6 fire damage. This doesn’t count as imbibing the alcohol yourself."
 			]
 		},
@@ -1210,8 +1294,17 @@
 			"name": "Disposable Weapon (legendary, fragile)",
 			"source": "spheres-of-might",
 			"featureType": "Barroom",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					},
+					"feature": [
+						"Barroom (Jagged Edge)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Barroom sphere (Jagged Edge), 5th level or higher.",
 				"You know how to break an object mid-swing to inflict severe wounds. Once per short rest before making an attack with a fragile weapon, you can expend your martial focus, breaking the weapon. If the attack hits, you can, as a reaction, change a normal hit into a critical hit. You can take this talent multiple times, each time increasing the number of times you can use this talent per short rest."
 			]
 		},
@@ -1219,8 +1312,17 @@
 			"name": "Eternal Buzz (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Barroom",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15
+					},
+					"feature": [
+						"Barroom (High on Fumes, Iron Liver)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Barroom sphere (High on Fumes, Iron Liver), 15th level or higher.",
 				"When using the High on Fumes talent, you can spend a bonus action instead of your martial focus. In addition, your blood is treated as an alcoholic beverage, and any creature who attempts to swallow you whole must pass a Constitution saving throw or become poisoned for as long as you are inside of it."
 			]
 		},
@@ -1228,8 +1330,14 @@
 			"name": "Go Limp (legendary, drunk)",
 			"source": "spheres-of-might",
 			"featureType": "Barroom",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} 5th level or higher.",
 				"As a reaction, you can expend your drunk status to gain resistance to bludgeoning, piercing, and slashing damage against one attack."
 			]
 		},
@@ -1237,8 +1345,14 @@
 			"name": "Magic in the Spirits (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Barroom",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} 5th level or higher.",
 				"So long as you have the drunk status, your non-magical unarmed strikes and wielded weapons gain a +1 bonus to attack and damage, and are treated as magical."
 			]
 		},
@@ -1246,8 +1360,17 @@
 			"name": "Perfect Relaxation (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Barroom",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					},
+					"feature": [
+						"Barroom (Nice and Loose)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Barroom sphere (Nice And Loose), 11th level or higher.",
 				"While using Nice And Loose to gain advantage on a Dexterity saving throw,"
 			]
 		},
@@ -1571,8 +1694,14 @@
 			"name": "Distant Tamer (legendary, tamer)",
 			"source": "spheres-of-might",
 			"featureType": "Beastmastery",
+			"prerequisite": [
+				{
+					"feature": [
+						"Beastmastery (Beast Tamer)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Beastmastery sphere (Beast Tamer)",
 				"The range of your Beast Tamer talent increases to 120 feet."
 			]
 		},
@@ -1580,8 +1709,14 @@
 			"name": "Enduring Control (legendary, tamer)",
 			"source": "spheres-of-might",
 			"featureType": "Beastmastery",
+			"prerequisite": [
+				{
+					"feature": [
+						"Beastmastery (Beast Tamer)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Beastmastery sphere (Beast Tamer), 1st level or higher.",
 				"The duration of your Beast Tamer talent increases to 8 hours."
 			]
 		},
@@ -1589,8 +1724,14 @@
 			"name": "Mass Tame (legendary, tamer)",
 			"source": "spheres-of-might",
 			"featureType": "Beastmastery",
+			"prerequisite": [
+				{
+					"feature": [
+						"Beastmastery (Beast Tamer)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Beastmastery sphere (Beast Tamer)",
 				"When using your Beast Tamer talent, you may affect multiple creatures at once, up to your proficiency bonus. All creatures must be within range. Your Hit Dice limits still apply to the total number you may affect at once with this ability."
 			]
 		},
@@ -1598,8 +1739,17 @@
 			"name": "Permanent Control (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Beastmastery",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					},
+					"feature": [
+						"Beastmastery (Beast Tamer, Enduring Control"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Beastmastery sphere (Beast Tamer, Enduring Control), 5th level or higher.",
 				"The duration of your Beast Tamer talent increases to permanent."
 			]
 		},
@@ -1607,8 +1757,14 @@
 			"name": "Swarm Master (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Beastmastery",
+			"prerequisite": [
+				{
+					"feature": [
+						"Beastmastery (Trainer)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Beastmastery sphere (Trainer)",
 				"Increase the number of creatures you can have tamed at a time by your level. This doesn’t increase the total Challenge Rating of the creatures you can have tamed at once."
 			]
 		},
@@ -1616,8 +1772,14 @@
 			"name": "Swarm Master (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Beastmastery",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} 5th level or higher.",
 				"You may speak with animals. You can ask questions of and receive answers from creatures of the beast type, but this ability doesn’t make them any more friendly than normal. Wary and cunning beasts are likely to be terse and evasive, while the more stupid ones make inane comments. If a beast is friendly toward you, it may do some favor or service for you."
 			]
 		},
@@ -1625,8 +1787,14 @@
 			"name": "Beast Companion (variant)",
 			"source": "spheres-of-might",
 			"featureType": "Beastmastery",
+			"prerequisite": [
+				{
+					"feature": [
+						"Beastmastery (Tamer Package)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:}  Tamer Package",
 				"You may only have one tame creature at a time and may only tame beasts that are no larger than Medium and have a challenge rating of 1/4 or lower. Add your proficiency bonus to the beast’s AC, attack rolls, and damage rolls, as well as to any saving throws and skills it is proficient in. Its hit point maximum equals the beast’s Constitution modifier + your key ability modifier + five times your level. Like any creature, it can spend Hit Dice during a short rest to regain hit points (the beast has a number of Hit Dice [d6s] equal to your level). The maximum challenge rating of your tame beast increases by 1 step when you reach 5th level (CR 1/2), 11th level (CR 1), and 17th level (CR 2). You cannot possess both this and the Monster Tamer variant."
 			]
 		},
@@ -1634,8 +1802,14 @@
 			"name": "Monster Tamer (variant)",
 			"source": "spheres-of-might",
 			"featureType": "Beastmastery",
+			"prerequisite": [
+				{
+					"feature": [
+						"Beastmastery (Tamer Package)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:}  Tamer Package",
 				"You gain Broad Skills with this variant. You may not use your tame ability on creatures of the beast type."
 			]
 		},
@@ -1643,8 +1817,14 @@
 			"name": "Offensive Rider (variant)",
 			"source": "spheres-of-might",
 			"featureType": "Beastmastery",
+			"prerequisite": [
+				{
+					"feature": [
+						"Beastmastery (Tamer Package)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:}  Tamer Package",
 				"You do not gain the skillful riding ability. You gain Skirmish Rider with this variant."
 			]
 		},
@@ -1823,8 +2003,17 @@
 			"name": "Alter Terrain (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Berserker",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7
+					},
+					"feature": [
+						"Berserker (Shatter Earth)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Berserker sphere (Shatter Earth), 7th level or higher.",
 				"When using the Shatter Earth talent, you may create a 5-foot deep hole in the ground in the affected squares. If you so choose, you also raise the terrain by 5 feet in all squares adjacent to the affected squares."
 			]
 		},
@@ -1840,8 +2029,15 @@
 			"name": "Rift Strike (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Berserker",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} 11 level or higher. As an action that provokes attacks of opportunity, you unleash a powerful roar and swing a weapon with such extreme ferocity that you tear the very fabric of space and time, opening up a rift to another location. This teleports you, your carried items, and up to one willing Medium or smaller creature and their gear per three levels to a location that can be up to 100 miles per level away. Large creatures count as two Medium creatures, a Huge creature counts as two Large creatures, etc.. All creatures to be transported must be in contact with one another, and at least one of those creatures must be in contact with you.",
+				"As an action that provokes attacks of opportunity, you unleash a powerful roar and swing a weapon with such extreme ferocity that you tear the very fabric of space and time, opening up a rift to another location. This teleports you, your carried items, and up to one willing Medium or smaller creature and their gear per three levels to a location that can be up to 100 miles per level away. Large creatures count as two Medium creatures, a Huge creature counts as two Large creatures, etc.. All creatures to be transported must be in contact with one another, and at least one of those creatures must be in contact with you.",
 				"You must have some clear idea of the destination’s location and layout; if you have not been to the desired destination before then you do not arrive at the exact location, instead creating a rift to a location within 1d20 miles of the desired point.",
 				"Your exhaustion level increases by 1 after using this ability. You incur this penalty even if you are immune to the exhausted condition. If your current exhaustion level is greater than 1, you incur a 50% chance that the ability fails to work and your exhaustion level still increases by 1. This is a magical effect."
 			]
@@ -1850,8 +2046,14 @@
 			"name": "Ruinous Tread (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Berserker",
+			"prerequisite": [
+				{
+					"feature": [
+						"Berserker (Shatter Earth)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Berserker sphere (Shatter Earth).",
 				"You may choose to break the ground as you move. Whenever you leave a square, you may choose to make that square difficult terrain. This difficult terrain remains until it is cleared as an action (clearing 1 square within the creature’s reach) or repaired with a spell or effect such as the mending spell."
 			]
 		},
@@ -1859,8 +2061,14 @@
 			"name": "Sever (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Berserker",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} 11th level or higher.",
 				"When you score a critical hit with a melee weapon, you may expend martial focus. The target must pass a Constitution saving throw or have one limb severed. The target takes 1d6 points of necrotic damage from the wound each round at the beginning of its turn until it receives at least 1 point of healing or the bleeding is stopped by a DC10 Wisdom (Medicine) check.",
 				"Losing a limb halves any movement speed dependent on that limb and removes any attacks and abilities dependent on that limb. Creatures with all legs removed are prone and have a walking speed of 5 feet unless possessing other forms of movement."
 			]
@@ -1869,8 +2077,14 @@
 			"name": "Spell Sunder (legendary, exertion)",
 			"source": "spheres-of-might",
 			"featureType": "Berserker",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} 5th level or higher.",
 				"You may attempt to break an ongoing spell effect on the target. You can choose an effect you are aware of, but otherwise this targets the lowest-level magical effect. If the damage from the brutal strike exceeds a DC of 10 + the spell’s level, the magic effect is suppressed for a number of rounds equal to your proficiency bonus. If your damage exceeds the DC by 5 or more, it is instead dispelled entirely. You may use this to target a magic effect on an area."
 			]
 		},
@@ -2051,8 +2265,14 @@
 			"name": "Soul Sunder (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Brute",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:}  15th level or higher.",
 				"The target must succeed on a Charisma saving throw or be hurled into the ethereal plane, becoming ethereal for a number of rounds equal to your proficiency bonus. They may attempt a new saving throw each round at the end of their turn to end this effect early. During this time, it can move in any direction. If it moves up or down, every foot of movement costs an extra foot. It can see and hear the plane it originated from, but everything there looks gray, and it can’t see anything more than 60 feet away.",
 				"While on the Ethereal Plane, it can only affect and be affected by other creatures on that plane. Creatures that aren’t on the Ethereal Plane can’t perceive it and can’t interact with it unless a special ability or magic has given them the ability to do so. It ignores all objects and effects that aren’t on the Ethereal Plane, allowing it to move through objects it perceives on the plane it originated from.",
 				"When the effect ends, it immediately returns to the plane it originated from in the spot it currently occupies. If it occupies the same spot as a solid object or creature when this happens, it is immediately shunted to the nearest unoccupied space that it can occupy and take force damage equal to twice the number of feet it is moved.",
@@ -2074,8 +2294,14 @@
 			"name": "Terrain Thrasher (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Brute",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:}  11th level or higher.",
 				"You may expend your martial focus as an action to grab a solid surface such as a wall, door, or floor within your reach and attempt to destroy it. Unsolid surfaces such as loose dirt cannot be broken in this fashion, nor surfaces made of iron or harder substances. If breaking a target thicker than 1 foot (such as trying to break through a castle’s outer wall or a mountain), you only break through 1 foot per use of this talent.",
 				"Make a DC 10 Strength check. If successful, you rip out a section from the wall, door, or floor the same size as yourself (roughly 5-ft diameter hole for a Medium creature)."
 			]
@@ -2084,8 +2310,14 @@
 			"name": "Thunderous Clap (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Brute",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} 5th level of higher. ",
 				"You may expend your martial focus as an action to slam your palms together, creating a thunderous shockwave that blows down anything in its path. Creatures within a 30-foot burst suffer 1d8+Strength modifier thunder damage (increasing by 1d8 at 5th level (2d8), 11th level (3d8), and 17th (4d8) level)) and are deafened for 1d4+1 rounds. A successful Constitution saving throw halves this damage and negates the deafened effect. All nonmagical sources of fire within the affected area are instantly extinguished."
 			]
 		},
@@ -2225,8 +2457,14 @@
 			"name": "Cyclone Cut (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Dual Wielding",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:}  5th level of higher.",
 				"While wielding two weapons, you may expend your martial focus as an action to twirl the two weapons with enough force to create a damaging cyclone of air. Each creature within 15 feet of you takes bludgeoning damage equal to the combined weapon damage dice of your two weapons. A successful Dexterity saving throw reduces this damage by half."
 			]
 		},
@@ -2234,8 +2472,14 @@
 			"name": "Three-Sword Style (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Dual Wielding",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} 5th level or higher.",
 				"You gain the ability to wield an additional weapon. If you do not have additional hands or some other method, you can wield the third weapon in your teeth, treating your mouth as an additional hand that can only be used to wield a one-handed or light weapon. While wielding a weapon in this manner, you cannot supply verbal spell components or make skill checks that require speaking or singing, though may still communicate in a garbled fashion. When you use two-weapon fighting on your turn, you may make an additional off-hand attack with the third weapon. If you do so, you cannot make a reaction this turn."
 			]
 		},
@@ -2840,8 +3084,14 @@
 			"name": "Bleed Air (legendary, exploit)",
 			"source": "spheres-of-might",
 			"featureType": "Fencing",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} 11th level or higher.",
 				"If you strike a creature at less than its maximum hit points, you may expend your martial focus to twist your blade to puncture a lung or similar organ, causing the target to begin suffocating 1d4 rounds later unless they succeed on a Constitution saving throw. Once the suffocation begins, the target drops to 0 hit points and begins making death saving throws. Creatures who do not need to breathe are immune to this effect. If the target is healed to full before suffocation begins, it is avoided."
 			]
 		},
@@ -2849,8 +3099,17 @@
 			"name": "Parry Anything (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Fencing",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					},
+					"feature": [
+						"Fencing (Parry and Riposte)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Fencing sphere (Parry And Riposte), 5th level or higher.",
 				"You may use your Parry And Riposte talent against ranged spell and weapon attacks as well as melee attacks. You still cannot make a retaliatory attack against the target unless it is within your reach (for a melee weapon) or within the normal range (for a ranged weapon or a weapon with the throwing property)."
 			]
 		},
@@ -3093,8 +3352,17 @@
 			"name": "I Will Come (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Guardian",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					},
+					"feature": [
+						"Guardian (Defend Other, I Will Hear)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Guardian sphere (Defend Other, I Will Hear), 11th level or higher.",
 				"When a creature calls you with the I Will Hear talent, you can spend an action to teleport to their location. You can bring along objects as long as their weight doesn’t exceed your maximum load. You can also bring a number of additional willing Medium or smaller creatures (carrying gear or objects up to its maximum load) equal to your proficiency bonus. A Large creature counts as two Medium creatures, a Huge creature counts as two Large creatures, and so forth. All creatures to be teleported must be in contact with one another and must be in contact with either you or a creature in contact with you.",
 				"Contact can be established without any action during your turn or as a reaction when not your turn. You can only travel to a particular creature using this ability once. You regain use of this ability for each relevant creature when you complete a long rest. This is a magical teleportation effect."
 			]
@@ -3103,8 +3371,14 @@
 			"name": "I Will Hear (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Guardian",
+			"prerequisite": [
+				{
+					"feature": [
+						"Guardian (Defend Other)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Guardian sphere (Defend Other).",
 				"You can form a bond with a creature as an action. There is no range limit on who you can bond with, nor do you need line of sight or line of effect to form a bond with a creature; you must, however, personally know the creature you are bonding with, even if it was a casual introduction. A bonded creature does not automatically become aware of this bond, your name, or how to call your name; it must be informed. A bonded creature can call your name as a reaction; if you are within 1 mile per level, you become immediately aware of the call and the direction to that creature. At 5th level, this range increases to 10 miles per level. At 11th level, the range becomes unlimited as long as you are both on the same plane. At 17th level, you can hear the call across the planes and gain knowledge of what plane the calling creature is on. You can maintain a number of these bonds equal to your proficiency bonus. This is a magical effect."
 			]
 		},
@@ -3112,8 +3386,17 @@
 			"name": "Indomitable (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Guardian",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					},
+					"feature": [
+						"Guardian (Delayed Damage Pool)
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Guardian sphere (delayed damage pool), 5th level or higher.",
 				"When reduced to 0 hit points, you can expend your martial focus (no action required) to act normally until the end of your next turn. You do not fall unconscious from hit point loss and are not subject to death saves during this time. You can receive healing during that turn to bring you above 0 hit points."
 			]
 		},
@@ -3121,8 +3404,14 @@
 			"name": "Inescapable Challenge (legendary, challenge)",
 			"source": "spheres-of-might",
 			"featureType": "Guardian",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Guardian sphere, 7th level or higher.",
 				"A creature affected by your challenge must make a Wisdom saving throw each time it attempts to move away from you (including via teleportation or other magical effects) or lose the attempted action or movement. The creature does not lose any spell, spell points, or magic item uses on a failed saving throw if this prevents a spell or sphere effect. The creature can be moved normally by other creatures."
 			]
 		},
@@ -3130,8 +3419,14 @@
 			"name": "Punishing Challenge (legendary, challenge)",
 			"source": "spheres-of-might",
 			"featureType": "Guardian",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} 5th level or higher.",
 				"Whenever a creature affected by your challenge gets disadvantage on an attack because it doesn’t affect you, that creature takes radiant or necrotic damage (chosen when you gain this talent) equal to your level. This is a magical effect."
 			]
 		},
@@ -3139,8 +3434,14 @@
 			"name": "Punishment (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Guardian",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} 5th level or higher.",
 				"When you deal damage with an attack to a creature while you have damage in your delayed damage pool, you can expend your martial focus to deal damage equal to your delayed damage pool to the target creature. This damage is of the same type as your triggering attack. If you possess the Cold Iron Call or Durable talents, you can also inflict any effects you are postponing with those abilities. If the effect allowed a saving throw, the target can make a saving throw immediately at the original DC.",
 				"A successful Constitution saving throw reduces the amount of additional damage by half and negates any additional effects."
 			]
@@ -3149,8 +3450,14 @@
 			"name": "Singularity (legendary, zone)",
 			"source": "spheres-of-might",
 			"featureType": "Guardian",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} 5th level or higher.",
 				"At the start of their turns, hostile creatures within the area of your patrol must succeed on a Strength saving throw or be moved 5 feet closer to you, though stop when they become adjacent. This movement does not provoke opportunity attacks. Hostile creatures within the area of your patrol count every 5 feet of movement directed away from you as 10 feet when determining their movement for the round. This stacks with the effects of difficult terrain. At 11th level, both the distance moved toward you and the additional cost of movement away from you increases by 5 feet. This is a magical effect."
 			]
 		},
@@ -3519,8 +3826,17 @@
 			"name": "Additional Sidekick (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Leadership",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					},
+					"feature": [
+						"Leadership (Sidekick package)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Leadership sphere (sidekick package), 5th level.",
 				"Gain an additional sidekick. You must divide your sidekick levels between both sidekicks and can do so as you see fit (thus, if you could normally have a sidekick with a maximum level of 6, with this talent you could have two sidekicks of 3rd level, one of 4th level and another of 2nd level, etc.).",
 				"You may take this talent multiple times. Each time you gain this talent, increase the number of sidekicks you can possess by 1. This doesn’t increase the total combined number of levels your sidekicks can have."
 			]
@@ -3529,8 +3845,17 @@
 			"name": "Air Travel (legendary, followers)",
 			"source": "spheres-of-might",
 			"featureType": "Leadership",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					},
+					"feature": [
+						"Leadership (Followers package)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Leadership sphere (followers package), 11th level.",
 				"Your followers are equipped with flying beasts, airships, arcane levitation, or other means of reliable overland flight. They possess a 50-foot fly speed.",
 				"{@b Special:} The level prerequisite may be reduced based on how common flight is in the setting. For example, in the Skybourne setting flight is common and airships are ubiquitous, so the level prerequisite could be ignored entirely."
 			]
@@ -3539,8 +3864,14 @@
 			"name": "Draft (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Leadership",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} 5th level.",
 				"You may expend martial focus as an Action to force a non-hostile creature within 30 feet to make a Charisma saving throw or be charmed by you for 1 hour. While charmed, the creature will serve you as if it were a sidekick. Creatures not of the humanoid type gain advantage on their saving throw. Once a creature saves successfully against your use of this ability, it is immune to further uses of this ability by you for 24 hours. When the duration of the draft effect ends, the creature returns to its previous disposition, modified by any other effects that would have altered it in the meantime.",
 				"Should the charmed creature take damage, or should you attempt to make the creature perform an obviously suicidal action, the creature is automatically released from the effects of the charm."
 			]
@@ -3549,8 +3880,14 @@
 			"name": "Master of the Dead (legendary, sidekick)",
 			"source": "spheres-of-might",
 			"featureType": "Leadership",
+			"prerequisite": [
+				{
+					"feature": [
+						"Leadereship (Sidekick package)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Leadership sphere (sidekick package).",
 				"You may recruit sidekicks with the undead type, finding and reanimating dead bodies with arcane rituals. Such sidekicks are built normally but have the undead type and gain the following modifiers and abilities based on whether they are a Skeleton or a Zombie:",
 				"{@b Skeleton:}",
 				{
@@ -3586,8 +3923,14 @@
 			"name": "Mystic Craftsman (legendary, followers)",
 			"source": "spheres-of-might",
 			"featureType": "Leadership",
+			"prerequisite": [
+				{
+					"feature": [
+						"Leadership sphere (Craftsman, Scholars)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Leadership sphere (Craftsman, Scholars)",
 				"Your followers may craft magic items, even in your absence, utilizing the magic item creation rules used in your game. They cannot produce spells and prerequisites on their own, but they can work on any magic item that you are high enough level to craft if you can provide the prerequisites. A troop can craft at the same pace as a single person of your level, and if you work with them, any check you make to craft the magic item is made with advantage."
 			]
 		},
@@ -3595,8 +3938,17 @@
 			"name": "Planisphere (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Leadership",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15
+					},
+					"feature": [
+						"Leadership sphere (Follower Package, Air Travel, Teleportation)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Leadership sphere (follower package, Air Travel, Teleportation), 15th level.",
 				"Your followers are equipped for planar travel. Your followers ignore negative planar traits, and if you are with them, you and a number of allies equal to your proficiency bonus do as well.",
 				"Your followers can meet you in any location on any plane within 1d4 days. Once per day, you and your allies can be carried to another plane by your followers, arriving between 5 and 500 miles from a chosen destination. This requires 1d4 hours.",
 				"If you possess the Messengers talent, your messengers can reach any location on any plane and return within 1d4 days. If you possess both Messengers and Merchants, your messengers can be sent to obtain items from anywhere in the planes. You do not need to roll for availability; if it is available for purchase anywhere in the planes it will be bought and brought to you."
@@ -3606,8 +3958,17 @@
 			"name": "Squad (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Leadership",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					},
+					"feature": [
+						"Leadership sphere (Follower and Sidekick Packages, Soldiers)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Leadership sphere (follower and sidekick packages, Soldiers), 5th character level.",
 				"You may recruit your follower troops to be sidekicks.",
 				"Choose one troop to become a sidekick. This troop becomes either a troop of students, a troop of explorers, or a troop of veterans, and advances as if it were a sidekick, except each level a squad has counts as two levels when determining the maximum level of your sidekick or sidekicks. For each level that the squad has beyond 1st, it gains three Hit Dice and its hit point maximum increases. To determine the amount of the increase, roll the Hit Die (the type of die appears in the sidekick’s stat block) three times, and add three times its Constitution modifier. It gains a minimum of 3 hit points per level. This troop will follow you into dangerous situations like any other sidekick."
 			]
@@ -3616,8 +3977,17 @@
 			"name": "Teleportation (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Leadership",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13
+					},
+					"feature": [
+						"Leadership (Followers Package)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Leadership sphere, (followers) package, 13th level.",
 				"Your followers are capable of performing rituals, borrowing spell-casting services, walking fairy-roads, and other methods of rapid, long-distance travel. Your followers can meet you anywhere on the same plane within 1d4 days, regardless of distance. Once per day, you and your allies can be carried to another location on your current plane by your followers, arriving 2d20 miles from a chosen destination. This requires 1d4 hours.",
 				"If you possess the Messengers talent, your messengers can reach any location on the same plane and return within 1d4 days. If you possess both Messengers and Merchants, your messengers can be sent to obtain items from anywhere on the plane. You do not need to roll for availability; if it is available for purchase anywhere on the plane it will be bought and brought to you."
 			]
@@ -3787,8 +4157,14 @@
 			"name": "Chasing Assault (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Retribution",
+			"prerequisite": [
+				{
+					"feature": [
+						"Retribution (Launching Uppercut)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Retribution sphere (Launching Uppercut).",
 				"Whenever you launch a hostile creature into the air with your Launching Uppercut talent, you may jump into the air next to them (this movement does not provoke opportunity attacks). You may make a single attack against that creature, knocking them to the ground if you hit and doubling their falling damage. You descend back to the ground at the end of the target’s turn and do not suffer falling damage for the distance you jumped."
 			]
 		},
@@ -3796,8 +4172,14 @@
 			"name": "Intense Conditioning (legendary, counter)",
 			"source": "spheres-of-might",
 			"featureType": "Retribution",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} 5th level or higher.",
 				"Whenever you land a successful counterstrike, you may expend your martial focus to make the creature damaged by your counterstrike make a Charisma saving throw; if this save is unsuccessful, for 1 minute, whenever the creature attempts the action which triggered your counterstrike, they must make a successful Charisma saving throw or be unable to take that action, though they may still choose to take another action in its place. Creatures immune to the frightened condition are immune to this effect."
 			]
 		},
@@ -3959,8 +4341,14 @@
 			"name": "Steal Equipment (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Scoundrel",
+			"prerequisite": [
+				{
+					"feature": [
+						"Scoundrel (Master Thief)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Scoundrel sphere (Master Thief)",
 				"When expending your martial focus with the Master Thief talent, you may attempt to steal the target’s armor or worn clothing. You have disadvantage on this roll, which is not mitigated through the Master Thief talent."
 			]
 		},
@@ -3968,8 +4356,14 @@
 			"name": "Steal Heart (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Scoundrel",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} 7th level or higher.",
 				"If you expend your martial focus when using steal, rather than steal an object, you may force the target to make a successful Wisdom saving throw. If they fail, they are charmed by you for 1 minute. Once a creature has been affected by or made a saving throw against this talent, they cannot be affected by it again until after you complete a long rest."
 			]
 		},
@@ -3977,8 +4371,14 @@
 			"name": "Steal Identity (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Scoundrel",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} 5th level or higher.",
 				"When using steal, rather than steal an item, you may expend your martial focus to harness an understanding of the creature’s appearance and behavior. You gain advantage on Disguise checks to disguise yourself as that creature for 1 hour. This is a magical effect."
 			]
 		},
@@ -3986,8 +4386,14 @@
 			"name": "Steal Spells (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Scoundrel",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} 11th level or higher.",
 				"When using steal, rather than steal an item, you may attempt to transfer an ongoing spell effect from that target to yourself for 1 minute. If the magic is being maintained through concentration, you take over concentrating on the effect. At the end of this duration, the effect ends on you and returns to the creature it was stolen from. Time spent stolen still counts against the effect’s duration, and if the effect’s duration expires while it is stolen, it ends as normal.",
 				"This functions with spell effects with a target of ‘self’ but does not otherwise function with spell effects that would consider you an invalid target (for example, if the effect only targets specific creature types). This is a magical effect."
 			]
@@ -3996,8 +4402,14 @@
 			"name": "Steal Skill (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Scoundrel",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} 5th level or higher.",
 				"When using steal, rather than steal an item, you may expend your martial focus to attempt to steal one skill proficiency the target possesses. This does not grant you knowledge of what proficiencies the target possesses; you must either know or guess them in order to steal them. If successful, the target loses their proficiency, and you gain it for 1 minute. If the creature receives twice its proficiency bonus to the chosen skill, you gain this benefit as well. This is a magical effect."
 			]
 		},
@@ -4005,8 +4417,14 @@
 			"name": "Steal Talent (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Scoundrel",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} 7th level or higher.",
 				"Whenever you use Steal Skill, you may choose to steal a talent (magic or martial) instead of a skill proficiency. If you attempt to steal a base sphere for which the target possesses additional talents beyond the base, you take disadvantage on your check. Affected creatures cannot use abilities for which the prerequisite talent has been stolen, and if you steal talents which have prerequisites that you do not meet, you cannot use them. This is a magical effect."
 			]
 		},
@@ -4247,8 +4665,17 @@
 			"name": "Detect Surface Thoughts (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Scout",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					},
+					"feature": [
+						"Proficiency with Insight"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Proficient with Insight, 5th level or higher.",
 				"You can spend an action to hear the surface thoughts of a scouted creature within 30 feet."
 			]
 		},
@@ -4256,8 +4683,14 @@
 			"name": "Empirical Tracker (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Scout",
+			"prerequisite": [
+				{
+					"feature": [
+						"Scout (Track the Scene)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Scout sphere (Track The Scene)",
 				"You can scout a creature by targeting the set of tracks you are following with the Track The Scene talent instead of targeting a creature you can see."
 			]
 		},
@@ -4265,8 +4698,14 @@
 			"name": "Inimical Gaze (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Scout",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} 5th level or higher.",
 				"You may expend your martial focus as an action to attempt to scout all creatures within 60 feet."
 			]
 		},
@@ -4274,8 +4713,17 @@
 			"name": "Magehunters Vision (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Scout",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3
+					},
+					"feature": [
+						"Scout (Heighten Awareness)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Scout sphere (Heighten Awareness), 3rd level or higher.",
 				"Your passive Perception from Heighten Awareness extends as far as you can see, rather than only 10 feet."
 			]
 		},
@@ -4283,8 +4731,17 @@
 			"name": "True Sight (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Scout",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17
+					},
+					"feature": [
+						"Scout (Discern Illusions, Piercing Eye)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Scout sphere (Discern Illusions, Piercing Eye), 17th level or higher.",
 				"So long as you have martial focus, your razor-sharp senses can no longer be fooled by illusions and misdirections, granting you the ability to see all things as they actually are. This is a personal, non-magical effect that allows you to see through normal and magical darkness, notice secret doors hidden by magic, see the exact locations of creatures or objects under blur or displacement effects, see invisible creatures or objects normally, see through illusions, and see the true form of polymorphed, changed, or transmuted things.",
 				"Further, you can focus your vision to see into the Ethereal Plane (but not into extradimensional spaces). The range of this effect is 120 feet.",
 				"This ability does not penetrate solid objects. It in no way confers x-ray vision or its equivalent. It does not negate obscuring effects, including that caused by fog and the like. It does not help you see through mundane disguises, spot creatures who are simply hiding, or notice secret doors hidden by mundane means. This effect cannot be further enhanced with magic, so one cannot use this ability through a crystal ball or in conjunction with the clairvoyance spell or similar effects."
@@ -4424,8 +4881,17 @@
 			"name": "Perfect Redirection (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Shield",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7
+					},
+					"feature": [
+						"Shield (Redirecting Shield)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Shield sphere (Redirecting Shield), 7th level or higher.",
 				"You may use your Redirecting Shield talent against spell attacks."
 			]
 		},
@@ -4433,8 +4899,14 @@
 			"name": "Souls Shield (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Shield",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} 11th level or higher.",
 				"You gain a bonus to all saving throws equal to your shield’s bonus to AC. This does not stack with effects that allow you to add an ability modifier to saving throws, such as the paladin’s aura of protection."
 			]
 		},
@@ -4593,8 +5065,17 @@
 			"name": "Fragmenting Shot (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Sniper",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7
+					},
+					"feature": [
+						"Sniper (Head Shot)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Sniper sphere (Head Shot), 7th level or higher.",
 				"If you reduce the target to 0 hit points through the Head Shot talent, it must succeed on a Constitution saving throw or be instantly killed as its head (or equivalent body part) explodes in a shower of gore. Each creature within 10 feet of the target must pass a successful Dexterity saving throw or be blinded for 1 minute or until they spend an action cleaning the guts from their eyes."
 			]
 		},
@@ -4602,8 +5083,17 @@
 			"name": "Phasic Shot (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Sniper",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15
+					},
+					"feature": [
+						"Sniper (Perfect Shot)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Sniper sphere (Perfect Shot), 15th level or higher.",
 				"Your shot is fired with such force and deadly accuracy that it cuts through the very bonds of reality, ignoring cover (including total cover) between it and its target, including effects that hinder ranged attacks such as the wind wall spell or the monk’s deflect missiles ability. If you possess the Star Scraper legendary talent, you may attack a target anywhere within its advanced range, even if they are completely enclosed by protective surfaces. However, you must still have a reliable means of ascertaining your target’s exact location. This is a magical effect."
 			]
 		},
@@ -4611,8 +5101,17 @@
 			"name": "Star Scraper (legendary, snipe)",
 			"source": "spheres-of-might",
 			"featureType": "Sniper",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					},
+					"feature": [
+						"Sniper (Perfect Shot)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Sniper sphere (Perfect Shot), 11th level or higher.",
 				"As a bonus action, you can impose disadvantage on a ranged attack to increase your weapon’s base range to 1 mile. You can attack a target without having line of sight or line of effect to them, ignoring any cover they possess, provided there is at least some form of straight open path between you and them, even if that path must go over a mountain or some other sort of large obstacle. However, you must have an accurate idea of the target’s location, such as by being signaled by a flying ally or informed of the target’s location and movements via a spell. Creatures who are completely enclosed by protective surfaces, such as creatures inside a castle room with no windows, cannot be targeted by this effect."
 			]
 		},
@@ -4892,8 +5391,14 @@
 			"name": "Futuristic Firearms (legendary, gadget)",
 			"source": "spheres-of-might",
 			"featureType": "Tinkerer",
+			"prerequisite": [
+				{
+					"feature": [
+						"Futuristic Era"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Futuristic era",
 				"{@b Complexity:} 3",
 				"You may create a gadget that functions as one of the ranged weapons listed in the Futuristic Firearms table below. The gadget is not crafted with ammunition, but you may create an energy cell as a separate gadget. An energy cell contains enough power for all the shots its firearm can make.",
 				{
@@ -4961,8 +5466,14 @@
 			"name": "Futuristic Melee Weaponry (legendary, gadget)",
 			"source": "spheres-of-might",
 			"featureType": "Tinkerer",
+			"prerequisite": [
+				{
+					"feature": [
+						"Futuristic Era"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Futuristic era",
 				"{@b Complexity:} 3",
 				"You may create a gadget that functions as one of the melee weapons listed in the Futuristic Melee Weaponry table below.",
 				{
@@ -5010,8 +5521,14 @@
 			"name": "Modern Firearms (legendary, gadget)",
 			"source": "spheres-of-might",
 			"featureType": "Tinkerer",
+			"prerequisite": [
+				{
+					"feature": [
+						"Modern Era"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Modern era",
 				"{@b Complexity:} 2",
 				"As part of a long rest, you can craft up to 10 firearm bullets. You must have tinker’s tools and materials on hand (usually worth half the item’s market price). Firearm bullets are always destroyed upon use.",
 				"You may create a gadget that functions as one of the ranged weapons listed in the Modern Firearms table below or a gadget that functions as one set of 10 firearm bullets.",
@@ -5095,8 +5612,14 @@
 			"name": "Modern Melee Weaponry (legendary, gadget)",
 			"source": "spheres-of-might",
 			"featureType": "Tinkerer",
+			"prerequisite": [
+				{
+					"feature": [
+						"Modern Era"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Modern era",
 				"{@b Complexity:} 2",
 				"You may create a gadget that functions as one of the melee weapons listed in the Modern Melee Weaponry table below.",
 				{
@@ -5154,8 +5677,14 @@
 			"name": "Pressurized Liquid Applicator (legendary, gadget)",
 			"source": "spheres-of-might",
 			"featureType": "Tinkerer",
+			"prerequisite": [
+				{
+					"feature": [
+						"Tinkerer sphere (Artillerist Gadgets)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Tinkerer sphere (Artillerist Gadgets)",
 				"{@b Complexity:} 3",
 				"You may create a special weaponized gadget that functions as described in the Pressurized Liquid Applicator table below. The gadget is not crafted with ammunition, but instead uses alchemical weapons (including formulae from the Alchemy sphere) as ammunition. Creatures who are hit by the single- target attack or fail their Dexterity saving throw against the stream fire suffer the effects of the alchemical weapon or formulae used as ammunition.",
 				{
@@ -5218,8 +5747,14 @@
 			"name": "Renaissance Firearms (legendary, gadget)",
 			"source": "spheres-of-might",
 			"featureType": "Tinkerer",
+			"prerequisite": [
+				{
+					"feature": [
+						"Renaissance Era"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Renaissance era",
 				"As part of a long rest, you can craft up to 10 firearm bullets. You must have tinker’s tools and materials on hand (usually worth half the item’s market price). Firearm bullets are always destroyed upon use.",
 				"You may create a gadget that functions as one of the ranged weapons listed in the Renaissance Firearms table below or a gadget that functions as one set of 10 firearm bullets.",
 				{
@@ -5505,8 +6040,14 @@
 			"name": "Penetrating Trap (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Trap",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} 5th level or higher.",
 				"Your damage-dealing traps are considered Magical for the sake of overcoming resistances."
 			]
 		},
@@ -5514,8 +6055,14 @@
 			"name": "Thaumic Sink (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Trap",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} 17th level or higher.",
 				"When used with a dart trap, a creature that is struck by your dart becomes affected as if he were inside of an antimagic field, as per the spell. This effect persists for a number of rounds equal to your proficiency bonus or until an action is spent removing the dart, inflicting damage equal to the dart’s minimum damage.",
 				"When used with a snare trap, a 10-foot radius around the triggering square is covered in an antimagic field per the spell. This effect persists for a number of rounds equal to your proficiency bonus.",
 				"Treat this effect as an 8th level spell."
@@ -5759,8 +6306,14 @@
 			"name": "Darklands Cry (legendary, shout)",
 			"source": "spheres-of-might",
 			"featureType": "Warleader",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} 11th level or higher.",
 				"{@b Duration:} Instantaneous",
 				"{@b Saving Throw:} Constitution",
 				"You may expend your martial focus to perform a shout that saps the very life and will to live from a creature. Any creature within this shout’s radius who fails a Constitution saving throw increases their exhaustion by 1. This is a magical effect."
@@ -5781,8 +6334,17 @@
 			"name": "Legion Unending (legendary, tactic)",
 			"source": "spheres-of-might",
 			"featureType": "Warleader",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					},
+					"feature": [
+						"Rousing Claxon"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Warleader sphere (Rousing Claxon), 11th level or higher.",
 				"Whenever a creature affected by this tactic would be reduced to 0 hit points, you may spend a reaction to grant them a number of temporary hit points equal to twice your level. These temporary hit points are applied before the damage from the triggering attack. These temporary hit points expire at the start of your turn.",
 				"You may expend martial focus to use this ability without using your reaction, but doing so ends the tactic."
 			]
@@ -5792,8 +6354,14 @@
 			"name": "Masters Aura (legendary, tactic)",
 			"source": "spheres-of-might",
 			"featureType": "Warleader",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} 11th level or higher.",
 				"{@b Targets:} self",
 				"Any creature who comes into physical contact with you while this tactic is active must succeed on a Wisdom saving throw or be charmed for 1 hour. Once a given creature has attempted a saving throw against this effect (whether they succeed or not), they cannot be affected by it again until you complete a long rest."
 			]
@@ -5803,8 +6371,17 @@
 			"name": "Recall Spirit (legendary, shout)",
 			"source": "spheres-of-might",
 			"featureType": "Warleader",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					},
+					"feature": [
+						"Warleader (Rousing Claxon)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Warleader sphere (Rousing Claxon), 11th level or higher.",
 				"You may expend your martial focus to recall the spirit of a creature within range of your shout that has died within 1 round. The target is healed for an amount equal to your level + your key ability modifier. The target’s exhaust level increases by 2, to a maximum of 5, and cannot be reduced below exhaustion level 1 by any means until completing a long rest."
 			]
 		},
@@ -5813,8 +6390,17 @@
 			"name": "Unending Loyalty (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Warleader",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15
+					},
+					"feature": [
+						"Warleader (Legion Undending, Recall Spirit, Rousing Claxon)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Warleader sphere (Legion Unending, Recall Spirit, Rousing Claxon), 15th level or higher.",
 				"You may use your Recall Spirit shout on a target that has died within 1 minute rather than 1 round. The target is returned to life with a number of hit points equal to twice your level + your key ability modifier and no exhaustion (if this would grant them more hit points than they would normally have, they gain any excess as temporary hit points). After one hour, the creature dies regardless of its hit points and may not be affected with this talent a second time unless they are returned to life by other means. This is a magical effect."
 			]
 		},
@@ -6023,8 +6609,17 @@
 			"name": "Earth-Shattering Slam (legendary, slam)",
 			"source": "spheres-of-might",
 			"featureType": "Wrestler",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					},
+					"feature": [
+						"Berserker (Shatter Earth), Wrestling (Living Weapon)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Berserker sphere (Shatter Earth), Wrestling sphere (Living Weapon), 5th level or higher.",
 				"If you use a creature wielded through Living Weapon to strike the ground with the Shatter Earth talent, the target must pass a Dexterity saving throw or be restrained in the ground. Using this ability ends your grapple. The target may end the restrained condition with a Strength (Athletics) or Dexterity (Acrobatics) check (its choice) against your sphere DC."
 			]
 		},
@@ -6032,8 +6627,17 @@
 			"name": "Limb Ripper (legendary, slam)",
 			"source": "spheres-of-might",
 			"featureType": "Wrestler",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					},
+					"feature": [
+						"Wrestling (Pin)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Wrestling sphere (Pin), 11th level or higher.",
 				"When you have a creature restrained via the Pin talent, you may attempt to remove a limb from them; the creature must make a successful Strength saving throw or have one of its limbs removed by you (arms, legs, tentacles, or wings), ending the grapple.",
 				"Losing a limb halves any movement speed dependent on that limb and removes any attacks and abilities dependent on that limb. Creatures with all legs removed are prone and have a walking speed of 5 feet unless possessing other forms of movement."
 			]
@@ -6042,8 +6646,14 @@
 			"name": "Magic Killing Grip (legendary, slam)",
 			"source": "spheres-of-might",
 			"featureType": "Wrestler",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					}
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} 11th level or higher.",
 				"Treat the result of your grapple check as a dispel check against the target of your grapple as though you were using dispel magic. If you grapple a summoned creature, this can end the spell that summoned them."
 			]
 		},
@@ -6051,8 +6661,17 @@
 			"name": "Tombstone Burial (legendary)",
 			"source": "spheres-of-might",
 			"featureType": "Wrestler",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					},
+					"feature": [
+						"Berserker (Shatter Earth), Wrestling (Living Weapon, Earth-Shattering Slam)"
+					]
+				}
+			],
 			"entries": [
-				"{@b Prerequisites:} Berserker sphere (Shatter Earth), Wrestling sphere (Living Weapon, Earth-Shattering Slam) 11th level or higher.",
 				"Whenever you successfully use Earth-Shattering Slam against a target, you may choose to bury them underground.",
 				"The target travels 10 feet through the ground. If this would put the target completely through the ground (such as dropping them through the roof of a building), they fall to the ground below, taking falling damage as normal. If the new ground is still within 10 feet, they may also travel into or through that surface to reach this talent’s limit. This distance increases to 20ft at 17th level.",
 				"So long as your Earth-Shattering Slam restrains the target, it also cannot breathe and must hold its breath or begin suffocating. Even if they escape the restraint, they must still climb, fly, or otherwise exit the hole they are in."
