@@ -21,43 +21,6 @@
 	},
 	"optionalfeature": [
 		{
-			"name": "Spheres of Whatever",
-			"prerequisite": [
-				{
-					"level": {
-						"level": 2
-					},
-					"feature": [
-						"BLAAAANK"
-					]
-				}
-			],
-			"entries": [
-				"When you hit a creature with an attack, you can choose to mark that creature. The creature is marked by you until the start of your next turn. Whenever you take damage, each creature marked by you takes necrotic damage equal to the damage you took."
-			],
-			"source": "GiddyOptionalfeature",
-			"featureType": [
-				"Alchemy"
-			]
-		},
-		{
-			"name": "Ancient Enmity",
-			"prerequisite": [
-				{
-					"feature": [
-						"Draconic Bloodline subclass"
-					]
-				}
-			],
-			"entries": [
-				"When you cast a spell which affects one or more giant-type creatures, you may spend 1 sorcery point to add an extra d6 to any damage rolled as part of the spell."
-			],
-			"source": "GiddyOptionalfeature",
-			"featureType": [
-				"MM:D"
-			]
-		},
-		{
 			"name": "Alchemy Sphere",
 			"source": "spheres-of-might",
 			"featureType": "Alchemy",
@@ -3392,7 +3355,7 @@
 						"level": 5
 					},
 					"feature": [
-						"Guardian (Delayed Damage Pool)
+						"Guardian (Delayed Damage Pool)"
 					]
 				}
 			],
