@@ -1,0 +1,1975 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "spheres-of-power",
+				"abbreviation": "SoP",
+				"full": "Spheres of Power",
+				"authors": [
+					"Drop Dead Studios"
+				],
+				"convertedBy": [
+					"me"
+				],
+				"version": "3.5.2",
+				"url": "url to original source",
+				"color": "28a2ed"
+			}
+		],
+		"dateAdded": 1516994880,
+		"dateLastModified": 1614777170,
+		"spellSchools": {
+			"AT": {
+				"full": "Alteration",
+				"short": "Alt.",
+				"color": "efca3b"
+			},
+			"CJ": {
+				"full": "Conjuration",
+				"short": "Conj.",
+				"color": "7967ae"
+			},
+			"CR": {
+				"full": "Creation",
+				"short": "Creat.",
+				"color": "f4c728"
+			},
+			"DK": {
+				"full": "Dark",
+				"short": "Dark.",
+				"color": "949494"
+			},
+			"DH": {
+				"full": "Death",
+				"short": "Death.",
+				"color": "5d8563"
+			},
+			"DR": {
+				"full": "Destruction",
+				"short": "Destr.",
+				"color": "ff5617"
+			},
+			"DV": {
+				"full": "Divination",
+				"short": "Div.",
+				"color": "49ede5"
+			},
+			"EH": {
+				"full": "Enhancement",
+				"short": "Enh.",
+				"color": "e876f7"
+			},
+			"FT": {
+				"full": "Fate",
+				"short": "Fate.",
+				"color": "4c84dd"
+			},
+			"IL": {
+				"full": "Illusion",
+				"short": "Ill.",
+				"color": "2561c2"
+			},
+			"LF": {
+				"full": "Life",
+				"short": "Life.",
+				"color": "78e998"
+			},
+			"LT": {
+				"full": "Light",
+				"short": "Light.",
+				"color": "fff300"
+			},
+			"MN": {
+				"full": "Mind",
+				"short": "Mind.",
+				"color": "ff74f9"
+			},
+			"NT": {
+				"full": "Nature",
+				"short": "Nature.",
+				"color": "8be866"
+			},
+			"PT": {
+				"full": "Protection",
+				"short": "Prot.",
+				"color": "4860a7"
+			},
+			"TK": {
+				"full": "Telekinesis",
+				"short": "Telekin.",
+				"color": "9da9cd"
+			},
+			"TM": {
+				"full": "Time",
+				"short": "Time.",
+				"color": "ffffff"
+			},
+			"UN": {
+				"full": "Universal",
+				"short": "Uni.",
+				"color": "cacaca"
+			},
+			"WP": {
+				"full": "Warp",
+				"short": "Warp.",
+				"color": "ff00ff"
+			},
+			"WR": {
+				"full": "Weather",
+				"short": "Weather.",
+				"color": "747474"
+			}
+		},
+		"spellDistanceUnits": {
+			"squares": {
+				"singular": "square",
+				"feetPerUnit": 5
+			}
+		}
+	},
+	"spell": [
+		{
+			"name": "Shapeshift",
+			"level": 0,
+			"school": "AT",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You change the shape of yourself or a willing creature into a completely new form.",
+				"When you shapeshift a target, you choose a form granted by a (genotype) talent you possess, as well as a series of traits for them. Forms constitute a creature’s basic physical makeup (humanoid, draconic, animalistic, avian, etc.) while traits are special characteristics or alterations (natural weapons, creature size, special abilities, etc.).",
+				"The target’s current physical makeup changes completely into that of the new form, its appearance changes into something of your choice that matches its new shape (although your control is not fine enough to mimic a specific individual creature), and it loses any special abilities, natural weapons, speaking ability, or movement types that were dependent on the new form, gaining new ones in their place. Unless their new form prevents the target from supplying the necessary components of their magic, such as hands for Somatic Casting or speech for Verbal Casting, shapeshifted targets do not lose their ability to use magic sphere talents or abilities unless stated otherwise.",
+				"In addition to the benefits listed in the (genotype) talent, you can grant the target 1 trait, plus an additional trait at 5th level (two traits), 11th level (three traits), and 17th level (four traits). You cannot grant the same trait more than once unless the trait indicates it may be granted multiple times.",
+				{
+					"type": "inset",
+					"name": "Natural Weapons",
+					"entries": [
+						"Some traits grant natural weapons, such as bites, claws, spines, talons, etc. These abilities alter the target’s unarmed strike, letting them change the damage die and damage type. Some might also grant special abilities that further augment their use. Some natural weapons require the target to have a particular set of limbs; a creature without the required limb cannot gain the natural weapons, and cannot put two natural weapons on the same limb (for example, if you have one head, you could only gain one bite weapon)."
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 1 sp",
+					"entries": [
+						"You can target unwilling creatures; they are allowed a Constitution saving throw to negate the effect. At the end of each of its turns, an affected creature can make a new Constitution saving throw. On a success, the effect ends for that creature."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"The effect persists for the remaining duration without concentration. This augment may be applied after the effect is cast on your turn without an action.",
+						"A target may only be affected by one shapeshift at any one time. If a caster attempts to place a second shapeshift on a target, he must succeed at a spellcasting ability check against the spell save DC or sphere DC of the caster of the existing effect. If he succeeds, the second shapeshift is successfully placed on the target, suppressing the first (which continues to expend its duration even while suppressed). The wild shape ability of the druid class, as well as spells like alter self, animal shapes, polymorph, and shapechange all count as a shapeshift for this purpose, although alternate sources of specific physical traits (for example, a class feature that lets you grow claws) still function.",
+						"The target chooses whether it’s equipment falls to the ground in it’s space, merges into its new form, or is worn by it. Worn equipment functions as normal, but the GM decides whether it is practical for the new form to wear a piece of equipment, based on the creature’s form and size. The equipment doesn’t change size or shape to match the new form, and any equipment that the new form can’t wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until the shapeshift ends.",
+						"If a talent or trait has a listed AC, this AC does not stack with any worn armor unless noted; use the higher value. Shields may be applied normally, though not all forms have the limbs required to wield them."
+					]
+				}
+			],
+			"savingThrow": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Summon",
+			"level": 0,
+			"school": "CJ",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You can summon a creature (called a companion) using stats from a (base) talent you possess, causing it to appear in an adjacent square, ready to act on your following turn.",
+				"In combat, your companion shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction and bonus actions on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take one of the actions in its stat block or the Dash, Disengage, Help, Hide, or Search action."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 1 sp",
+					"entries": [
+						"The casting time of summon becomes an action."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"The effect persists for the remaining duration without concentration. This augment may be applied after the effect is cast on your turn without an action."
+					]
+				}
+			]
+		},
+		{
+			"name": "Alter",
+			"level": 0,
+			"school": "CR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You can alter an object with a touch. The object cannot be larger than Tiny size, although you can target a Tiny-sized portion of a larger object (such as a wall). This increases to Small size at 5th level, Medium size at 11th level, and Large size at 17th level.",
+				"You cannot alter an animate target (such as a golem or animated object) and the object must be non-magical and unattended (not held, worn, or part of a creature’s equipment)."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"The effect persists for the remaining duration without concentration. This augment may be applied after the effect is cast on your turn without an action."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Augment 1 sp",
+					"entries": [
+						"The size of the object you can alter may be up to two sizes larger.",
+						"When you gain the Creation sphere, you can alter objects in the following ways:"
+					]
+				}
+			]
+		},
+		{
+			"name": "Create",
+			"level": 0,
+			"school": "CR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You can create objects out of magic that appear in either your hand or adjacent to you. You may create a single non-magical, unattended object out of vegetable matter such as wood, hemp, or cotton that may be no larger than Tiny size, increasing to Small size at 5th level, Medium size at 11th level, and Large size at 17th level.",
+				"If you cannot carry, hold, or wield the created object with two hands due to bulk, weight, or size, it must begin in an adjacent square and no part of it can be more than 30 feet away.",
+				"You cannot create items that require mixing, carry special properties, or knowledge you don’t possess (alchemical items, rare herbs, the key to a lock you didn’t create, etc.). A DC 10 Intelligence check reveals the object as a magical fake. Fabricated objects have a lingering magical aura that can be detected as magic, although the objects themselves aren’t magical.",
+				"While simple objects such as candles, folds of cloth, simple furniture, or basic weapons are easy to create, particularly complex objects (mechanics, crossbows, objects with moving parts) require an ability check be made as if crafting that object. Failure means the object comes into being broken and unusable. You cannot create an object directly onto a target (summoning manacles onto someone’s wrists, etc.)."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 1 sp",
+					"entries": [
+						"The size of the object you can create may be up to two sizes larger."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"The effect persists for the remaining duration without concentration. This augment may be applied after the effect is cast on your turn without an action."
+					]
+				}
+			]
+		},
+		{
+			"name": "Dark",
+			"level": 0,
+			"school": "DK",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You can create a 15-ft radius sphere of darkness, centered anywhere within range. This darkness radiates from a central point, and cannot extend through walls. The darkness spreads around corners. A creature with darkvision can see through this darkness, but nonmagical light cannot illuminate it.",
+				"If a Light sphere effect is created inside your darkness effect, the creator of the Light sphere effect must succeed on a spellcasting ability check against your sphere DC. If the check succeeds, your darkness effect is countered, and the Light sphere effect functions normally. Otherwise, it functions as any other light source, as described above."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"The effect persists for the remaining duration without concentration. This augment may be applied after the effect is cast on your turn without an action."
+					]
+				}
+			]
+		},
+		{
+			"name": "Meld",
+			"level": 0,
+			"school": "DK",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You can grant a creature a single meld. Unwilling targets are allowed a Wisdom saving throw to resist gaining a meld."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 1 sp",
+					"entries": [
+						"The casting time is reduced to 1 action."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"The effect persists for the remaining duration without concentration. This augment may be applied after the effect is cast on your turn without an action."
+					]
+				}
+			],
+			"savingThrow": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Ghost Strike",
+			"level": 0,
+			"school": "DH",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You can make a ghost strike, summoning negative energy and throwing it at a target within range. A ghost strike has no effect on creatures of the undead or construct type (although some talents provide exceptions). Ghost strike effects do not stack with themselves unless noted."
+			]
+		},
+		{
+			"name": "Reanimate",
+			"level": 0,
+			"school": "DH",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You can target the dead remains of an aberration, beast, dragon, humanoid, giant, or monstrosity to reanimate it as a type of undead chosen from among any (undead) talents you possess. The reanimated creature does not possess any of its original statistics or abilities, except for size, hit points, and movement modes (though the talent can modify these as well).",
+				"On each of your turns, you can use a bonus action to mentally command any undead you made with this ability if the creature is within reanimate range (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.",
+				"Most basic reanimated undead cannot speak, have no memory of their past, or lack the ability for complex thought. This makes it difficult or impossible for the undead to answer questions or reveal anything it knew in life. On the other hand, reanimated undead chosen from (undead) advanced talents generally have the ability to speak and possess some fragmented memories of who they were in life, but are under no obligation to share what they know or remember. When the duration expires, the body collapses (or fades away if a spirit) until reanimated again. It does not regain hit points between reanimations. If reduced to 0 hit points, the undead is destroyed; it cannot be reanimated again.",
+				"You can have a total number of reanimated creatures active at any one time equal to your proficiency bonus. If you attempt to reanimate creatures that would push your total beyond this limit, you must release control of reanimated creatures of your choice until the total is low enough to permit the new reanimated creatures. You cannot reanimate a target with a Challenge Rating greater than one-fourth your level."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"The effect persists for the remaining duration without concentration. This augment can be applied after the effect is cast on your turn without an action."
+					]
+				}
+			]
+		},
+		{
+			"name": "Destructive Blast",
+			"level": 0,
+			"school": "DR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"Choose a blast type and blast shape you possess. An object or creature of your choice within range takes 1d8 damage of a type determined by the (blast type) talent being applied to the destructive blast. The destructive blast’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+				"When augmenting a destructive blast with Destruction sphere talents, you can only apply 1 (blast type) talent and 1 (blast shape) talent to each individual destructive blast."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 1 sp",
+					"entries": [
+						"The destructive blast instead deals 1d8 damage + 1d8 damage per 2 levels."
+					]
+				}
+			]
+		},
+		{
+			"name": "Divine",
+			"level": 0,
+			"school": "DV",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You open your senses to a range of 120 feet. Choose a (divine) talent you possess; the effect of divine is determined by the chosen talent. Unless explicitly stated otherwise, you generally cannot pinpoint the location of a hidden creature or object simply by sensing the presence or general direction of their aura. Divine can penetrate most barriers, but it is blocked by sufficiently dense objects, unless otherwise noted. Refer to Table: Density Categories and Common Substances below to see what objects can block divining. Many (divine) talents have a recall lore augment, which allow the diviner to gain additional information about a subject or target.",
+				{
+					"type": "table",
+					"caption": "Density Categories and Common Substances",
+					"colLabels": [
+						"Density Category",
+						"Example Substance",
+						"Amount that blocks Divine"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-1 text-center",
+						"col-1 text-center"
+					],
+					"rows": [
+						[
+							"Weightless",
+							"Feathers or Balsa Wood",
+							"30 feet"
+						],
+						[
+							"Light",
+							"Coal or Wood",
+							"3 feet"
+						],
+						[
+							"Somewhat Dense",
+							"Flesh or Stone (such as Granite)",
+							"A foot"
+						],
+						[
+							"Dense",
+							"Common Metal (such as Copper, Iron, and Steel)",
+							"An inch"
+						],
+						[
+							"Very Dense",
+							"Uncommon or Rare Metals (such as Adamantium, Lead, GOld, Platinum)",
+							"A thin sheet"
+						]
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 1 sp",
+					"entries": [
+						"The casting time of divine becomes an action."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"The effect persists for the remaining duration without concentration. This augment may be applied after the effect is cast on your turn without an action."
+					]
+				}
+			]
+		},
+		{
+			"name": "Sense",
+			"level": 0,
+			"school": "DV",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You can grant yourself paranormal senses with a range of 30 feet. Choose and gain the effects of one (sense) talent you possess."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 1 sp",
+					"entries": [
+						"Your sense acts out to a range of 120 feet."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"The effect persists for the remaining duration without concentration. This augment may be applied after the effect is cast on your turn without an action."
+					]
+				}
+			]
+		},
+		{
+			"name": "Degrade",
+			"level": 0,
+			"school": "EH",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You can degrade a creature or object within range. The target is allowed a Wisdom saving throw to negate the effect on itself or objects in its possession. At the end of each of its turns, an affected creature can make a Wisdom saving throw. On a success, the effect ends for that creature or an object in its possession."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"The effect persists for the remaining duration without concentration. This augment may be applied after the effect is cast on your turn without an action."
+					]
+				}
+			],
+			"savingThrow": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Enhance",
+			"level": 0,
+			"school": "EH",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You can enhance a creature or object within range. If targeting a creature or intelligent item that doesn’t want to be enhanced (or an item in the possession of a creature that doesn’t want their item enhanced), the target is allowed a Wisdom saving throw to negate the effect. At the end of each of its turns, an affected creature can make a Wisdom saving throw. On a success, the effect ends for that creature or an object in its possession."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"The effect persists for the remaining duration without concentration. This augment may be applied after the effect is cast on your turn without an action."
+					]
+				}
+			],
+			"savingThrow": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Consecration",
+			"level": 0,
+			"school": "FT",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"Cosmic power radiates from the target in a 10-foot aura. Until the sphere effect ends, the aura moves with and is centered on the target. Choose and apply one consecration ability that you possess to the aura. The area increases by 5 feet when you reach 5th level (15-foot radius), 11th level (20-foot radius), and 17th level (25- foot radius)."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"The effect persists for the remaining duration without concentration. This augment can be applied after the effect is cast on your turn without an action."
+					]
+				}
+			]
+		},
+		{
+			"name": "Motif",
+			"level": 0,
+			"school": "FT",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"Manifest the vestige of a cosmic aspect or entity onto a creature. Choose and apply one motif ability that you possess to a creature within range. An individual creature can never have more than one instance of a particular (motif) talent active on them at a time; a second casting replaces the first."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 1 sp",
+					"entries": [
+						"The casting time is reduced to 1 action."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"The effect persists for the remaining duration without concentration. This augment can be applied after the effect is cast on your turn without an action. Each motif, if augmented, can be dismissed by the target as a reaction to grant an additional benefit."
+					]
+				}
+			]
+		},
+		{
+			"name": "Word",
+			"level": 0,
+			"school": "FT",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "instant"
+					}
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"Alter reality through the use of cosmic words of power. Choose and apply one (word) talent you know to one creature or object within range."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 1 sp",
+					"entries": [
+						"The casting time is reduced to 1 bonus action."
+					]
+				}
+			]
+		},
+		{
+			"name": "Figment",
+			"level": 0,
+			"school": "IL",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You can create the image of something that is not actually there, known as a ‘figment’. Your figment has a maximum size of a 10-foot cube, which improves by 5 feet at 5th level (15-foot cube), 11th level (20-foot cube), and 17th level (25-foot cube).",
+				"Alternatively, you can create an illusionary sound such as a lion’s roar, a speaking voice, etc.. Whether creating figments or simply sounds, you cannot create illusions that can directly affect the world around you; your images cannot affect objects and you cannot create sounds loud enough to deafen or deal thunder damage, etc..",
+				"As long as you are within range of a visual figment, you can use your action to cause the image to move to any other spot within range. As the image changes location, you can alter its appearance so that its movements appear natural for the image. For example, if you create an image of a creature and move it, you can alter the image so that it appears to be walking. If you are not using your action to control it, however, the image simply sits still and does not move.",
+				"Physical interaction with a visual figment reveals it to be an illusion, because things can pass through it. Likewise, creatures that rely primarily on a sense that your illusion does not affect may often ignore your illusions completely. For example, a target with a keen sense of smell (such as a wolf or dog) will automatically disbelieve a figment of a person if you do not have the Greater Illusions talent.",
+				"A creature that uses its action to examine the image or sound can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and its other sensory qualities become faint to the creature."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 1 sp",
+					"entries": [
+						"Your illusion includes both sight and sound. If you possess (sensory) talents, any or all of those talents are also applied to the figment as you so choose."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Augment 1 sp",
+					"entries": [
+						"Your figment increases in size to a 20-foot cube. This increases by 10 feet at 5th level (30-foot cube), 11th level (40-foot cube), and 17th level (50-foot cube)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"The effect persists for the remaining duration without concentration. This augment may be applied after the effect is cast on your turn without an action."
+					]
+				}
+			],
+			"savingThrow": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Glamer",
+			"level": 0,
+			"school": "IL",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 1 sp",
+					"entries": [
+						"If you possess a (glamer) talent, you may create an illusion that alters the appearance or perceived characteristics of a creature or object in some way. Unlike with a figment, you do not need to use your action to move the glamer; instead, the glamer moves with whatever target it is attached to as they do. Whenever you use this ability, grant a target the effects of one (glamer) talent you possess. Unlike figments, glamers (with some exceptions noted in the talent) cannot be disbelieved; for example, an invisible creature is simply invisible, whether or not a target ‘believes’ it to be true."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"The effect persists for the remaining duration without concentration. This augment may be applied after the effect is cast on your turn without an action."
+					]
+				}
+			],
+			"savingThrow": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Cure",
+			"level": 1,
+			"school": "LF",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"{@b Cost: } 1 sp. The target regains a number of hit points equal to 1d8 + your key ability modifier. The amount of healing increases by 1d8 at 5th (2d8 + KAM), 11th (3d8 + KAM), and 17th level (4d8 + KAM). This ability has no effect on undead or constructs."
+			]
+		},
+		{
+			"name": "Invigorate",
+			"level": 0,
+			"school": "LF",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You can invigorate a creature, granting them temporary hit points equal to your proficiency bonus. If used on a living creature that has 0 hit points, the creature becomes stable before receiving the temporary hit points. Unlike normal temporary hit points, this ability can only be used on an injured target and cannot raise a target’s current hit points plus their temporary hit points to be higher than their maximum hit points. If an invigorated creature later receives healing that would put their temporary hit points above their maximum hit points, they lose temporary hit points until their current hit points plus their temporary hit points is not higher than their maximum hit points."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 1 sp",
+					"entries": [
+						"Increase the duration of the effect to: until depleted or you finish a long rest. This augment may be applied after the effect is cast on your turn without an action."
+					]
+				}
+			]
+		},
+		{
+			"name": "Restore",
+			"level": 1,
+			"school": "LF",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"{@b Cost:} You can end either one disease or one condition afflicting the target. The condition can be blinded, deafened, paralyzed, or poisoned. If the condition targeted is caused by an ongoing effect, this suppresses the effect for a number of rounds equal to your key ability modifier. This cannot be used to remove curses or instantaneous effects."
+			]
+		},
+		{
+			"name": "Brighten",
+			"level": 0,
+			"school": "LT",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You can cause any creature or object you have caused to glow that is within range to glow brightly, creating bright light in a 20-foot radius and dim light in an additional 20-foot radius. Unwilling targets can make a saving throw to prevent their glow from being brightened. Both radii increase by 10 feet at 5th (30-foot radius), 11th (40-foot radius), and 17th level (50-foot radius)."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 1 sp",
+					"entries": [
+						"You can target a number of glows equal to your proficiency bonus."
+					]
+				}
+			],
+			"savingThrow": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Glow",
+			"level": 0,
+			"school": "LT",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You can cause an object or creature in range to glow for the duration, shedding bright light in a 5-foot radius sphere and dim light an additional 15 feet beyond that, which may be of any color you wish. This requires a melee spell attack or ranged spell attack. The object or creature becomes outlined with light, giving it disadvantage on Dexterity (Stealth) checks and negating all bonuses usually bestowed by invisibility, darkness, or similar effects.",
+				"Whenever a glow effect interacts with a magical darkness effect (such as from the Dark sphere) the caster of the glow effect must succeed on a spellcasting ability check against the sphere or spell save DC of the darkness effect’s caster. If they succeed, the darkness is countered and the Light effect functions normally. If they fail, the glow effect is countered and the Dark effect functions normally (outlines are swallowed, light sources are hampered, etc.).",
+				"Some talents are designated (glow), which add additional effects to your glow ability. You can only apply the benefits of one (glow) talent to any individual glow effect. While you can only apply one such talent to an individual glow effect, areas of light from different glow effects can overlap. When augmenting a glow effect with a (glow) talent, the effect is applied once per round, at the end of the caster’s turn. For example, if a glowing object is thrown into a large group of enemies, it would only affect those within the area where it landed, not those targets it passed by to arrive in that area.",
+				"Some talents are designated (nimbus), which allows you to alter the appearance of light shed by your glow effects, changing the area or shape in which light is increased as well as where the effects of (glow) talents are applied. You can only apply a single (nimbus) talent to a glow at a time, but may switch between them and the normal area of your glow as a bonus action at the start of your turn, though any (glow) talents affect only one area in a round."
+			]
+		},
+		{
+			"name": "Lens",
+			"level": 0,
+			"school": "LT",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"Light talents listed with the (lens) tag are talents that do not create light, but instead bend it or alter its properties. Placing a (lens) effect on an unwilling target requires a melee or ranged spell attack."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"The effect persists for the remaining duration without concentration. This augment may be applied after the effect is cast on your turn without an action."
+					]
+				}
+			]
+		},
+		{
+			"name": "Charm",
+			"level": 0,
+			"school": "MN",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "special"
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"{@b Cost:} 0 sp (lesser), 1 sp (greater), 2 sp (powerful)",
+				"You can place charms on creatures. You can only use charms on targets that possess your own creature type (humanoid for humanoids, etc.) although the Expanded Mind talent changes this. Each charm has three strengths; lesser, greater, and powerful. Lesser charms are at-will abilities, but you cannot target an individual creature more than once with any individual lesser charm unless noted. You can do so again after completing a long rest. You must possess the Powerful Charm talent before you can use any powerful charms."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 1 sp",
+					"entries": [
+						"You can use the greater charm effect of the selected (charm) ability."
+					]
+				}
+			]
+		},
+		{
+			"name": "Geomancy",
+			"level": 0,
+			"school": "NT",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "special"
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You can create or manipulate the elements and forces of nature around you. Choose one geomancy ability that you possess."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"The effect persists for the remaining duration without concentration. This augment may be applied after the effect is cast on your turn without an action."
+					]
+				}
+			],
+			"savingThrow": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Spirit",
+			"level": 0,
+			"school": "NT",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You can draw power from nature’s spirits, harnessing their residual energy to imbue yourself with power. Choose and gain one spirit ability that you possess. (Spirit) talents grant you additional spirit abilities."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 1 sp",
+					"entries": [
+						"The casting time is reduced to 1 bonus action."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"The effect persists for the remaining duration without concentration. This augment may be applied after the effect is cast on your turn without an action."
+					]
+				}
+			]
+		},
+		{
+			"name": "Aegis",
+			"level": 0,
+			"school": "PT",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You can grant a creature an aegis. Unwilling targets are allowed a Wisdom saving throw to resist gaining an aegis."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"The effect persists for the remaining duration without concentration. This augment may be applied after the effect is cast on your turn without an action."
+					]
+				}
+			],
+			"savingThrow": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Succor",
+			"level": 0,
+			"school": "AT",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 300
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You can create an effect by sacrificing an aegis you created. Doing so immediately ends one aegis on the targeted creature. The sacrificed aegis must be one that you have augmented to be maintained without concentration. You cannot use succor on a creature not currently under the effects of your aegis."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 1 sp",
+					"entries": [
+						
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						
+					]
+				}
+			]
+		},
+		{
+			"name": "Ward",
+			"level": 0,
+			"school": "PT",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You create a ward in a cylindrical area (20 ft radius, 10 ft tall). Wards remain in the location they were created, even if you move. When creating a ward, you can always choose to reduce the height or radius below its maximum. The maximum height of the cylinder increases by 5 feet and the maximum radius increases by 10 feet at 5th level (15-foot-by-30-foot radius cylinder), 11th level (20-foot-by-40-foot radius cylinder), and 17th level (25-foot-by-50-foot radius cylinder)."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"The effect persists for the remaining duration without concentration. This augment may be applied after the effect is cast on your turn without an action."
+					]
+				}
+			]
+		},
+		{
+			"name": "Catch",
+			"level": 0,
+			"school": "TK",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You can target a thrown weapon or launched projectile such as an arrow from a bow (usually requiring the Ready action to catch it after it’s fired) to stop the attack from dealing damage. The target must be within your Telekinesis sphere size limit. Make a ranged spell attack contested by the attacker’s attack roll; if you succeed, the attack is negated. You can choose to immediately drop the object (making this an instantaneous effect) or you can choose to continue to lift the object, in which case your catch becomes a levitate."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 1 sp",
+					"entries": [
+						"You can reduce the casting time to 1 reaction."
+					]
+				}
+			]
+		},
+		{
+			"name": "Levitate",
+			"level": 0,
+			"school": "AT",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You can telekinetically move a willing creature or an unattended object up to your telekinesis size within range. Targets you are levitating cannot move on their own, and once each round as a bonus action you can gently move the target in a straight line up to 20 feet in any direction, including up. The maximum distance you can move it increases at 5th level (40 feet), 11th level (60 feet), and 17th level (80 feet). The target remains suspended in that location until you decide to move it again or until the effect ends."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 1 sp",
+					"entries": [
+						"You can lift an unwilling creature with levitate. The target is allowed a Strength saving throw to negate this effect. An affected creature makes another Strength saving throw at the end of each of its turns. On a successful save, the effect ends for it. A creature may suffer falling damage if they successfully save while floating high in the air."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"This effect lasts for its remaining duration. This augment may be applied without any action required on your turn. Levitated targets will remain suspended until you end the effect early, with either a bonus action or as a reaction, causing the target to fall."
+					]
+				}
+			]
+		},
+		{
+			"name": "Projectile",
+			"level": 0,
+			"school": "TK",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 0
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You can telekinetically lift a willing creature or object up to your telekinesis size within range, referred to as the projectile, and hurl it at another target that is also within telekinesis range of yourself. Make a ranged spell attack roll against the target’s AC. On a successful hit, both the target and the projectile take bludgeoning damage (or another appropriate damage type, such as piercing if throwing a dagger) according to the chart below:",
+				{
+					"type": "table",
+					"colLabels": [
+						"Target Size",
+						"Damage Die"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-1 text-center"
+					],
+					"rows": [
+						[
+							"Tiny",
+							"1d4"
+						],
+						[
+							"Small",
+							"1d6"
+						],
+						[
+							"Medium",
+							"1d8"
+						],
+						[
+							"Large",
+							"1d10"
+						],
+						[
+							"Huge",
+							"2d6"
+						],
+						[
+							"Gargantuan",
+							"2d8"
+						]
+					]
+				},
+				"If the projectile is a weapon, the attack instead deals damage to the target equal to the weapon’s damage die (arrows and bolts are treated as daggers for this purpose) and the projectile suffers no damage, since weapons are designed for attacking. If you are already levitating an object, it is always a valid target to be made into a projectile, no matter how large it might be or whether or not it is unwilling."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 1 sp",
+					"entries": [
+						"You can target an unwilling creature to be your projectile. The target is allowed a Strength saving throw to negate this effect."
+					]
+				}
+			],
+			"savingThrow": [
+				"strength"
+			]
+		},
+		{
+			"name": "Alter Time",
+			"level": 0,
+			"school": "TM",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"Manipulate time around a target by applying the effects of a single (chronos) talent you possess"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"Alter Time effects with non-instantaneous durations persist for the remaining duration without concentration. This augment may be applied after the effect is cast on your turn without an action."
+					]
+				}
+			]
+		},
+		{
+			"name": "Dispel",
+			"level": 0,
+			"school": "UN",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You attempt to dispel a single active magical effect. If the spell or sphere effect on the target has a spell level or required spell points equal to or lower than half your proficiency bonus, it ends. Otherwise, make a spellcasting ability check. The DC equals 10 + the spell’s level, or 10 + the number of spell points included. On a successful check, the spell ends."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 1 sp",
+					"entries": [
+						"You can attempt to dispel a number of additional magical effects equal to half your proficiency bonus."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Augment 1 sp",
+					"entries": [
+						"You automatically dispel active magical effects with a spell level or spell point cost equal to or lower than your proficiency bonus."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Augment 1 sp",
+					"entries": [
+						"The casting time is reduced to 1 action. When used in this way, you can ready this ability to disrupt a creature’s casting."
+					]
+				}
+			]
+		},
+		{
+			"name": "Manabond",
+			"level": 0,
+			"school": "UN",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"Make a ranged spell attack against a target within your manabond range; unless otherwise stated, a magical effect has an AC equal to its spell save or sphere DC. On a hit, you form a manabond with the target.",
+				"For the duration, on each of your turns you can use your action to apply a (manabond) talent you know to the target. The manabond ends if you use your action to do anything else. The manabond also ends if the target is ever outside of the manabond’s range or if it has total cover from you."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"The effect persists for the remaining duration without concentration. This augment can be applied after the effect is cast on your turn without an action."
+					]
+				}
+			],
+			"savingThrow": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Chaos Aura",
+			"level": 0,
+			"school": "UN",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [	
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You emit an 5-foot aura that twists the fabric of magic, increasing the wild magic chance of all creatures in the area by 50%. Only creatures with the wild magic package, general drawback, or similar class feature (such as sorcerers with the wild magic sorcerous origin) are innately aware of this increase. The area increases by 5 feet at 5th level (10-foot radius), 11th level (15-foot radius), and 17th level (20-foot radius)."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"The effect persists for the remaining duration without concentration. This augment can be applied after the effect is cast on your turn without an action."
+					]
+				}
+			]
+		},
+		{
+			"name": "Teleport",
+			"level": 0,
+			"school": "WP",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You can teleport yourself or a willing creature and anything up to the target’s carrying capacity to any place within 10 feet. You must have line of sight to your destination. The distance that you can teleport a target increases by 10 feet at 5th level (20 feet), 11th level (30 feet), and 17th level (40 feet).",
+				"Talents marked (teleport) improve or grant you new ways of utilizing your teleport sphere ability."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 1 sp",
+					"entries": [
+						"The distance you can teleport a target increases to 30 feet at 1st level, 60 feet at 5th level, 90 feet at 11th level, and 120 feet at 17th level."
+					]
+				}
+			]
+		},
+		{
+			"name": "Bend Space",
+			"level": 0,
+			"school": "WP",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "special"
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"Talents marked (space) grant you ways of bending and folding space. You must be touching the target or location to be affected."
+			]
+		},
+		{
+			"name": "Mantle",
+			"level": 0,
+			"school": "WR",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You wrap your magic around the target, granting them benefits depending on the surrounding weather. While an individual creature can never have more than one mantle on them at a time, the creature gains the benefits of all (mantle) talents that you have that are applicable to the weather in the area."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 1 sp",
+					"entries": [
+						"The casting time is reduced to 1 action."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Augment 1 sp",
+					"entries": [
+						"You bestow the effects of one of your (mantle) talents regardless of what the weather is in the area. This augment may be applied multiple times, granting the effects of an additional (mantle) talent each time. You can change a bestowed (mantle) talent once each round as a bonus action."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"The effect persists for the remaining duration without concentration. This augment may be applied after the effect is cast on your turn without an action."
+					]
+				}
+			]
+		},
+		{
+			"name": "Shroud",
+			"level": 0,
+			"school": "WR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You alter the weather immediately surrounding the target, applying the effects of one (shroud) talent you know. An individual creature can only be under the effect of one of your shrouds at a time; targeting a creature with a second shroud dispels the first. While a shroud might produce rain, winds, or more, its effects are not lasting on the environment; any rain evaporates immediately, ice disappears when it leaves the target, etc."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"The effect persists for the remaining duration without concentration. The effect immediately ends on a shrouded target once they have made 3 successful saving throws against the effect. This augment may be applied after the effect is cast on your turn without an action."
+					]
+				}
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Alteration",
+			"source": "spheres-of-power",
+			"featureType": "SPHEEEERE",
+			"entries": [
+				"You have the ability to change the physical makeup of creatures.",
+				"When you first gain the Alteration sphere, you gain the {@spell shapeshift|spheres-of-power} special ability. In addition, you gain one (genotype) talent that you qualify for.",
+				"A target may only be affected by one shapeshift at any one time. If a caster attempts to place a second shapeshift on a target, he must succeed at a spellcasting ability check against the spell save DC or sphere DC of the caster of the existing effect. If he succeeds, the second shapeshift is successfully placed on the target, suppressing the first (which continues to expend its duration even while suppressed). The wild shape ability of the druid class, as well as spells like alter self, animal shapes, polymorph, and shapechange all count as a shapeshift for this purpose, although alternate sources of specific physical traits (for example, a class feature that lets you grow claws) still function.",
+				"The target chooses whether it’s equipment falls to the ground in it’s space, merges into its new form, or is worn by it. Worn equipment functions as normal, but the GM decides whether it is practical for the new form to wear a piece of equipment, based on the creature’s form and size. The equipment doesn’t change size or shape to match the new form, and any equipment that the new form can’t wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until the shapeshift ends.",
+				"If a talent or trait has a listed AC, this AC does not stack with any worn armor unless noted; use the higher value. Shields may be applied normally, though not all forms have the limbs required to wield them.",
+				"{@b Natural Weapons:} Some traits grant natural weapons, such as bites, claws, spines, talons, etc. These abilities alter the target’s unarmed strike, letting them change the damage die and damage type. Some might also grant special abilities that further augment their use. Some natural weapons require the target to have a particular set of limbs; a creature without the required limb cannot gain the natural weapons, and cannot put two natural weapons on the same limb (for example, if you have one head, you could only gain one bite weapon)."
+			]
+		}
+	]
+}
