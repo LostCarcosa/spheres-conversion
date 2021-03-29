@@ -1,59 +1,400 @@
-{
-	"_meta": {
-		"sources": [
-			{
-				"json": "GiddyOptionalfeature",
-				"abbreviation": "Brew",
-				"full": "TheGiddyLimit",
-				"authors": [
-					"TheGiddyLimit"
-				],
-				"version": "1.0.0",
-				"url": "https://github.com/TheGiddyLimit/homebrew",
-				"targetSchema": "1.0.0"
-			}
-		],
-		"optionalFeatureTypes": {
-			"MM:D": "Metamagic, Draconic"
-		},
-		"dateAdded": 0,
-		"dateLastModified": 0
-	},
-	"optionalfeature": [
 		{
-			"name": "Mark of Pain",
+			"name": "Dark Sphere",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"entries": [
+				"You can create and manipulate darkness.",
+				"When you first gain the Dark sphere, you gain the {@spell darkness|spheres-of-power} and {@spell meld|spheres-of-power} sphere abilities.",
+				"Talents designated as (darkness) add additional effects to a sphere of darkness. Only one such talent may be applied to an individual sphere of darkness, but areas of darkness with different effects may overlap. Individual darkness effects do not stack with themselves. Talents designated as (meld) add alternative effects that you can apply with your meld ability."
+			]
+		},
+		{
+			"name": "Black Lung (darkness)",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"entries": [
+				"Your darkness takes on a foul, miasmic quality that causes creatures to choke and retch. Creatures that enter the darkness or start their turn within it must succeed on a Constitution saving throw or become poisoned until they leave the darkness. Creatures with the Verbal Casting drawback or attempting to cast a spell with verbal components while poisoned by this ability must succeed on a Constitution saving throw or have the casting fail, losing the action and any spell points or spell slots. Creatures that do not breathe are unaffected by Black Lung.",
+				"{@b Augment 1 sp:} You can imbue your Black Lung with a dose of contact or inhalation poison held in your hand. Using this ability consumes the dose of poison. Any creature that fails its save against the Black Lung talent must make an additional saving throw against the poison’s DC or suffer its effects. Those immune to your Black Lung are also immune to the poison."
+			]
+		},
+		{
+			"name": "Creeping Lethargy (darkness)",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"entries": [
+				"{@b Augment 1 sp:} Your darkness fogs the mind, causing those within to slip towards slumber. Creatures that enter the darkness or start their turn within your darkness must succeed on a Wisdom saving throw or be able to only take actions or bonus actions each turn, not both, until they start their turn outside of your darkness. If a creature suffering this penalty starts its turn within the darkness, it must succeed on a Wisdom saving throw or fall asleep for 1 minute or until they start their turn outside of the darkness, whichever happens first. Sleeping creatures receive a new saving throw to wake up at the beginning of each of their turns. The creature wakes up if it takes damage or if another creature takes an action to shake it awake."
+			]
+		},
+		{
+			"name": "Disorienting Darkness (darkness)",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"entries": [
+				"You can create a darkness effect that has a chance to disorient anyone who enters it. When a creature attempts to enter or leave a space within this darkness for the first time on its turn, it must pass an Intelligence saving throw or become disoriented. If the creature fails this saving throw, they must roll a d8 to determine direction: 1 is their intended direction, with 2-8 rotating around the creature in a clockwise direction. The target moves that direction as if it were their intended course. The target does not realize they are off-course until their next turn or until they leave the area of darkness.",
+				"You can take this talent a second time. Doing so grants the following augmentations:",
+				"{@b Augment 0 sp:} You possess a modicum of control over your targets’ delusions. When a creature that has failed its save against your Disorienting Darkness attempts to move, you can spend a reaction to choose their direction of travel instead of rolling randomly.",
+				"{@b Augment 1 sp:} When a creature that has failed its saving throw and become disoriented by your Disorientating Darkness makes an attack, casts a targeted spell or sphere effect, or uses another ability with a specified target before the end of the turn in which it failed its saving throw, the attack or ability is randomly directed to another legal target within range. If there is no other legal target within range, the attack or ability is not affected. If the affected spell or ability has more than one target, all its targets are randomly chosen from among the legal targets within range."
+			]
+		},
+		{
+			"name": "Fearful Darkness (darkness)",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"entries": [
+				"You can create a darkness effect that plays with the fears of any who enter it. Creatures that enter or start their turn within this area of darkness must pass a Charisma saving throw or become frightened until they end their turn outside the darkness. Creatures who succeed at this saving throw but remain in the darkness may save again to end their frightened condition at the start of their subsequent turns."
+			]
+		},
+		{
+			"name": "Hungry Darkness (darkness)",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"entries": [
+				"You can create a darkness effect that saps away the lifeforce of those inside. When a creature enters or begins its turn within the area of this darkness, it must pass a Constitution save or suffer 1 point of necrotic damage per Hit Die it possesses. A creature may only be affected by Hungry Darkness once per round, regardless of how many times they enter or exit the area that turn."
+			]
+		},
+		{
+			"name": "Looming Darkness (darkness)",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"entries": [
+				"You can create a darkness effect that erodes the resolve of those who enter it. All creatures within your darkness suffer disadvantage on all Intelligence, Wisdom, and Charisma ability checks and saving throws."v
+			]
+		},
+		{
+			"name": "Numbing Darkness (darkness)",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"entries": [
+				"You can create a darkness that subtly anesthetizes those inside. All creatures within your darkness suffer disadvantage on all Strength, Dexterity, and Constitution ability checks and saving throws."
+			]
+		},
+		{
+			"name": "Pure Darkness (darkness)",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"entries": [
+				"You can create a darkness that reduces Darkvision to 5 feet. In addition, all other senses (blindsight, scent, etc.) are reduced by half. You can also choose to dim sound as well; imposing disadvantage on all Perception checks made to hear noises produced inside or travelling through the area of your darkness."
+			]
+		},
+		{
+			"name": "Shadow Slick (darkness)",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"entries": [
+				"Your darkness takes on a slick, nearly frictionless quality. Any creature attempting to move more than half their speed through the darkness must succeed on a Dexterity (Acrobatics) ability check against your sphere DC or fall prone. Creatures within your darkness have advantage on all Dexterity ability checks made to escape the grappled condition."
+			]
+		},
+		{
+			"name": "Shadow Tag (darkness, meld)",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"entries": [
+				"Anyone passing through your area of darkness picks up a bit of your magic in their shadow, allowing you to know their relative direction and status (alive, unconscious, dead) for 8 hours. If used as a (meld) talent, you cast this ability directly upon a creature instead, gaining the same benefits. You can track a number of creatures equal to your proficiency bonus in this way. If you are at this limit, you must cease tracking an old target in order to begin tracking a new one. The effect immediately ends for a target that moves more than one mile away from you."
+			]
+		},
+		{
+			"name": "Snagging Darkness (darkness)",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"entries": [
+				"You can create a darkness effect filled with dark tendrils that snare anything that passes. When a creature enters or begins its turn inside the darkness, it must pass a Dexterity saving throw or become restrained until the start of its next turn. A restrained creature can attempt to escape its entanglement by making a Strength (Athletics) or Dexterity (Acrobatics) check as a bonus action, with a DC equal to the save DC."
+			]
+		},
+		{
+			"name": "Tenebrous Legerdemain (darkness)",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"entries": [
+				"You create an area of darkness which you can manipulate to perform minor feats of legerdemain. You can attempt to steal a worn or held object from a creature within your darkness as a bonus action. You must make either a ranged spell attack roll or a Dexterity (Sleight of Hand) check contested by that creature’s Strength (Athletics) or Dexterity (Acrobatics) check. If you succeed, you pull the object away from that creature and can move it to another place within the same area of darkness. If an object is secured firmly or held in two hands, you have disadvantage on this check. Objects that are not worn or held by a creature may be moved without a check. This ability can move objects that weigh up to 5 pounds per level."
+			]
+		},
+		{
+			"name": "Thick Darkness (darkness)",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"entries": [
+				"You can create a darkness effect that counts as difficult terrain. Creatures move at half speed through your darkness and cannot take the dash or withdraw actions."
+			]
+		},
+		{
+			"name": "Blindfold (meld)",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"entries": [
+				"Duration: Concentration, up to 1 minute",
+				"Saving Throw: Wisdom negates",
+				"You concentrate a target’s shadow into a band of supernatural darkness across their heads, rendering the target blinded and reducing the range of all other senses by half. A creature under the effects of a blindfold receives a new saving throw to end the effect every round at the end of its turn. Darkvision has no effect on Blindfold, but creatures that can see in magical darkness are immune."
+			]
+		},
+		{
+			"name": "Clearsight (meld)",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"entries": [
+				"You can grant a target immunity to all negative effects from your (darkness) talents. This does not grant the target the ability to see in your darkness if it does not already possess the means to do so, but it does allow creatures with Darkvision to see in Pure Darkness. Additionally, allies may choose to allow your Clearsight to apply to darkness effects they create in addition to your own."
+			]
+		},
+		{
+			"name": "Dark Slaughter (meld)",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"entries": [
+				"You can grant the target the ability to make precision strikes. Whenever the target attacks a creature with advantage or that is not able to perceive the target (such as through a successful Dexterity (Stealth) check), it deals an additional 1d6 points of damage to the target. This increases by one die size at 5th (1d8), 11th (1d10), and 17th levels (1d12). This damage is multiplied on a critical hit and stacks with a rogue’s sneak attack ability. This only functions while within an area of your darkness."
+			]
+		},
+		{
+			"name": "Feed on Darkness (meld)",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"entries": [
+				"Duration: Concentration, up to 10 minutes",
+				"The target gains temporary hit points equal to your key ability modifier each round it remains within your darkness. These hit points last for 1 round after leaving the darkness."
+			]
+		},
+		{
+			"name": "Hide In Darkness (meld)",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"entries": [
+				"You grant the target the ability to make Dexterity (Stealth) checks to hide in areas of dim light or darkness even while clearly visible. This only functions when within an area of your darkness."
+			]
+		},
+		{
+			"name": "Shadow Lurk (meld)",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"entries": [
+				"Duration: Concentration, up to 10 minutes",
+				"You can make a target’s shadow split off from them and form a shadow lurk that acts as an independent creature, unwaveringly loyal to you. A shadow lurk appears as a shaded, obviously spurious version of the target. It is weightless and its equipment is entirely illusionary. It has the same skills, feats, and attributes as the target, except that its Strength score is 3 (Unless it would be lower, then use its normal Strength score), and only has a number of hit points equal to your level. The shadow lurk cannot attack, use class or racial abilities, cast spells or sphere effects, or any other abilities, though it can manipulate objects and use skills. A shadow lurk must remain within 300 feet of its original source or it ceases to exist. The target lacks a shadow while this effect is active.",
+				"Retracting a shadow lurk is a bonus action. Either the target or the shadow lurk may spend this action. If a shadow lurk is killed or exceeds its range, it winks out of existence and the target’s shadow returns to them with a surge of energy that causes them to be stunned until the end of their next turn. In either case, the target immediately gains the knowledge of everything their shadow lurk observed and did while it was detached.",
+				"By investing a second talent in Shadow Lurk you master the art of weaving shadowstuff into your shadow lurks, giving them and their equipment increased substance. Your shadow lurks use the full Strength score of their source, have 2 hit points per level, and possess non-magical versions of their sources’ equipment. It has the same reach as the creature it is created from and may make a single attack per turn using non-magical versions of whatever weapons or natural attacks its source possesses. It attacks using its source’s full proficiency bonus, Strength score, and feats, but deals only half damage. A shadowstuff-imbued lurk still may not cast spells or sphere effects, or use its source’s class features. Consumable items, such as acid flasks or potions, created as part of your lurks do not function."
+			]
+		},
+		{
+			"name": "Shadowed Mien (meld)",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"entries": [
+				"You cloak the target in an aura of menacing shadow that conceals its appearance, subtle movements, and intentions behind a curtain of disconcerting murk. This dark aura hides distinguishing features from observers and grants advantage on Charisma (Deception) checks to lie as well as to Charisma (Intimidation) checks. Wisdom (Insight) checks to discern the target’s true intentions suffer disadvantage. The target has no difficulty seeing out of Shadowed Mein, but the effect cannot be penetrated by Darkvision. Clearsight and abilities that allow a creature to see through magical darkness allow the target of Shadowed Mein to be seen clearly. Creatures that can see the target clearly are not subject to the effects of this ability.",
+				"{@b Augment 1 sp:} You can grant substance to the shadowy aura. The target gains a number of temporary hit points equal to your level for the duration of the effect. Exhausting these temporary hit points does not end the other effects of Shadowed Mein."
+			]
+		},
+		{
+			"name": "Step Through Darkness (meld)",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"entries": [
+				"You can grant the target and up to a heavy load of carried equipment the ability to step into one patch of darkness and emerge in another. While the melded target is in dim light or darkness, they can as a bonus action teleport up to half their movement speed to an unoccupied space they can see that is also in dim light or darkness.",
+				"{@b Augment 1 sp:} Increase the distance teleported to their full movement speed."
+			]
+		},
+		{
+			"name": "Clinging Darkness",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"entries": [
+				"{@b Augment 0 sp:} You can center an area of darkness on a creature or object rather than an area. If targeting a creature or its worn or held object, that creature may attempt a Wisdom saving throw to negate the effect. Augmented darkness effects are anchored to, and move with the target. Affected creatures receive a new saving throw to end the effect each round at the end of their turn."
+			]
+		},
+		{
+			"name": "Directional Darkness",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"entries": [
+				"{@b Augment 1 sp:} Your area of darkness only blocks the light from one vantage point. If your darkness is in the form of a wall, it hampers vision from one side and appears clear from the other. If it is spherical, the caster may choose either for those within the area of darkness to see outside of it clearly or for those outside to see within clearly. The boundaries of the area of darkness remain obvious to those who can see through it unhindered."
+			]
+		},
+		{
+			"name": "Extinguish",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"entries": [
+				"{@b Augment 0 sp:} You can opt to instantly extinguish all non-magical light sources within your areas of darkness, not merely suppress them. This includes fire, incandescence, and alchemical sources. Coals turn cold, glowing-hot metal is made cool, and luminous chemicals are rendered inert. Additionally, your darkness can be used to counter or dispel sources of magical flame (such as an Energy Wall consisting of fire) with a spellcasting ability check against the spell or sphere DC of the magical flame. This is an instantaneous counter effect that occurs when the area of darkness is created. Creatures made of flame or other luminous materials or energies are not harmed by this talent."
+			]
+		},
+		{
+			"name": "Greater Darkness",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"entries": [
+				"{@b Augment 1 sp:} When creating an area of darkness, its radius increases to 30 feet. If combined with the Wall of Darkness talent, this allows you to double the number of 10-foot cubes created."
+			]
+		},
+		{
+			"name": "Obfuscation",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"entries": [
+				"{@b Augment 1 sp:} Creatures and items within your area of darkness or subject to one of your (meld) talents are treated as if shielded by a veneer of lead, and any attempt to locate them via scrying fails. Divination talents benefiting from a single instance of Penetrating Divination may bypass obfuscation with a successful spellcasting ability check against your sphere DC. Those benefiting from a second instance of Penetrating Divination bypass Obfuscation automatically. Obfuscation does not affect the caster’s own divinations."
+			]
+		},
+		{
+			"name": "Obscure Passage",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"entries": [
+				"You gain the {@spell obscure passage|spheres-of-power} sphere ability."
+			]
+		},
+		{
+			"name": "Rolling Blackout",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"entries": [
+				"{@b Augment 0 sp:} You gain the ability to move your areas of darkness. You can move one instance of darkness up to 30 feet as an action or bonus action, within the maximum range of the effect. If moving an area of darkness causes a creature to leave its area of effect, any ongoing effects the creature is under due to being inside that area of darkness end immediately."
+			]
+		},
+		{
+			"name": "Shadow Stash",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"entries": [
+				"You gain the {@spell shadow stash|spheres-of-power} sphere ability."
+			]
+		},
+		{
+			"name": "Wall of Darkness",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"entries": [
+				"{@b Augment 0 sp:} Rather than create a sphere of darkness, you can arrange your darkness as a number of 10-foot Cubes equal to twice your proficiency bonus. These cubes must be arranged contiguously, but otherwise may assume any shape. You must be able to perceive all areas your darkness will inhabit."
+			]
+		},
+		{
+			"name": "Animated Shadow (advanced, meld)",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
 			"prerequisite": [
 				{
 					"level": {
-						"level": 5,
-						"class": {
-							"name": "Warlock"
-						}
-					}
-				}
-			],
-			"entries": [
-				"When you hit a creature with an attack, you can choose to mark that creature. The creature is marked by you until the start of your next turn. Whenever you take damage, each creature marked by you takes necrotic damage equal to the damage you took."
-			],
-			"source": "GiddyOptionalfeature",
-			"featureType": "EI"
-		},
-		{
-			"name": "Ancient Enmity",
-			"prerequisite": [
-				{
+						"level": 5
+					},
 					"feature": [
-						"Draconic Bloodline subclass"
+						"Dark (Shadow Lurk)"
 					]
 				}
 			],
 			"entries": [
-				"When you cast a spell which affects one or more giant-type creatures, you may spend 1 sorcery point to add an extra d6 to any damage rolled as part of the spell."
-			],
-			"source": "GiddyOptionalfeature",
-			"featureType": [
-				"MM:D"
+				"You lend your shadow animation and substance, allowing it to move and manipulate objects as if they were an additional set of limbs. Your animated shadow has two arms and a reach of 10 feet. It can retrieve and use stored items, wield and attack with weapons, activate magical items, accomplish delicate tasks like disabling a lock, and deliver spell attacks, all using your own statistics and bonuses. These arms can not be used to make additional attacks above your normal maximum or grant additional actions. You cannot use other abilities or talents that allow you to use your shadow to manipulate objects while Animated Shadow is active."
 			]
-		}
-	]
-}
+		},
+		{
+			"name": "Eternal Darkness (advanced)",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					}
+				}
+			],
+			"entries": [
+				"{@b Augment 2 sp:} You can turn your darkness into a permanent effect that lasts until it is dispelled. Once created, this darkness is unmoving. It cannot be centered on a creature or object with the Clinging Darkness talent, and cannot be moved with the Rolling Blackout talent."
+			]
+		},
+		{
+			"name": "Lightless Penumbra (advanced, meld)",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"prerequisite": [
+				{
+					"feature": [
+						"Dark (Shadowed Mein)"
+					]
+				}
+			],
+			"entries": [
+				"{@b Augment 1 sp:} You can render your Shadowed Mein entirely opaque, protecting the target from harm from daylight, magical or normal, and granting advantage on saves against light and vision-based effects. You are always treated as having your eyes averted with respect to gaze attacks, though you suffer none of the associated penalties. Creatures with extreme vulnerability to daylight, such as vampires, are protected from daylight by this talent."
+			]
+		},
+		{
+			"name": "Midnight (advanced, darkness)",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					},
+					"feature": [
+						"Dark (Greater Darkness)"
+					]
+				}
+			],
+			"entries": [
+				"{@b Augment 2 sp:} You can increase the area of your darkness to a 2 mile radius. You cannot add the effects of any (darkness) talents to darkness augmented in this way."
+			]
+		},
+		{
+			"name": "One With The Void (advanced)",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					},
+					"feature": [
+						"Dark (Step Through Darkess)"
+					]
+				}
+			],
+			"entries": [
+				You gain the {@spell one with the void|spheres-of-power} sphere ability. It costs 2 spell points to use. 
+			]
+		},
+		{
+			"name": "Pitch Black (advanced)",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					},
+					"feature": [
+						"Dark (Pure Darkness)"
+					]
+				}
+			],
+			"entries": [
+				"{@b Augment 1 sp:} You can add Pure Darkness in addition to any other (darkness) talent you apply to an area of (darkness) you create."
+			]
+		},
+		{
+			"name": "Shadow Walker (advanced, meld)",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					},
+					"feature": [
+						"Dark (Step Through Darkness)"
+					]
+				}
+			],
+			"entries": [
+				"{@b Augment 1 sp:} A target must be within an area of dim light or darkness for you to apply this (meld) talent to them. When this talent is applied, the target temporarily steps out of the Material Plane and into the place where it borders the Plane of Shadow. While within this region of shadow, the target may move at a rate of 50 miles per hour, seeing their relative place in the Material Plane, although it appears blurry and lacking in details. At any time, the target may step back into the Material Plane, at which point the effects of this (meld) talent immediately end.",
+				"Because of the blurring of reality between the Plane of Shadow and the Material Plane, the target can’t make out details of the terrain or areas you pass over during transit, nor can you predict perfectly where your travel will end. It’s impossible to judge distances accurately, making this ability ill-suited for scouting or spying. Furthermore, when stepping back into the Material Plane, the target is shunted 1d10 x 100 feet in a random horizontal direction from the desired endpoint. If this would place the target within a solid object, they are shunted 1d10 x 1,000 feet in the same direction. If this would still place them within a solid object, they are shunted to the nearest empty space available, but the strain of this activity increases the creature’s exhaustion level by 1."
+			]
+		},
+		{
+			"name": "Meld into Dark (variant)",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"entries": [
+				"You cannot create darkness, and you can only target yourself when granting a (meld) talent. You can only select (meld) talents from the Darkness sphere. However, you can also use (meld) talents in all dim light and darkness, not just areas of your darkness. You cannot have both this and the Shadow Dependence variant. You gain a (meld) talent as a bonus talent."
+			]
+		},
+		{
+			"name": "Shadow Dependence (variant)",
+			"source": "spheres-of-power",
+			"featureType": "Dark",
+			"entries": [
+				"Rather than summon darkness from nothing, you draw upon your own shadow to produce your magic. You stretch and manipulate your shadow to create areas of darkness and may only have one active at any given time. When your darkness is active you do not cast a shadow and can’t use or be the target of abilities or talents that depend on possessing a shadow. You cannot have both this and the Meld into Dark variant. You gain a bonus (darkness) talent."
+			]
+		},
+		
