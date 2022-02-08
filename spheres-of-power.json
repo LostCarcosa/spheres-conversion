@@ -9,7 +9,7 @@
 					"Drop Dead Studios"
 				],
 				"convertedBy": [
-					"me"
+					"StarsofCarcosa"
 				],
 				"version": "3.5.2",
 				"url": "url to original source",
@@ -2657,8 +2657,491 @@
 				"This effect closes all mortal wounds, but it doesn’t restore missing body parts. If the creature is lacking body parts or organs integral for its survival--its head, for instance--the effect automatically fails, expending all spell points and actions used in the casting.",
 				"Coming back from the dead is an ordeal. The target takes a −4 penalty to all attack rolls, saving throws, and ability checks. Every time the target finishes a long rest, the penalty is reduced by 1 until it disappears."
 			]
+		},
+		{
+			"name": "Phoenix Resurgence",
+			"level": 3,
+			"school": "NT",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"{@b Cost:} 3 sp",
+				"When you are reduced to 0 hit points, you can explode into a ball of flame dealing 1d6 fire damage per two levels in a 15- foot radius sphere. A successful Dexterity saving throw halves this damage. At the beginning of your next turn, you return to life with a number of hit points equal to your level.",
+				"The radius increases by 5 feet at 11th level (20-foot) and 17th level (25-foot)."
+			]
+		},
+		{
+			"name": "Buttress",
+			"level": 1,
+			"school": "PT",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 300
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You restore up to 5 hit points per level to one barrier you created."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 1 sp",
+					"entries": [
+						"The casting time is reduced to a bonus action."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"The casting time is reduced to a reaction. If used in reaction to an attack that would destroy the barrier, the restored hit points can prevent the barrier from being destroyed. Subtract the damage dealt from the total of the barrier’s current hit point plus the hit points granted by this talent to determine the final hit points. This cannot cause the barrier to have more hit points than its maximum."
+					]
+				}
+			]
+		},
+		{
+			"name": "Gravity Shift",
+			"level": 0,
+			"school": "TK",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You manipulate the gravity affecting a 5-foot radius within range, effectively increasing or decreasing the area’s gravity. This area increases by 5 feet at 5th level (10-foot radius), 11th level (15-foot radius), and 17th level (20-foot radius). The area becomes either an area of heavy gravity or an area of light gravity. You can change the gravity to heavy, normal, or light as an action or bonus action. This cannot be used in areas of no gravity or subjective gravity.",
+				"{@i Heavy Gravity:} In heavy gravity areas, Strength and Dexterity checks take disadvantage, as do all attack rolls. All object weights are effectively doubled, which might affect a character’s speed. Weapon ranges are halved. Characters that fall in areas of heavy gravity take 1d10 points of bludgeoning damage for each 10 feet fallen instead of 1d6, to a maximum of 20d10 points of damage.",
+				"{@i Light Gravity:} Characters in an area of light gravity gain advantage on attack rolls with heavy weapons, Dexterity saving throws, and on Dexterity (Acrobatics) checks. All items weigh half as much, and weapon ranges double. Falling characters in light gravity take 1d4 points of bludgeoning damage for each 20 feet fallen instead of 1d6 per 10 feet, to a maximum of 10d4."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"This effect lasts for its remaining duration. This augment may be applied without any action required on your turn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Gravity Well",
+			"level": 0,
+			"school": "TK",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You can create a compact point of telekinetic force that draws everything towards it. Select a point within range. All creatures and unattended objects of up to your telekinesis size that are within 5 feet of that spot are drawn in a straight line to the unoccupied space nearest to the center of the effect. The size of the area increases at 5th level (10-foot radius), 11th level (15-foot radius), and 17th level (20-foot radius).",
+				"Unwilling targets may make a Strength saving throw to resist, plus any turn they end their movement within the affected space. Once a target has been pulled to the center of the gravity, they are grappled for the duration, but may attempt a new Strength saving throw at the beginning of their turn to break free."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"This effect lasts for its remaining duration. This augment may be applied without any action required on your turn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Friction Field",
+			"level": 0,
+			"school": "TK",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You manipulate an area’s friction affecting a 5-foot radius within range, flooding the area to increase friction and make it more difficult to move. This area increases by 5 feet at 5th level (10-foot radius), 11th level (15-foot radius), and 17th level (20-foot radius). The area becomes difficult terrain, even the air; flying or hovering over the ground does not avoid the effect. In addition, when a creature starts its turn within the area, that creature takes bludgeoning damage equal to your level. You can choose to not inflict this damage on a creature that you can see; this choice does not require any action."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"This effect lasts for its remaining duration. This augment may be applied without any action required on your turn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Momentum Line",
+			"level": 0,
+			"school": "TK",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You can create a compact point of telekinetic force that draws everything towards it. Select a point within range. All creatures and unattended objects of up to your telekinesis size that are within 5 feet of that spot are drawn in a straight line to the unoccupied space nearest to the center of the effect. The size of the area increases at 5th level (10-foot radius), 11th level (15-foot radius), and 17th level (20-foot radius).",
+				"Unwilling targets may make a Strength saving throw to resist, plus any turn they end their movement within the affected space. Once a target has been pulled to the center of the gravity, they are grappled for the duration, but may attempt a new Strength saving throw at the beginning of their turn to break free.",
+				"You manipulate an area’s momentum affecting a 10 foot wide line with a length of 60 feet, centered anywhere within range. Movement within this area is doubled, allowing creatures to move two squares for only 5 feet of movement. The length of this line increases by 10 feet at 5th level (70 feet), 11th level (80 feet), and 17th level (90 feet). Augment 2 sp:} This effect lasts"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"This effect lasts for its remaining duration. This augment may be applied without any action required on your turn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Tether",
+			"level": 0,
+			"school": "TK",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"{@b Target:} 2 creatures or objects you can see",
+				"You can create a telekinetic connection between two creatures or objects of any size so long as at least one is within your telekinesis size, tethering them together. The targets must be within 30 feet of each other; the tether prevents them from moving further than 30 feet from each other without either breaking the tether or dragging the other target with them. An unwilling creature may make a Dexterity saving throw to avoid being tethered.",
+				"A creature dragging an object follows the normal carrying capacity and encumbrance rules. Creatures two or more sizes smaller than the creature they are tethered to cannot drag their partner, and cannot resist when dragged. Otherwise, to drag an unwilling creature, each makes a contested Strength check; if the creature attempting to move wins, it may move at half speed. The tether may be broken as an action with a Strength check equal to the tether’s save DC."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 1 sp",
+					"entries": [
+						"The duration increases to 1 hour."
+					]
+				}
+			]
+		},
+		{
+			"name": "Homing",
+			"level": 1,
+			"school": "TK",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"When you or an ally misses with a ranged weapon attack, a thrown weapon, or a telekinetic projectile, you can make the projectile home back in on the target. The projectile single-mindedly moves towards the target without you needing to concentrate on it, taking the shortest path as it attempts to attack them each turn. A projectile directed this way can only make one attack per turn, and once it makes a single successful attack it stops pursuing the target and drops to the ground.",
+				"After a successful attack is made with spell, this spell ends."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 1 sp",
+					"entries": [
+						"(requires Mass (metasphere)), You can make multiple objects pursue a target, but as soon as any one of them makes a successful attack, they all stop pursuing."
+					]
+				}
+			]
+		},
+		{
+			"name": "Inertial Armor",
+			"level": 0,
+			"school": "TK",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You can wrap a willing creature or object in cushioning force, granting them resistance to bludgeoning and slashing damage, and negating any damage they might take from falling or being used as a projectile."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"This effect lasts for its remaining duration without concentration. This augmentation may be applied without any action required on your turn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Fly",
+			"level": 1,
+			"school": "TK",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"The target gains a 20 foot fly speed, increasing by 20 feet at 5th level (40 feet), 11th level (60 feet), and 17th level (80 feet)."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"This effect lasts for its remaining duration without concentration. This augment may be applied without any action required on your turn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Help/Hinder",
+			"level": 1,
+			"school": "TK",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"Increase or decrease (your choice) the target’s movement speeds by 10 feet, +5 feet at 5th (15 feet), 11th (20 feet) and 17th (25 feet) levels, to a minimum of 5 feet. The target also doubles their falling damage if their speed is increased, or negates falling damage if their speed is hindered. The target is allowed a Strength saving throw to negate this effect."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"This effect lasts for its remaining duration. This augment may be applied without any action required on your turn"
+					]
+				}
+			]
+		},
+		{
+			"name": "Touchsense",
+			"level": 1,
+			"school": "TK",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "self"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"source": "spheres-of-power",
+			"entries": [
+				"You gain blindsense with a 30-foot range."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Augment 2 sp",
+					"entries": [
+						"This effect lasts for its remaining duration. This augmentation may be applied without any action required on your turn."
+					]
+				}
+			]
 		}
-		
 	],
 	"monster": [
 		{
@@ -10299,24 +10782,6 @@
 			"source": "spheres-of-power",
 			"featureType": "Illusion",
 			"entries": [
-				
-			]
-		},
-		{
-			"name": "BLAAAAAAAANK (advanced)",
-			"source": "spheres-of-power",
-			"featureType": "Illusion",
-			"prerequisite": [
-				{
-					"level": {
-						"level": 5
-					},
-					"feature": [
-						"BLAAAANK"
-					]
-				}
-			],
-			"entries": [
 				"When augmenting a figment to include both an image and sound, you can also grant it intelligence. This means your figment can fool spells and abilities such as detect thoughts or telepathy and allow them to do quick calculations as if using your Intelligence score. Your figments can appropriately act on their own as well, responding to stimuli even if you are not there to direct the illusion yourself. This means you no longer need to use your action to direct your figments, although you must still spend an action to give them orders (for example, once you spend your action to order the illusion of a bartender to talk to the patrons, it will continue to do so until you spend another action to give it new orders).",
 				"Additionally, if you give a target the Illusionary Disguise (glamer), they can now fool thought-detecting and memory- probing magic, displaying only the mind, memories, and thoughts you desire unless the creature attempting the probe succeeds on a an Intelligence (Investigation) check against your sphere DC to notice the thoughts and memories are not truly genuine."
 			]
@@ -11578,7 +12043,1831 @@
 				"Your charms act more like a hammer than a scalpel, and produce odd, unintended changes in your target, effectively giving your charms a signature, recognizable trait. Deadpan speech patterns accompanied by an echo and a change in vocabulary, strange glowing halos, curious tremors in the earth whenever the target draws near, the temporary growth of horns or antlers, or even inexplicably vibrant, sometimes swirling, eyes are just some of the traces that your magical mind-affecting effects might leave on their targets.",
 				"These side effects vanish without a trace when a target is no longer under the effect of one of your charms, making it incredibly obvious when you are influencing someone’s mind and when you are not. Whatever the nature of the signs, a person speaking to or observing a target so affected will recognize the creature’s signs with a DC 5 Wisdom (Perception) check, and may know (either through personal history or a DC 5 Intelligence (Arcana) check) that the target is under mental control. In addition, a DC 5 Wisdom (Insight) check will suggest mental coercion and allow someone to detect the enchantment at work. You gain Expanded Charm as a bonus talent."
 			]
+		},
+		{
+			"name": "Nature Sphere",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"You can command the very terrain to do your bidding.",
+				"When you first gain the Nature sphere, you gain the {@spell geomancy|spheres-of-power} and {@spell spirit|spheres-of-power} sphere abilities. Select one of the following Nature packages: {@optfeature air package|spheres-of-power}, {@optfeature earth package|spheres-of-power}, {@optfeature fire package|spheres-of-power}, {@optfeature metal package|spheres-of-power}, {@optfeature plant package|spheres-of-power}, or {@optfeature water package|spheres-of-power}. Having a package grants specific geomancy abilities. The {@optfeature expanded geomancy|spheres-of-power} talent grants access to additional packages. Each sphere talent or ability from the Nature sphere will state whether the duration is instantaneous or concentration. In addition, most talents from the Nature sphere have additional environmental or terrain requirements that must be met to use the sphere talent or ability.",
+				"Some talents are marked (air), (plant), (water), (fire), (earth), or (metal). You must possess the air, earth, fire, metal, plant, or water Nature package respectively to gain a talent with its designation. Talents marked (geomancy) give you new geomancy abilities.",
+				"Some talents are marked (spirit). These talents give you ways to tune your spirit with nature. Each (spirit) talent grants you new spirit abilities.",
+				"The nature sphere has many talents that grant a collection of lesser talents together. These lesser talents are listed as individual entries but are not intended to be taken individually. Any talent that is granted as part of another talent has its parent talent as a prerequisite."
+			]
+		},
+		{
+			"name": "Air Package",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"Possessing the air package grants you the {@optfeature breeze|spheres-of-power}, {@optfeature gust of wind|spheres-of-power}, and {@optfeature purify air|spheres-of-power} geomancy abilities."
+			]
+		},
+		{
+			"name": "Earth Package",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"Possessing the earth package grants you the {@optfeature bury|spheres-of-power}, {@optfeature sandblast|spheres-of-power}, and {@optfeature tremor|spheres-of-power} geomancy abilities."
+			]
+		},
+		{
+			"name": "Fire Package",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"Possessing the fire package grants you the {@optfeature affect fire|spheres-of-power}, {@optfeature move fire|spheres-of-power}, and {@optfeature quick light|spheres-of-power} geomancy abilities."
+			]
+		},
+		{
+			"name": "Metal Package",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"Possessing the metal package grants you the {@optfeature magnetize|spheres-of-power}, {@optfeature recover ore|spheres-of-power}, and {@optfeature reforge|spheres-of-power} geomancy abilities."
+			]
+		},
+		{
+			"name": "Plant Package",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"Possessing the plant package grants you the {@optfeature entangle|spheres-of-power}, {@optfeature harvest|spheres-of-power}, and {@optfeature pummel|spheres-of-power} geomancy abilities."
+			]
+		},
+		{
+			"name": "Water Package",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"Possessing the water package grants you the {@optfeature fog|spheres-of-power}, {@optfeature freeze|spheres-of-power}, and {@optfeature vortex|spheres-of-power} geomancy abilities."
+			]
+		},
+		{
+			"name": "Breeze",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"prerequisite": [
+				{
+					"feature": [
+						"Air Package"
+					]
+				}
+			],
+			"entries": [
+				"{@b Target:} 1 creature or object that you can see",
+				"(concentration; requires air) You create a light wind that remains swirling around its target. The breeze grants the target advantage on Constitution saving throws against very hot conditions, severe heat, and on all saving throws against clouds, vapors, and gases (such as cloudkill, stinking cloud, and inhaled poisons)."
+			]
+		},
+		{
+			"name": "Gust Of Wind",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"prerequisite": [
+				{
+					"feature": [
+						"Nature (Air Package)"
+					]
+				}
+			],
+			"entries": [
+				"{@b Area:} 10-foot wide, Range length line.",
+				"(concentration; requires air) You can create a line-shaped gust of wind emanating out from you, affecting all valid targets within the area. The wind disperses nonmagical gas or vapor, and it extinguishes candles, torches, and other Small-sized or smaller unprotected nonmagical flames in the area. It causes protected nonmagical flames, such as those of lanterns, to dance wildly and has a 50 percent chance to extinguish them. You can change the direction in which the line blasts from you once per turn.",
+				"{@b Augment 1 sp:} All Small-sized or smaller creatures and objects within that line must succeed a Strength saving throw or be pushed back 10 feet. Affected creatures in the line must spend 2 feet of movement for every 1 foot it moves when moving closer to you. The distance pushed back increases by 10 feet at 5th level (20 feet), 11th level (30 feet), and 17th level (40 feet).",
+				"{@b Augment 1 sp:} You may disperse or extinguish magical fires, gases, or vapors with a successful spellcasting ability check against the spell save DC.",
+				"{@b Augment 1 sp:} The maximum size of affected creatures and flames increases by 1 size category (Medium-sized), increasing again at 5th level (Large-size), 11th level (Huge-size), and 17th level (Gargantuan-size)."
+			]
+		},
+		{
+			"name": "Purify Air",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"prerequisite": [
+				{
+					"feature": [
+						"Nature (Air Package)"
+					]
+				}
+			],
+			"entries": [
+				"{@b Area:} 10-foot cube",
+				"(concentration; requires air, gas, or vaporous substance) You can convert polluted air, or a non-breathable gas or vapor into a cloud of breathable air in an area within range. If targeting a cloud of air, gas, or vapor that was magically created (such as by a cloudkill or stinking cloud spell), a spellcasting ability check against the spell save DC is required to create the cloud of breathable air. For the duration, creatures who are entirely within the area of the cloud are able to breathe with sufficient air to sustain them. The area increases by 5 feet when you reach 5th level (15-foot cube), 11th level (20-foot cube), and 17th level (25-foot cube).",
+				"{@b Augment 1 sp:} The affected area increases to a 20 foot cube, increasing by 10 feet at 5th (30-foot cube), 11th (40-foot cube), and 17th level (50-foot cube)."
+			]
+		},
+		{
+			"name": "Bury",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"prerequisite": [
+				{
+					"feature": [
+						"Nature (Earth Package)"
+					]
+				}
+			],
+			"entries": [
+				"{@b Area:} 10-foot square",
+				"{@b Cost:} 1 sp",
+				"(concentration; requires sand or dirt) You shift the sands or dirt, swallowing targets in an area within range. For the duration the area becomes difficult terrain.",
+				"A creature in the area of this earth geomancy must succeed a Strength saving throw or sink one foot into the sand, becoming restrained until the sphere effect ends. A creature restrained may use its action to make a Strength check against your sphere DC. On a success it frees itself, on a failure they sink 1 foot deeper. Once a creature is completely buried, they begin to suffocate. The area increases by 5 feet when you reach 5th level (15-foot square), 11th level (20-foot square), and 17th level (25-foot square)."
+			]
+		},
+		{
+			"name": "Sandblast",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"prerequisite": [
+				{
+					"feature": [
+						"Nature (Earth Package)"
+					]
+				}
+			],
+			"entries": [
+				"{@b Area:} 10-foot square",
+				"(instantaneous; requires sand or loose dirt) You can kick up sand or dirt, creating a cloud inside an area within range. Any creature completely within the cloud must make a Dexterity saving throw or become blinded until the start of their next turn. The area increases by 5 feet when you reach 5th level (15- foot square), 11th level (20-foot square), and 17th level (25-foot square)."
+			]
+		},
+		{
+			"name": "Tremor",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"prerequisite": [
+				{
+					"feature": [
+						"Nature (Earth Package)"
+					]
+				}
+			],
+			"entries": [
+				"{@b Area:} 10-foot square",
+				"{@b Cost:} 1 sp",
+				"(instantaneous; requires dirt, sand, or stone) You can send a tremor through the ground, affecting an area within range. Creatures in the area must make a Dexterity saving throw or be knocked prone. The area increases by 5 feet when you reach 5th level (15-foot square), 11th level (20-foot square), and 17th level (25-foot square)."
+			]
+		},
+		{
+			"name": "Affect Fire",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"prerequisite": [
+				{
+					"feature": [
+						"Nature (Fire Package)"
+					]
+				}
+			],
+			"entries": [
+				"{@b Target:} one fire",
+				"(concentration; requires fire) You can increase or decrease the size of a fire within range. The maximum size fire you can affect is a 5-foot cube, which increases when you reach 5th level (10-foot cube), 11th level (15-foot cube), and 17th level (20-foot cube). You can increase the size up to your maximum or decrease it as small as desired, even extinguishing it entirely if you so choose."
+			]
+		},
+		{
+			"name": "Move Fire",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"prerequisite": [
+				{
+					"feature": [
+						"Nature (Fire Package)"
+					]
+				}
+			],
+			"entries": [
+				"{@b Target:} one fire",
+				"(concentration; requires fire) You can take a fire and move it to another location within range. The fire moved can be no larger than a 5-foot cube. A fire moved in this way continues to burn, even without fuel (although it may be drowned or extinguished otherwise as normal), and dies as soon as the duration ends if not moved to a new fuel source. If you augmented Move Fire to maintain the effect without concentration, you can move fires as a bonus action. When moving fire to a space occupied by a creature, that creature must make a Dexterity saving throw or take 1d8 fire damage.",
+				"The fire damage and maximum size of fires you can move increase when you reach 5th level (2d8, 10-foot cube), 11th level (3d8, 15-foot cube), and 17th level (4d8, 20-foot cube)."
+			]
+		},
+		{
+			"name": "Quick Light",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"prerequisite": [
+				{
+					"feature": [
+						"Nature (Fire Package)"
+					]
+				}
+			],
+			"entries": [
+				"{@b Casting Time:} 1 bonus action",
+				"{@b Target:} one flammable object",
+				"(instantaneous) You can ignite a nearby campfire, candle, lamp, lantern, torch, or another Small or Tiny object designed to be lit. This sphere effect will light objects even if they are dowsed or wet. If targeting an attended object, the attending creature can choose to make a Dexterity saving throw to negate the effect. A creature can choose to extinguish the lit object by interacting with it."
+			]
+		},
+		{
+			"name": "Magnetize",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"prerequisite": [
+				{
+					"feature": [
+						"Nature (Metal Package)"
+					]
+				}
+			],
+			"entries": [
+				"{@b Target:} one metal object",
+				"(instantaneous, requires metal) You can cause an unattended object consisting mostly of metal (whose size is not larger than your maximum recover ore size) to fly towards a creature or object of your choice within range. You can choose to throw the item harmlessly (in which case it can either be caught by the target without any required action provided they have an appropriate limb available or else lands in an adjacent square), or you can use this as a ranged spell attack. If successful, you deal either the object’s ‘ore damage’, or if it is a weapon, the weapon’s damage (arrows and bolts with metal tips count as daggers for this purpose, dealing 1d4 damage). Despite the name of this ability, the target object or creature needn’t be made of metal."
+			]
+		},
+		{
+			"name": "Recover Ore",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"prerequisite": [
+				{
+					"feature": [
+						"Nature (Metal Package)"
+					]
+				}
+			],
+			"entries": [
+				"{@b Area:} 10-foot cube",
+				"{@b Cost:} 1 sp",
+				"(instantaneous, requires dirt or sand) You can create a Tiny-sized piece of metal ore from the ground; either by combining existing metal particles or transmuting existing elements in the area. You must have a large enough piece of earth (sand or dirt) to pull the ore from. This piece of ore can be brass, bronze, copper, or tin.",
+				"The piece of ore you recover is formed on the surface of the affected area and can be of any basic shape (a ball, a rod, a sheet, even a chair), but cannot be anything complex or with moving parts. You can also pull multiple pieces of ore placed in different adjacent squares, so long as their combined size does not exceed your maximum, and each piece of recovered ore must be of the same type (such as copper or tin). For these purposes, 2 Tiny-sized pieces of ore equals 1 Small-sized piece, etc.",
+				"While this effect is instantaneous and thus cannot be dispelled, the recovered ore breaks down into dust after 8 hours. The ore is considered made of fragile material for the purpose of hit points. If a piece of ore is used as a weapon, it counts as an improvised weapon, dealing either bludgeoning, piercing, or slashing damage, chosen at the time of recovery. The damage such a weapon deals is listed as ‘ore damage’ in Table: Recover Ore.",
+				"The maximum area that you can affect and size of ore that you can recover increases at 5th level (15-foot cube; Small), 11th (20-foot cube; Medium), and 17th level (25-foot cube; Large).",
+				"{@b Augment 1 sp:} The metal pulled forms into a more finely shaped and hardier object. The ore is considered made of a resilient material for the purpose of hit points. Weapons or tools you shape using the recover ore ability are no longer considered improvised weapons or tools and function in all ways like the object formed; you still may not form objects with complex moving parts.",
+				"{@b Augment 1 sp:} You can recover ore that is 2 sizes larger. If this would allow you to recover a Huge-sized piece of ore, you can target a 30-foot cube area. If this would allow you to recover a Gargantuan-sized piece of ore, you can target a 35- foot cube area.",
+				{
+					"type": "table",
+					"caption": "Recover Ore",
+					"colLabels": [
+						"Required Earth to Pull From",
+						"Ore Size Recovered",
+						"Ore Damage",
+						"Ore Weight (maximum)"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-1 text-center",
+						"col-1 text-center",
+						"col-1 text-center"
+					],
+					"rows": [
+						[
+							"10-ft. cube",
+							"Tiny",
+							"1d4",
+							"8 lbs"
+						],
+						[
+							"10-ft. cube",
+							"Small",
+							"1d6",
+							"60 lbs"
+						],[
+							"10-ft. cube",
+							"Medium",
+							"1d8",
+							"500 lbs"
+						],[
+							"10-ft. cube",
+							"Large",
+							"1d10",
+							"4000 lbs"
+						],[
+							"10-ft. cube",
+							"Huge",
+							"2d6",
+							"16 tons"
+						],[
+							"10-ft. cube",
+							"Gargantuan",
+							"3d6",
+							"125 tons"
+						]
+					]
+				},
+				{
+					"type": "inset",
+					"name": "The Value of Recovered Ore",
+					"entries": [
+						"Ore recovered through the metal package from the Nature Sphere is of poor quality and degrades quickly, making it impossible to simply create and sell. However, players who possess proficiency with appropriate tools can heat and purify this ore to make it workable. This allows such a character to make checks to earn a wage even without the presence of a market or workshop to work in. Rather than earning money, the check instead creates an amount of raw materials equal to that day or week's wage, which may be sold later or used as raw materials for any metal based crafting."
+					]
+				}
+			]
+		},
+		{
+			"name": "Reforge",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"prerequisite": [
+				{
+					"feature": [
+						"Nature (Metal Package)"
+					]
+				}
+			],
+			"entries": [
+				"{@b Target:} one metal object",
+				"{@b Cost:} 1 sp",
+				"(instantaneous, requires metal) You can cause an unattended object (or object that you are holding) consisting mostly of metal whose size is not larger than your maximum Recover Ore size to be reshaped into a different object of the same size. For example, you could reshape a longsword into a mace. You cannot reshape metal objects into forms with complex moving parts. If targeting a magical item, the effect is not instantaneous, but lasts for only 1 minute before the object reverts to its original form. If reshaping a magical item would make it no longer qualify for specific enhancements, those enhancements are suppressed for the effect’s duration. Reforge does not function on artifacts."
+			]
+		},
+		{
+			"name": "Entangle",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"prerequisite": [
+				{
+					"feature": [
+						"Nature (Plant Package)"
+					]
+				}
+			],
+			"entries": [
+				"{@b Area:} 10-foot square",
+				"(concentration; requires grass, weeds, vines, or underbrush) You cause nearby vegetation to grow rapidly in an area within range. For the duration, these plants turn the ground in the area into difficult terrain.",
+				"A creature that enters or starts its turn in the area of this plant geomancy must succeed on a Strength saving throw or be restrained by the entangling plants until the sphere effect ends. A creature restrained by the plants can use its action to make a Strength check against your plant geomancy DC. On a success, it frees itself.",
+				"The area increases by 5 feet at 5th level (15-foot square), 11th level (20-foot square), and 17th level (25-foot square)."
+			]
+		},
+		{
+			"name": "Harvest",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"prerequisite": [
+				{
+					"feature": [
+						"Nature (Plant Package)"
+					]
+				}
+			],
+			"entries": [
+				"{@b Target:} one plant",
+				"{@b Cost:} 1 sp",
+				"(instantaneous; requires fruit trees, berry bushes, or food crops) You can cause a plant to sprout food spontaneously. Each affected plant produces enough food to provide 3 medium- sized creatures or 1 large-sized creature with food for a day.",
+				"You can affect an additional plant when you reach 5th level (2 plants), 11th level (3 plants), and 17th level (4 plants)."
+			]
+		},
+		{
+			"name": "Pummel",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"prerequisite": [
+				{
+					"feature": [
+						"Nature (Plant Package)"
+					]
+				}
+			],
+			"entries": [
+				"{@b Target:} one branch or tree",
+				"(concentration; requires a tree) You give life and mobility to a branch or tree within range, no larger than Medium size. For the duration, the affected vegetation makes one slam attack each round against the designated target or until the target dies or moves out of reach. You can use a bonus action to designate a new target. The slam uses your spell attack roll, and does 1d12 bludgeoning damage (regardless of size). An individual tree or branch cannot be under the effect of more than one Pummel at a time. While under the effects of Pummel, a tree’s AC is equal to 10 + your key ability modifier; A tree’s reach and hit points are determined by a tree’s size, as determined in the table below.",
+				"The tree’s maximum size, and damage of Pummel increases by 1d12 when you reach 5th level (2d12, Large), 11th level (3d12, Huge), and 17th level (4d12, Gargantuan).",
+				{
+					"type": "table",
+					"caption": "Tree Size and Hit Points",
+					"colLabels": [
+						"Tree Size",
+						"Reach",
+						"Hit Points"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-1 text-center",
+						"col-1 text-center"
+					],
+					"rows": [
+						[
+							"Tiny",
+							"1 foot",
+							"5 (2d4)"
+						],
+						[
+							"Small",
+							"2.5 feet",
+							"10 (3d6)"
+						],
+						[
+							"Medium",
+							"5 feet",
+							"18 (4d8)"
+						],
+						[
+							"Large",
+							"10 feet",
+							"27 (5d10)"
+						],
+						[
+							"Huge",
+							"15 feet",
+							"39 (6d12)"
+						],
+						[
+							"Gargantuan",
+							"20 feet",
+							"52 (8d12)"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Fog",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"prerequisite": [
+				{
+					"feature": [
+						"Nature (Water Package)"
+					]
+				}
+			],
+			"entries": [
+				"{@b Area:} 10-foot radius",
+				"(concentration, requires water) You can create a cloud of fog, cutting off people’s vision within an area centered within range. The cloud spreads around corners, and its area is heavily obscured. It lasts for the duration or until a moderate wind (at least 10 miles per hour) disperses it. Creatures with watersense do not have their vision obscured by the cloud. The area increases by 5 feet at 5th level (15-foot radius), 11th level (20-foot radius), and 17th level (25-foot radius)."
+			]
+		},
+		{
+			"name": "Freeze",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"prerequisite": [
+				{
+					"feature": [
+						"Nature (Water Package)"
+					]
+				}
+			],
+			"entries": [
+				"{@b Target:} one creature",
+				"{@b Area:} 10-foot square",
+				"(instantaneous, requires at least 5 cubic feet of water) You can flash-freeze the water in an area or on a creature. You can freeze the top of an area of water, or cover a wet creature in ice. Squares that are frozen will support creatures who take up less space than the affected area. Creatures must succeed at a Dexterity saving throw or be restrained. On a failure, the targets take 1d4 cold damage each round they are restrained. At the end of each of their turns affected targets can make a Strength saving throw to escape from the ice. Affected targets can also escape from the ice if another creature uses an action to break the ice around the trapped creature. The ice melts naturally after one minute on an average day. If you target a swarm instead of freezing an area or individual creatures, the swarm is not immune to the restrained condition bestowed by Freeze.",
+				"The area increases by 5 feet at 5th level (15-foot square), 11th level (20-foot square), and 17th level (25-foot square). Augment 2 sp:} On a successful save, the target is still restrained for 1 round."
+			]
+		},
+		{
+			"name": "Vortex",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"prerequisite": [
+				{
+					"feature": [
+						"Nature (Water Package)"
+					]
+				}
+			],
+			"entries": [
+				"{@b Area:} 10-foot cube",
+				"(concentration, requires 5-foot cube of water) You can create a spinning vortex in the area that sucks creatures and objects to its center. Any creature entering this area must pass a Strength saving throw or suffer 1d8 bludgeoning damage.",
+				"If the creature is smaller than the vortex, they must pass a second Strength saving throw or be pulled into the middle of the vortex. Creatures in the middle of the vortex suffer bludgeoning damage once per round with no saving throw, and must pass a Strength saving throw each round or be restrained for the round, and on a success may only move at half their speed. A vortex cannot contain more creatures than would fit in its space (see table: Creature Size and Space). You can move the vortex up to 30 feet per round as part of maintaining it via concentration. The area increases by 5 feet and the damage increases by 1d8 at 5th level (15-foot cube; 2d8), 11th level (20- foot cube; 3d8), and 17th level (25-foot cube; 4d8).",
+				"{@b Augment 1 sp:} You can designate a simple pattern for the vortex to move, which you can alter as a bonus action. Creatures in the middle of the vortex are carried along with it as it moves. The vortex must remain within your geomancy range.",
+				{
+					"type": "table",
+					"caption": "Creature Size and Space",
+					"colLabels": [
+						"Size",
+						"Space: Squares",
+						"Space: Hexes"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-1 text-center",
+						"col-1 text-center"
+					],
+					"rows": [
+						[
+							"Tiny",
+							"4 per square",
+							"4 per hex"
+						],
+						[
+							"Small",
+							"1 square",
+							"1 hex"
+						],
+						[
+							"Medium",
+							"1 square",
+							"1 hex"
+						],
+						[
+							"Large",
+							"4 squares (2x2)",
+							"3 hexes"
+						],
+						[
+							"Huge",
+							"9 squares (3x3)",
+							"7 hexes"
+						],
+						[
+							"Gargantuan",
+							"16 squares (4x4) or more",
+							"12 hexes or more"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Air Mastery (geomancy, air)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"When you use the Gust Of Wind ability, you can create a cone area of effect instead of a line. Additionally, you gain the following abilities:",
+				"{@b Absorbing Inhalation:} Cost: 1 sp",
+				"(concentration) You can grant your lungs inhuman strength and capacity, allowing you to harmlessly and completely inhale one gas, fog, smoke, mist, or similar cloud-like effect during the duration of the talent. The cloud-like effect can have a radius effect no larger than 10 feet. If the targeted cloud is a magical effect, you must succeed at a spellcasting ability check against the spell save DC or sphere DC of the effect to inhale it. Inhaling the cloud removes it from the area, leaving normal breathable air in its place. Gaseous creatures receive a Dexterity saving throw to avoid being inhaled. This talent can only affect a cloud with a non-instantaneous duration.",
+				"You can keep the cloud harmlessly contained within you for as long as the talent remains active, but you must hold your breath to do so (even if you do not normally have to breathe). If the cloud has a duration, the time the cloud is contained within you counts toward that duration (gaseous creatures are immediately and harmlessly exhaled should their gaseous form expire in the nearest empty space).",
+				"As an action, you can exhale, releasing the stored cloud as a breath weapon, filling a 60-foot cone (or the cloud’s original area, if smaller). Any creature in the breath’s area is subject to its normal effects, attempting saving throws as appropriate against the cloud’s original DC. The exhaled cloud resumes its duration, if any.",
+				"Exhaling the stored cloud immediately ends the duration of this talent. If you do not exhale the cloud before this talent’s duration expires, you suffer the cloud’s effects, automatically fail any saving throw made to resist it, and exhaling any gaseous creatures inhaled into the nearest empty space. The maximum radius of the inhaled cloud increases by 5 feet at 5th level (15-foot radius), 11th level (20-foot radius), and 17th level (25-foot radius).",
+				"{@b Augment 1 sp:} You can instead use Absorbing Inhalation as a reaction, allowing you to affect clouds with instantaneous durations (such as breath weapons).",
+				"{@b Feather Fall:} (concentration, requires air) One creature and their equipment fall slowly, changing the rate at which they fall to a mere 60 feet per round (equivalent to the end of a fall from a few feet), and it takes no damage upon landing. When the duration expires, a normal rate of falling resumes.",
+				"{@b Augment 1 sp:} The casting time of this option is reduced to 1 reaction.",
+				"{@b Augment 1 sp:} You can target a number of additional creatures equal to your proficiency bonus."
+			]
+		},
+		{
+			"name": "Create Nature (geomancy)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"{@b Cost:} 1 sp",
+				"(instantaneous) You can create a volume of a material corresponding to a geomancy package you possess anywhere within range. This creates the listed volume of one material corresponding to a geomancy package that you possess, per Table: Create Nature. The created material will immediately displace gases, liquids, and vapors in the area, but will shortly thereafter behave as normal material of its kind. For example, if this talent is used underwater, a created air cloud will form a bubble that will begin to ascend to the surface.",
+				"You gain the following augment that may be applied to any geomancy ability that requires a material:",
+				"{@b Augment 1 sp:} You create a natural material as Create Nature to supply the required material for the geomancy ability."
+			]
+		},
+		{
+			"name": "Destroy Elements (geomancy)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"You can remove and deconstruct your elements. You can use the following geomancy abilities depending on what packages you possess.",
+				"{@b Steal Breath (air):} Cost: 1 sp, Target: 1 creature",
+				"(concentration) You pull the breath from a living creature’s lungs within range, leaving it unable to speak, use breath weapons, cast spells with verbal components, or anything else requiring breathing. At the end of each of its turns, an affected creature can make a Constitution saving throw. On a success, the effect ends for that creature. Being under the effects of this talent counts as holding your breath, but each round counts as two rounds (12 seconds) when determining how long you can hold your breath. This talent has no effect on creatures that do not need to breathe air.",
+				"You can instead target a creature comprised mostly of air (such as air elementals). Air creatures must succeed on a Constitution saving throw each round or suffer 1d12 force damage. A successful Constitution saving throw reduces the damage by half. The amount of force damage increases by 1d12 at 5th level (2d12), 11th level (3d12), and 17th level (4d12).",
+				"{@b Shatter (earth):} Cost: 1 sp",
+				"(concentration) Once each round, you can target an unattended, non-magical object, regardless of composition, of up to 10 lb. per level and shatter it to pieces. This can be used to target objects attached to other objects (for example, a door or window), but cannot target a section of a larger object (for example, a portion of a stone wall). You can instead target a creature composed mostly of stone, crystal, or metal, once per round, dealing 1d12 thunder damage to the target. A successful Constitution saving throw halves this damage. The amount of thunder damage increases by 1d12 at 5th level (2d12), 11th level (3d12), and 17th level (4d12).",
+				"{@b Extinguish (fire):} Cost 1 sp",
+				"(Instantaneous) You can extinguish any and all fires within your geomancy range. Creatures in this area comprised mostly of fire (such as a fire elemental) must succeed at a Constitution saving throw or suffer 1d12 cold damage. A successful Constitution saving throw reduces the damage by half. The amount of cold damage increases by 1d12 at 5th level (2d12), 11th level (3d12), and 17th level (4d12).",
+				"{@b Oxidize (metal):} Cost: 1 sp",
+				"(concentration) You can target a piece of non-magical metal equipment, such as a weapon or suit of armor, or a creature mostly comprised of metal. Attacks made with the weapon suffer disadvantage, while the armor or the metal creature’s armor class is reduced by 2, which is further reduced at 5th (3), 11th (4), or 17th level (5).",
+				"{@b Decompose (plant):} Cost: 1 sp",
+				"(concentration) Once each round, you cause living flesh to rot, possibly even growing mold and mushrooms, dealing 1d6 poison damage to all creatures and vegetable matter within a 10-foot cube. This damage is doubled against plants and against creatures of the plant type. A successful Constitution saving throw reduces the damage by half. The affected area increases by five feet and the damage increases by 1d6 at 5th level (15-foot cube, 2d6), 11th level (20-foot cube, 3d6), and 17th level (25-foot cube, 4d6).",
+				"{@b Dehydration (water):} Cost: 1 sp",
+				"(concentration) Once each round, you draw water from creatures and plants in a 10-foot cube, drying moist surfaces and dealing 1d6 necrotic damage to creatures and plants. This damage is doubled against aquatic creatures and creatures entirely composed of liquid (such as most oozes and water elementals). A successful Constitution saving throw reduces the damage by half. If used on a volume of water, the volume is reduced by up to 10 cubic feet. The affected area increases by five feet and the damage increases by 1d6 at 5th level (15-foot cube, 2d6), 11th level (20-foot cube, 3d6), and 17th level (25-foot cube, 4d6)."
+			]
+		},
+		{
+			"name": "Earth Mastery (geomancy, earth)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"You gain the following geomancy abilities.",
+				"{@b Granulation:} (instantaneous; requires rock or stone) You can deal 1d10 bludgeoning damage to an unattended rock or stone object in range, ignoring the damage threshold of non-magical targets, creating vast amounts of dust and sand as the object is worn down. The bludgeoning damage increases by 1d10 at 5th level (2d10), 11th level (3d10), and 17th level (4d10).",
+				"You gain the following augment for any geomancy ability that requires sand or lose dirt:",
+				"{@b Augment 0 sp:} You can use granulation on a stone within range to supply the required sand or dirt for the effect you are augmenting.",
+				"{@b Sandstone:} Cost: 1 sp",
+				"(instantaneous; requires dirt or sand) You can transform dirt or sand in an area within range into a Medium sized rock or stone. The size of the created rock or stone increases by one step at 5th level (Large), 11th level (Huge), and 17th level (Gargantuan), but is still limited by the amount of dirt or stone within range.",
+				"Alternatively, you can encase a dirt-or-sand-covered target in 1-inch thick sandstone. Creatures and objects are allowed a Dexterity saving throw to avoid being trapped in the sandstone. On a failure, creatures or objects caught in the area are restrained; to escape, they must pass a Dexterity (Acrobatics) or Strength (Athletics) check against your sphere DC as an action; alternatively, a creature may break free by dealing sufficient damage to the sandstone. Sandstone has an AC of 15 and 10 hit points. You gain the following augment for any geomancy ability that requires rock or stone:",
+				"{@b Augment 0 sp:} You can use sandstone on sand within range to supply the required rock or stone for the effect you are augmenting.",
+				"{@b Unearth:} (concentration; requires earth, sand, or stone) you can manipulate the earth surrounding a creature or object, forcing them to be pushed or pulled 5 feet each round toward the surface; a successful Strength saving throw negates this movement each round. While affected, the target is unable to burrow or earth glide, but is otherwise unimpeded. You can only target a creature or object whose location you have pinpointed (such as with a successful Wisdom (Perception) check or with tremorsense). Unless the target has Earth Glide, the creature cannot be forcefully moved through stone or lava, but rather only sand or dirt."
+			]
+		},
+		{
+			"name": "Elevated Nature (geomancy)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"Your basic geomancy abilities can now affect greater depths and heights; rocks fly, vines reach, and fire blazes in such a way as to affect creatures at much higher or lower elevations than normal.",
+				{
+					"type": "list",
+					"items": [
+						"{@b Gust of Wind (air):} {@b Augment 0 sp:} Gust Of Wind no longer emanates from you, but instead from anywhere within geomancy range.",
+						"{@b Tremor (earth):} {@b Augment 1 sp:} The rocks ricochet into the air, affecting creatures flying up to to 10 feet above the affected area. Flying creatures that fail their saving throw against the Tremor fall to the ground, taking falling damage as normal. This height increases by 10 feet at 5th (20 feet), 11th (30 feet), and 17th (40 feet) level.",
+						"{@b Affect Fire (fire):} {@b Augment 1 sp:} The affected fire becomes a burning pillar that reaches into the air, affecting creatures flying up to to 10 feet above the affected area. This height increases by 10 feet at 5th (20 feet), 11th (30 feet), and 17th (40 feet) level.",
+						"{@b Magnetize (metal):} {@b Augment 1 sp:} Double the geomancy range that you can magnetize a target.",
+						"{@b Entangle (plant):} {@b Augment 1 sp:} The plants reach into the air, affecting creatures flying up to to 10 feet above the affected area. Flying creatures that fail their saving throw against the entangle are pulled to the ground, and restrained as normal. This height increases by 10 feet at 5th (20 feet), 11th (30 feet), and 17th (40 feet) level.",
+						"{@b Vortex (water):} {@b Augment 1 sp:} Your vortex reaches new heights and depths, increasing the height of the vortex by 10 feet. This height increases by 10 feet at 5th (20 feet), 11th (30 feet), and 17th (40 feet) level."
+					]
+				}
+			]
+		},
+		{
+			"name": "Fire Mastery (geomancy, fire)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"You gain the following abilities.",
+				"{@b Alter Light:} (concentration, requires fire) You can alter the light produced by a fire within your Affect Fire maximum. You can halve or double the radius of its light, as well as change its granted light from an emanation to a cone of double its light radius. You can also increase its granted light to bright light or decrease its granted light to dim light.",
+				"{@b Flash:} Cost: 1 sp",
+				"(instantaneous) You can cause a fire within range to emit a 10-foot radius burst of flame, dealing 1d8 fire damage and causing creatures and flammable objects that take damage to catch fire, taking 1d8 fire damage per round until the flames are extinguished. Creatures may attempt a new Dexterity saving throw to extinguish the flames at the end of each of their turns. Using an action to roll on the ground or to use a blanket to smother the flames automatically extinguishes the flame. A successful Dexterity saving throw halves the damage and negates catching fire. You can use this ability to relight a non-magical fire within range that was extinguished (through magical or mundane means) since the end of your last turn. This can be used to reignite a creature who has caught on fire and extinguished the flames. This initial and on fire damage increases by 1d8 and the radius increases by 5 feet at 5th (2d8, 15-foot), 11th, (3d8, 20-foot) and 17th (4d8, 25 foot) level.",
+				"{@b Augment 1 sp:} The casting time of Flash is reduced to 1 reaction."
+			]
+		},
+		{
+			"name": "Fog Mastery (water, geomancy)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"When you use the Fog ability from the water package, you can add one of the following additional effects depending on what other packages you possess.",
+				"{@b Wind Blades (air):} (requires air instead of water) Your cloud attacks those inside it with blades of wind. Any creature or unattended object moving through the cloud must succeed a Dexterity saving throw or suffer 1d6 points of slashing damage for every 5 feet of movement spent entering or moving through the cloud.",
+				"{@b Sandstorm (earth):} (requires sand or loose dirt instead of water) You create a sandstorm. In addition to the fog, this also functions as a Vortex, except it travels over land and extends into the air, and can even leave the ground and travel in the air. The obscuring effect only applies to the actual area of the vortex, and creatures that possess earthsight or tremorsense do not have their vision obscured by this effect.",
+				"{@b Smokescreen (fire):} (requires fire instead of water) Your cloud billows out ash and smoke filling the area. Any creature completely within the cloud at the start of their turn must make a Constitution saving throw or become blinded until the start of their next turn. Creatures that possess firesight automatically succeed on this saving throw.",
+				"{@b Acid Rain (metal):}  {@b Augment 1 sp:} Creatures that enter into or begin their turn within the cloud must make a Constitution saving throw or take 1d10 acid damage. On a successful save, they take half damage. The acid damage increases by 1d10 at 5th (2d10), 11th (3d10), and 17th (4d10) levels.",
+				"{@b Spores (plant):} (requires plants or fungi instead of water) Your cloud causes nearby plants and fungi to flower and burst forth pollen and spores. Each creature that enters or starts its turn inside the cloud must make a Constitution saving throw against poison. On a failed save, the creature becomes poisoned until the start of its next turn. Creatures that don’t need to breathe or are immune to poison automatically succeed on this saving throw. Creatures with plantsight do not have their vision obscured by the cloud.",
+				"{@b Solid Fog (water):} (requires rain, mist, or at least 10 cubic feet of water) Your cloud becomes so thick that it becomes effectively solid. Creatures inside the cloud have their speed halved, take a -2 penalty to attack rolls, and can’t use reactions. This does not stack with being slowed. Creatures and objects that fall within the area of the cloud are slowed so that each 10 feet of the cloud reduces the bludgeoning damage of the fall by 1d6. If using a body of water as the required component, the fog must be at least partially over the water itself. Creatures with watersense do not have their vision obscured by the cloud."
+			]
+		},
+		{
+			"name": "Forge Earth (earth, geomancy)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"You gain the following geomancy abilities.",
+				"{@b Excavate:} (instantaneous, requires dirt or sand) You can move a 5-foot cube of dirt or sand and deposit it in an unoccupied space anywhere within range. This movement doesn’t involve enough force to cause damage. The affected area increases by five feet at 5th level (10-foot cube), 11th level (15-foot cube), and 17th level (20-foot cube).",
+				"{@b Augment 2 sp:} You can target loose or unworked stone with the Excavate ability.",
+				"{@b Inscribe:} (instantaneous, requires sand or stone) You carve images, shapes, or words into sand or stone within a 10-footcube. The affected area increases by five feet at 5th level (15-foot cube), 11th level (20-foot cube), and 17th level (25-foot cube).",
+				"{@b Landscape:} instantaneous, requires dirt or stone) You can cause an area of dirt or stone to become difficult terrain, or remove difficult terrain from an area of dirt and stone. Each casting affects a 10-foot cube. The affected area increases by five feet at 5th level (15-foot cube), 11th level (20-foot cube), and 17th level (25-foot cube)."
+			]
+		},
+		{
+			"name": "Hazardous Terrain (geomancy)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"You know how to make many of your geomancy abilities particularly dangerous. You gain the following augments:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Purify Air (air):} {@b Augment 1 sp:} Instead of purifying air, you can stagnate the air. Creatures who enter or begin their turn in the area must succeed a Constitution saving throw or be poisoned for 1 minute. Creatures that do not need to breathe automatically succeed this saving throw.",
+						"{@b Tremor (earth):} {@b Augment 0 sp:} Instead of knocking creatures prone, the ground form jagged rock formations in the area, acting as caltrops. These caltrops use your Nature sphere DC and deal piercing damage equal to your level.",
+						"{@b Affect Fire (fire):} {@b Augment 0 sp:} The affected fire also creates an aura of unbearable heat. Each round creatures within 5 feet of the affected area must succeed a Constitution save or suffer an amount of fire damage equal to your level. A creature only makes a single saving throw against the aura each round, no matter how many times a creature enters or exits the aura. The size of this aura increases by 5 feet at 5th (10 feet), 11th (15 feet), and 17th level (20 feet).",
+						"{@b Magnetize (metal):} {@b Augment 1 sp:} You can use Magnetize as a concentration effect, affecting a 5-foot radius within range. Any creature who enters or begins their turn inside the area are attacked by the metal object. A creature may only be attacked by Magnetize once each round, no matter how many times a creature enters or exits the area. The size of this Magnetized area increases by 5 feet at 5th level (10-ft radius), 11th level (15-ft radius), and 17th level (20-ft radius).",
+						"{@b Entangle (plant):} {@b Augment 0 sp:} Instead of restraining creatures, the plants instead sprout thorns, inflicting 1d6 piercing damage for every 5 feet of movement through the affected area. A successful Dexterity saving throw halves this damage. Only 1 saving throw is made per turn, regardless of distance moved. If a creature chooses to reduce its movement speed by half, it gains advantage on this saving throw.",
+						"{@b Freeze (water):} {@b Augment 0 sp:} Instead of restraining creatures, the ice forms piercing ice spikes in the area, acting as caltrops. These caltrops use your Nature sphere DC and deal cold damage, instead of piercing damage, equal to your level."
+					]
+				}
+			]
+		},
+		{
+			"name": "Lava Mastery (geomancy, earth or fire)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"{@b Augment 0 sp:} Whenever an earth package ability would require dirt sand, or stone, you can instead use lava to fulfill that requirement.",
+				"{@b Augment 0 sp:} Whenever an earth package ability would deal damage, you can choose to change the damage type to bludgeoning or fire.",
+				"You also gain the following geomancy abilities:",
+				"{@b Earth Oven:}Area: 10-foot cube,  (concentration; requires dirt, sand, or stone) You bake the interior of an area of earth with intense heat. Buried or burrowing creatures that start their turn within this cube take 1d6 fire damage. A successful Constitution saving throw halves this damage.", 
+				"The area increases by five feet and the damage increases by 1d6 at 5th level (15-foot cube, 2d6), 11th level (20-foot cube, 3d6), and 17th level (25-foot cube, 4d6).",
+				"{@b Manipulate Lava:} Area: special,  (concentration or instantaneous, requires lava) You can manipulate lava. This is exactly the same as the Freeze and Vortex abilities from the water package, except you must spend an additional spell point for each ability, and you must target lava. Frozen lava becomes obsidian, with a damage threshold of 6 and a fragile hit point value appropriate for its size (see Creation sphere), and does not deal damage per round to trapped creatures.",
+				"{@b Melt Earth:} Area: 10-foot square,  Cost: 2 sp, (concentration, requires sand, dirt, or stone) You can target an area of dirt, sand, or stone within range, transmuting the top portion into lava. Creatures who touch or otherwise enter the square with lava created with Melt Earth take 1d6 fire damage. A successful Constitution saving throw halves this damage. A creature can only be damaged by an area affected by Melt Earth once per round, no matter how many times it enters its area. Even after a creature leaves the lava, the creature continues to take the fire damage for 1d4 rounds.  If this effect ends while a creature is inside the space affected by this ability, the earth instantly cools around the creature. The creature must succeed on a Dexterity saving throw or become restrained. As an action a creature restrained with Melt Earth may free themselves of the condition with a successful Strength (Athletics) or Dexterity (Acrobatics) check against the Nature sphere DC. Alternatively, the cooled earth may be broken by reducing its hit points to zero. The cooled earth has an AC of 5, a damage threshold of 8, and 10 hit points.",
+				"The area increases by 5 feet, and the fire damage increases by 1d6 when you reach 5th level (15-foot square; 2d6), 11th level (20-foot square; 3d6), and 17th level (25-foot square; 4d6)." 
+			]
+		},
+		{
+			"name": "Manipulate Nature (geomancy)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"You can manipulate the elements to take on different shapes. The geomancy abilities you gain are determined by your Nature packages, as outlined below:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Air Geyser (air):}  Target: one creature or object,  (instantaneous, requires air) You can fling a Medium- sized or smaller target within geomancy range upward into the air. If the target fails its Dexterity saving throw, the force of air hurls the target upward 10 feet. If a solid object (such as a ceiling) is encountered, the target strikes the object in the same manner as it would during a normal fall. After this blast of air ceases, the target falls down (unless it was flying), taking falling damage as normal. The height hurled upward increases by 10 feet at 5th level (20 feet), 11th level (30 feet), and 17th level (40 feet).",
+						"{@b Sculpt Stone (earth):} Cost: 2 sp (instantaneous, requires stone) You can target a stone object within range of Medium size or smaller, or a section of stone no more than 5 feet in any dimension. The stone is then reshaped and formed into one that suits your purpose. So, for example, you could shape a large rock into a weapon, idol, or coffer, or make a small passage through a wall, as long as the wall is less than 5 feet thick. You could also shape a stone door or its frame to seal the door shut. The object you create can have up to two hinges and a latch, but finer mechanical detail isn’t possible.",
+						"{@b Selective Flames (fire):} (concentration, requires fire) You can choose to temporarily dowse a 5-foot cube of flame or lava within range, allowing creatures in the cube to not take fire damage from environmental effects (including geomancy abilities from the Fire package) for the duration. You can choose an additional 5-foot cube at 5th (two 5-foot cubes), 11th (three 5-foot cubes), and 17th level (four 5-foot cubes).",
+						"{@b Pin-Ball (metal):} Casting Time: 1 bonus action,  Cost: 1 sp,  (instantaneous, requires Magnetize active) When using the Magnetize geomancy ability, if the attack hits, you can, magnetize another creature within range and make an additional ranged spell attack at that creature. You can make a maximum number of additional attacks in this manner equal to your proficiency bonus, but if you miss once the ability ends without any further attacks. You cannot make attacks twice in a row against the same target.",
+						"{@b Shelter (plant):} Cost: 1 sp, (instantaneous, requires tree or branch) You can reshape a tree to create a shelter. Use the Tree Size and Hit Points table from the Pummel ability to determine the hit points and size of a shelter based on the tree used (the radius of the shelter is the reach of the tree or branch used); Creatures can only benefit from a shelter whose size category is equal to or greater than their own. Creatures and equipment under the shelter suffer no harm from being in a hot or cold environment, and can exist comfortably in conditions between –50 and 140 degrees Fahrenheit (-45.5 and 60 degrees Celsius) without having to attempt Constitution saving throws. In addition, the shelter provides protection against other environmental hazards such as smoke, lack of air, and so forth, however the vessel does not protect against any environmental damage such as cold or fire damage. The shelter also provides three-quarters cover (+5 AC and Dexterity saving throws) to and from those inside, and hostile creatures cannot enter the shelter without first destroying the shelter. However, if the tree or branch used to create the shelter is destroyed, the effects of the shelter immediately end.",
+						"{@b Wave (water):}(instantaneous; requires at least 10 cubic feet of water) You can create a surge in water that pushes targets in its wake. This surge may be created anywhere within range and may face any direction, but once created it travels in a straight line for a distance of 60 feet. This area may extend out of the water and onto land to a maximum of 20 feet. The wave created is 5 feet wide. The width may be doubled by halving the length. This may be done multiple times, but the length cannot become smaller than 5 feet. A target cannot be pushed back further than the wave’s length. All creatures within the affected area must make a Strength saving throw or be pushed back 10 feet and must succeed a Dexterity saving throw or be knocked prone. The distance the target is pushed increases by 5 feet when you reach 5th level (15 feet), 11th level (20 feet), and 17th level (25 feet)."
+					]
+				}
+			]
+		},
+		{
+			"name": "Metal Mastery (geomancy, metal)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"{@b Augment 1 sp:} Whenever you use Recover Ore, you gain the ability to Recover Ore of iron, lead, or steel. You can expand the types of ore you can recover at 5th (silver), 11th (mithril), and 17th level (adamantium).",
+				"{@b Augment 1 sp:} When using Recover Ore, you can target a living, corporeal creature with this ability, removing the need for dirt or sand. Doing so inflicts 1d12 necrotic damage and extracts a volume of ore two size categories smaller than the target (minimum Tiny). A successful Constitution saving throw halves this damage. This damage increases by 1d12 at 5th (2d12), 11th (3d12), and 17th (4d12).",
+				"{@b Augment 1 sp:} When using Magnetize, you can also affect the metal object with Reforge with the same action, transforming the metal object into a more dangerous form. The object may take the form of a specific weapon of your choice, or simply into a dangerous form which deals bludgeoning, slashing, and piercing damage and deals double the ore damage normal for its size.",
+				"You also gain the following ability:",
+				"{@b Fortify (earth): } Cost: 2 sp (instantaneous); You can fortify an unattended object (even non-metal objects) within range. The target becomes fused with metal, permanently increasing or decreasing the damage threshold and AC of the object by your proficiency bonus. An object may only be under the effects of one fortify at a time, as each future casting dismisses and replaces the previous casting. This grants no further benefit or penalties due to the metals used."
+				
+			]
+		},
+		{
+			"name": "Plant Mastery (geomancy, plant)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"{@b Augment 1 sp:} When using Entangle, the size of the affected square is doubled. For example at 1st level, your Entangle would affect a 20-foot square instead of a 10-foot square.",
+				"{@b Augment 0 sp:} When using Harvest, you can produce a number of magical berries equal to your key ability modifier (minimum 1), along with the usual food. Any creature who consumes one of these berries is healed by a number of hit points equal to your proficiency bonus. These berries lose their magical potency after a long rest.",
+				"{@b Augment 1 sp:} When using Pummel, you can affect a number of additional branches equal to half your proficiency bonus.",
+				"You also gain the following ability:",
+				"{@b Grasping Vine:} Target: one creature, concentration;  You cause nearby vines to lash out at a creature within range. That creature must succeed on a Dexterity saving throw or be pulled 10 feet directly toward the vine. Until the effect ends, you can direct the vine to lash out at the same creature or another one as a bonus action on each of your turns.",
+				"The distance the vine pulls a creature increases by 5 feet at 5th level (15 feet), 11th level (20 feet), and 17th level (25 feet)."
+			]
+		},
+		
+		{
+			"name": "Pummel Mastery (geomancy, plant)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"{@b Augment 1 sp:} When using Pummel, you can add your key ability modifier to the damage dealt by Pummel’s slam attack.",
+				"{@b Augment 1 sp:} When using Pummel, the tree branches may throw vegetation as a ranged attack instead of only making melee attacks. This has a range equal to twice the tree branch’s reach. The attack roll and damage otherwise remain unchanged.",
+				"{@b Augment 1 sp:} When using Pummel, instead of making a slam attack, you can have a tree branch attempt to challenge a creature you can see. The challenge can be auditory (creaking of wood or rustling of foliage) or visual (shaking branches or throwing fruit), so long as the target can perceive the challenge. Unwilling creatures may attempt a Charisma saving throw to resist, and mindless creatures cannot be challenged.",
+				"A creature affected by your branch takes disadvantage on attack rolls that do not include the branch as a target and gains advantage on attack rolls targeting only the branch. If the creature can’t possibly attack the branch (for example, if the branch is concealed), they do not suffer disadvantage when attacking something else.",
+				"The challenge lasts for 1 minute. When you have a tree branch attempt a new challenge, any previous challenge that branch has active ends. A creature can be affected by multiple challenges, but gains advantage so long as they are attacking at least one target who has challenged them."
+			]
+		},
+		{
+			"name": "Reforge Mastery (geomancy, metal)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"You gain the following abilities. If an additional package is listed, you must possess it to use that ability.",
+				"{@b Altered Edge:} Target: one metal object, (concentration) You can target a metal weapon within range. The weapon either scores a critical hit on a roll of 19 or 20 or else becomes incapable of scoring a critical hit.",
+				"{@b Chill Metal (water):}  Target: one metal object (concentration; requires metal) Choose a manufactured metal object, such as a metal weapon or a suit of heavy or medium metal armor, that you can see within range. You cause the object to become extremely cold. Any creature in physical contact with the object takes 1d8 cold damage. As long as the effect persists, you can use a bonus action on each of your subsequent turns to cause this damage again. If a creature is holding or wearing the object and takes the damage from it, the creature must succeed on a Constitution saving throw or be unable to drop or stow the object as it freezes to them. If it doesn’t drop the object, it has disadvantage on attack rolls and ability checks until the start of your next turn.",
+				"This damage increases by 1d8 at 5th (2d8), 11th (3d8) and 17th (4d8) level. Chill Metal may be used to dispel Heat Metal.",
+				"{@b Forged Reach:} Target: one metal object (concentration; requires metal weapon) You can increase the reach of a metal weapon within range by up to 5 feet. This increases to 10 feet at 11th level.",
+				"{@b Heat Metal (fire):} Target: one metal object, (concentration; requires metal) Choose a manufactured metal object, such as a metal weapon or a suit of heavy or medium metal armor, that you can see within range. You cause the object to glow red-hot. Any creature in physical contact with the object takes 1d8 fire damage. As long as the effect persists, you can use a bonus action on each of your subsequent turns to cause this damage again. If a creature is holding or wearing the object and takes the damage from it, the creature must succeed on a Constitution saving throw or drop the object if it can. If it doesn’t drop the object, it has disadvantage on attack rolls and ability checks until the start of your next turn.",
+				"This damage increases by 1d8 at 5th (2d8), 11th (3d8) and 17th (4d8) level. Heat Metal may be used to dispel Chill Metal."
+			]
+		},
+		{
+			"name": "Thermoturgy (geomancy, fire)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"You gain the following abilities. If an additional package is listed, you must possess it to use that ability.",
+				"{@b Ash Strike:} (instantaneous; requires fire) You can generate a cone of ash that reaches from you to the edge of your geomancy range. This ash reveals invisible characters until they can wash off the ash or remove it as an action, and reveals the space invisible creatures are in if they walk on the ground, as they leave footprints in the ash.",
+				"{@b Augment 1 sp:} Targets struck by the ash strike must pass a Dexterity saving throw or be blinded until the start of your next turn.",
+				"{@b Boil Water:} (concentration, requires water) You can cause a 5-foot cube of water within range to heat up and boil, dealing 1d8 Fire damage to any creature within. Each round at the beginning of your turn, any creature still within the boiling water suffers damage again. If a creature enters the boiling water, they immediately suffer damage, but only once during their movement, no matter how many times that movement takes them in and out of the boiling water.",
+				"The fire damage and maximum size of the area you can affect increase when you reach 5th level (2d8, 10-foot cube), 11th level (3d8, 15-foot cube), and 17th level (4d8, 20-foot cube).",
+				"{@b Trail Blaze:} Cost: 1 sp (instantaneous, requires fire) You can create a wave of ash, hot air and smoke in a 120-foot line which reveals a safe path to traverse, allowing creatures to ignore difficult terrain within the affected area for 1 minute. Creatures who are caught in the area of effect when first cast must succeed on a Constitution saving throw or suffer 1 level of exhaustion."
+			]
+		},
+		{
+			"name": "Water Mastery (geomancy, water)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"{@b Augment 0 sp:} Whenever a water package ability would require water, you can instead use snow to fulfill that requirement.",
+				"You also gain the following geomancy abilities:",
+				"{@b Cold Snap:} (concentration) You create a 10-foot cube of bitter cold. Creatures that start their turn within this cube take 1d6 cold damage. A successful Constitution saving throw halves this damage.",
+				"The affected area increases by five feet and the damage increases by 1d6 at 5th level (15-foot cube, 2d6), 11th level (20-foot cube, 3d6), and 17th level (25-foot cube, 4d6).",
+				"{@b Move Water:} (concentration; requires water) You can move water. You can cause a volume of water equal in size to a Medium- sized object to move up to your geomancy range. The water may be moved through the air and does not fall to the ground until the effect ends. If you possess the Telekinesis sphere, you can use your telekinesis speed if it is greater.",
+				"The volume of water you can move increases at 5th level (Large-sized), 11th level (Huge-sized), and 17th level (Gargantuan-sized). If moving a volume of water of at least Small size, you can attempt to shove a creature in its path, making a spell attack roll in place of a Strength (Athletics) check. If the volume of water is two or more sizes smaller than the creature, you take disadvantage on this check. If it is two or more sizes larger, you gain advantage on it.",
+				"{@b Purify Water:} Area: 10-foot cube (concentration; requires water) You can convert dirty or polluted water into potable water in an area within range. For the duration, the water is clear, breathable for aquatic creatures, and safe to drink. Purified water that is used (consumed or cooked with) while the duration is active doesn’t have it revert back to being dirty or polluted once the effect ends.",
+				"The area increases by 5 feet when you reach 5th level (15-foot cube), 11th level (20-foot cube), and 17th level (25-foot cube).",
+				"Augment 2 sp: The duration changes from concentration to instantaneous, permanently converting dirty or polluted water into potable water."
+			]
+		},
+		{
+			"name": "Beast Friend (spirit)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"{@b Cost:} 1 sp",
+				"You can cause creatures of the beast type to treat you as a friend. This means that such creatures will not attack unless provoked and you can make requests of them, provided you can communicate with them (if you cannot communicate with a creature, only basic commands such as ‘go’, ‘come’, ‘fight’, or ‘stay’ may be communicated). This has no effect on creatures who are hostile to you (such as those already in combat), and a creature with a master (such as summoned beast) will still attack if commanded by its master.",
+				"Once during the duration of this ability, you can call the nearest beast of a particular kind you designate (provided its CR is equal to or less than your level) to seek you out. The beast moves toward you under its own power, so the time it takes to arrive depends on how close a beast of the desired kind is when you cast the effect. If there is no beast of that kind capable of reaching you within this effect’s duration, you are aware of this fact."
+			]
+		},
+		{
+			"name": "Dragonlung (spirit)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"You gain a breath weapon [Recharge 5-6], making a 60 foot line or a 30 foot cone (chosen at the time of casting), dealing 2d6 damage. Affected creatures may make a Dexterity saving throw to reduce damage by half. The type of damage is chosen when the effect is cast, with options based on the packages you possess.",
+				"The damage of the breath weapon increases by 1d6 at 5th level (3d6), 11th level (4d6), and 17th level (5d6).",
+				{
+					"type": "list",
+					"items": [
+						"{@b Air Package:} thunder damage",
+						"{@b Earth Package:} bludgeoning, piercing, or slashing damage",
+						"{@b Fire Package:} fire damage",
+						"{@b Metal Package:} lightning damage",
+						"{@b Plant Package:} acid damage",
+						"{@b Water Package:} cold damage"
+					]
+				}
+			]
+		},
+		{
+			"name": "Meld with Nature (spirit; earth, metal, plant, or water)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"You step into a plant or metal, stone, or wooden object or surface large enough to fully contain your body, melding yourself and all the equipment you carry with the object for the duration. The substances you can meld with are determined by the packages you possess; see the table below. Using your movement, you step into the object at a point you can touch. Nothing of your presence remains visible or otherwise detectable by non-magical senses.",
+				"While merged with the object, you can’t see what occurs outside it, and any Wisdom (Perception) checks you make to hear sounds outside it are made with disadvantage. You remain aware of the passage of time and can cast spells on yourself while merged. You can use your movement to leave the object where you entered it, which ends the effect. You otherwise can’t move.",
+				"Minor physical damage to the object doesn’t harm you, but its partial destruction or a change in its shape (to the extent that you no longer fit within it) expels you and deals 6d6 bludgeoning damage to you. The object’s complete destruction (or transmutation into a different substance to which your use of this ability does not apply) expels you and deals 50 bludgeoning damage to you. If expelled, you fall prone in an unoccupied space closest to where you first entered.",
+				"{@b Augment 1 sp:} While melded in the substance, you can spend hit dice to heal yourself as if taking a short rest.",
+				{
+					"type": "table",
+					"caption": "Meld With Nature",
+					"colLabels": [
+						"Nature Package",
+						"Melded Substance"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-1 text-center"
+					],
+					"rows": [
+						[
+							"Earth",
+							"Sand and stone"
+						],
+						[
+							"Metal",
+							"Metal and ore"
+						],
+						[
+							"Plant",
+							"Plants and wood"
+						],
+						[
+							"Water",
+							"Ice"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Nature’s Carapace (spirit)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"You gain the following spirit abilities. You must possess the listed geomancy package to use each ability.",
+				{
+					"type": "list",
+					"items": [
+						"{@b Buffeting Winds (air):} Strong winds swirl around you. For the duration, ranged attacks made against you suffer from disadvantage.",
+						"{@b Stoneskin (earth):} Cost: 1 sp You can turn your flesh as hard as stone or steel. For the duration, you gain resistance to nonmagical bludgeoning, piercing, and slashing damage.",
+						"{@b Flame Mantle (fire):} Cost: 1 sp, You gain the ability to strike back against melee attacks with fiery retribution. Whenever any creature within 5 feet of you hits you with a melee attack, the attacker takes 1d4 fire damage. The amount of fire damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).",
+						"{@b Iron Body (metal):} If you are wearing metal armor, you temporarily merge with it. You gain 5 temporary hit points for the duration and no longer suffer disadvantage on Stealth checks or suffer a penalty to movement from your armor, if you would gain either. Your number of temporary hit points increases by 10 at 5th level (15 temporary hp), 11th level (25 temporary hp), and 17th level (35 temporary hp).",
+						"{@b Barkskin (plant):} Cost: 1 sp You gain a rough bark-like appearance; your AC cannot be less than 15, regardless of what kind of armor you are wearing. Your minimum AC increases by one at 5th level (16 AC), 11th level (17 AC), and 17th level (18 AC).",
+						"{@b Seamantle (water):} Your body becomes slick as wet ice; You gain advantage on all Strength (Athletics) or Dexterity (Acrobatics) checks made to contest or escape a grapple check."
+					]
+				}
+			]
+		},
+		{
+			"name": "Nature’s Motion (spirit)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"You can grant yourself one of the following abilities. You must possess the listed (geomancy) package to use each ability.",
+				"{@b Airwalk (air):} Cost: 1 sp, You may move up to a 45 degree angle vertically whenever you move horizontally, climbing 1 foot in height for every 2 feet of movement. You may also choose to either stay at the same elevation or, if you are already in the air, move up to a 45 degree angle downward instead. If you are knocked prone you fall to the ground, just as a creature with a fly speed that cannot hover, though you only fall at a rate of 60 feet per round, suffering no falling damage. If you possess the ability to give this talent to another then you can give it to a mount, but you must make a DC 20 Animal Handling check to successfully ride it into the air. You can negate the need for this check if you take the time to train the animal you intend to cast air walk on, this training takes 1 week and a DC 25 Animal Handling check.",
+				"{@b Stonestep (earth):} You can gain the ability to ignore natural difficult terrain caused by earth, rock, and sand. You can attempt a spellcasting ability check against the spell save DC or sphere DC of the effects of difficult terrain effects caused by magical manipulation of those materials to ignore them. You can safely walk across quicksand and similar hazards as if they were solid ground.",
+				"{@b Smokewalk (fire):} You can gain the ability to walk on fire or smoke. Fire and its byproducts (such as smoke) become solid to you, allowing you to move over it as if it were normal ground. You can always choose to sink into the fire or smoke if you so desire, making you heavily obscured. Smokewalk doesn’t grant any resistance or immunity to fire damage, but it does grant the ability to see through smoke and breathe in smoke harmlessly.",
+				"{@b Ironshod (metal):} Cost: 1 sp, You become difficult to impede with traps, hazards, and difficult terrain. You gain resistance to damage caused by difficult terrain, hazards, and traps, including caltrops and similar effects.",
+				"{@b Greenstep (plant):} You can gain the ability to ignore difficult terrain caused by natural plants. You can attempt a spellcasting ability check against the spell save DC or sphere DC of the effects of difficult terrain caused by magical plant growth and manipulation to ignore them.",
+				"{@b Waterwalk (water):} Cost: 1 sp, You gain the ability to walk on water. Water and all other liquid becomes solid to you, allowing you to move over it as if it were normal ground. Especially turbulent water (such as during a storm) may count as difficult terrain. You can always choose to sink into the water and swim if you so desire, in which case you are considered to have a Swim speed equal to your walking speed, granting you all the usual benefits of a Swim speed. This does not, however, grant you the ability to breathe underwater."
+			]
+		},
+		{
+			"name": "Nature’s Weapon (spirit)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"You can grant yourself one of the following abilities. You must possess the listed (geomancy) package to use each ability.",
+				"{@b Cacophony (air):} Once each round, as an action you can create a torrent of wind that creates a cone that reaches from you to the edge of your geomancy range. Creatures caught in the area must make a Constitution saving throw or take 1d4 thunder damage. On a successful save, the affected creatures take no damage. Creatures damaged by cacophony are deafened for 1 round. The thunder damage increases by 1d4 at 5th level (2d4), 11th level (3d4), and 17th level (4d4).",
+				"{@b Stone Fist (earth):} Once each round, you can choose whether or not to encase your fist (or similar appendage) in stone for 1 round. While so encased, you cannot hold anything in that hand, but you gain a +2 shield bonus to AC and your unarmed strikes with that hand deal 1d6 + your Strength modifier damage. The encased fist damage increases at 5th level (1d8), 11th level (1d10), and 17th level (1d12). This does not stack with monk levels or other effects that increase the damage of unarmed strikes.",
+				"{@b Fire Wielder (fire):} Cost: 1 sp, Once each round, you can choose whether or not to encase your weapons in flames for 1 round. Your melee weapon attacks and unarmed strikes deal an additional 1d4 fire damage. The amount of fire damage increases when you reach 5th level (1d6), 11th level (1d8), and 17th level (1d10).",
+				"{@b Blade Whip (metal):} (requires metal weapon) In place of an attack, you can target a metal weapon you are wielding, reshaping it into a cable and sending it out to shove a creature within geomancy range to become prone. If the weapon grants any bonus to attack rolls, that bonus applies to this shove. After the shove has been resolved, the weapon returns to its original form.",
+				"{@b Bramble Strike (plant):} (requires wooden weapon) Once each round you can choose whether or not to cause brambles to burst from any mostly wooden weapon you are wielding (such as a club, quarterstaff, or spear), or pieces of mostly-wooden ammunition such as an arrow or bolt coming from a ranged weapon you are using for one round. If you successfully hit a creature with a wooden weapon, they must succeed on a Dexterity saving throw or become grappled for 1 round. If they are already grappled and fail their saving throw, they are instead restrained for 1 round.",
+				"{@b Icicles (water):} Cost: 1 sp, Once per round, you can create from residual moisture a dagger made of ice. These ice daggers melt if they leave your hand for more than 1 round. Instead of dealing piercing damage, these daggers deal cold damage, and count as magical for the purpose of bypassing immunity and resistance. The daggers gain a +1 bonus to attack and damage at 5th level (+1), 11th level (+2), and 17th level (+3)."
+			]
+		},
+		{
+			"name": "Nature Sight (spirit)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"You gain an extraordinary sense depending on geomancy packages you possess. Each sense has a range equal to your geomancy range.",
+				{
+					"type": "list",
+					"items": [
+						"{@b Cloudsight (air):} You can see through clouds of fog, mist, and smoke as if they were transparent.",
+						"{@b Earthsight (earth):} Cost: 1 sp, You gain tremorsense, except only allowing you to detect anything in contact with the same body of ground as you.",
+						"{@b Firesight (fire):} You can see through flames, lava, and smoke as if they were transparent.",
+						"{@b Metalsight (metal):}  You gain the sense ability, except only allowing you to detect metal objects (including creatures wearing or carrying metal objects).",
+						"{@b Plantsight (plant):} You can see through leaves, vines, greenery, undergrowth, and living wood as if they were transparent (you still cannot see through dead wood).",
+						"{@b Watersense (water):} Cost: 1 sp, You gain tremorsense, except only allowing you to detect anything in contact with the same body of water as you."
+					]
+				}
+			]
+		},
+		{
+			"name": "Resist Elements (spirit)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"You gain resistance to a particular damage type chosen from the list of geomancy packages you have access to.",
+				{
+					"type": "list",
+					"items": [
+						"{@b Air Package:} thunder damage",
+						"{@b Earth Package:} bludgeoning, piercing, or slashing damage",
+						"{@b Fire Package:} fire damage",
+						"{@b Metal Package:} lightning damage",
+						"{@b Plant Package:} acid damage",
+						"{@b Water Package:} cold damage"
+					]
+				},
+				"{@b Augment 1 sp:} You can use Resist Elements as a reaction, but if you do the duration is reduced to 1 round.",
+				"{@b Augment 1 sp:} When you successfully resist damage of the chosen element, you also regain 1d6 hit points. An individual can only benefit by healing from this effect once per short or long rest. The amount of healing increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
+			]
+		},
+		{
+			"name": "Speak With Beasts (spirit)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"{@b Cost:} 1 sp",
+				"You gain the ability to comprehend and verbally communicate with beasts for the duration. The knowledge and awareness of many beasts is limited by their intelligence, but at minimum, beasts can give you information about nearby locations and monsters, including whatever they can perceive or have perceived within the past day. You might be able to persuade a beast to perform a small favor for you, at the GM’s discretion."
+			]
+		},
+		{
+			"name": "Speak With The Elements (spirit)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"You gain an extraordinary ability to speak with elementals and other materials depending on the geomancy packages you possess.",
+				"{@b Speak With Clouds (air):} Cost: 1 sp. For the duration, you gain the Primordial language, and may speak with clouds of fog or mist. This is not truly accomplished with speech, but rather by interacting with the cloud you can learn what else has touched it, passed through it, is hidden within it, etc. You can tell depth, weight, size, and number of passers-by, but not more detailed information.",
+				"{@b Speak With Stone (earth):} Cost: 1 sp. For the duration, you gain the Primordial language, and may speak with natural or worked stone. This is not truly accomplished through speech, but rather by touching a stone you can learn what else has touched it, passed by it, what is hidden underneath it, etc. You can tell depth, weight, size, and number of passers-by, but not more detailed information.",
+				"{@b Speak With Fire (fire):} Cost: 1 sp. For the duration, you gain the Primordial language, and may speak with fire or smoke. This is not truly accomplished through speech, but rather by gazing into the flames and smoke you can learn what else has touched it, passed by it, what is responsible for creating it, etc. You can tell weight, size, and number of passers-by, but not more detailed information.",
+				"{@b Speak With Metal (metal):} Cost: 1 sp. For the duration, you gain the Primordial language, and may speak with natural ore or worked metal. This is not truly accomplished through speech, but rather by touching a piece of metal you can learn what else has touched it, worn it, passed by it, what is hidden inside it, details of its forging, etc. You can tell depth, weight, size, and number of passers-by, but not more detailed information.",
+				"{@b Speak With Plants (plant):} Cost: 1 sp. For the duration, you gain the Primordial language, and may speak with normal plants and plant creatures. You can communicate with normal plants and plant creatures and can ask questions and receive answers from them. A normal plant’s sense of its surroundings is limited, so it will not be able to give (or recognize) detailed descriptions of creatures or answer questions about events outside its immediate vicinity.",
+				"{@b Speak With Water (water):} Cost: 1 sp. For the duration, you gain the Primordial language, and may speak with pools or bodies of water. This is not truly accomplished through speech, but rather by dipping a limb into the water you can learn what else has touched it, passed by it, what is hidden inside it, etc. You can tell depth, weight, size, and number of passers-by, but not more detailed information. You can speak with both fresh or salt bodies of water, and if attempting to converse with particularly large bodies of water, such as oceans, you can only acquire information from a portion of the body of water, to a maximum distance of 1000 feet + 100 feet per level."
+			]
+		},
+		{
+			"name": "Expanded Geomancy",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"Choose and gain a Nature package you do not already possess. You can select this talent multiple times, gaining a new package each time."
+			]
+		},
+		{
+			"name": "Master of Elements",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"You count as possessing three additional Nature packages of your choice when determining what (spirit) talents you can gain and use. You can take this talent twice, which allows you to count as possessing every package. If you later gain all Nature packages except one per time you’ve gained this talent, you immediately retrain this talent into Expanded Geomancy.",
+				"Abilities from (spirit) talents that scale off of geomancy abilities (such as an ability that deals damage or determines size by referencing a particular ability) function normally according to the statistics that ability would have if you possessed it. For retraining purposes, possessing any Nature package counts as having Master Of Elements."
+			]
+		},
+		{
+			"name": "Earthquake (advanced, geomancy, earth)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15
+					},
+					"feature": [
+						"Nature sphere (Forge Earth)"
+					]
+				}
+			],
+			"entries": [
+				"{@b Cost:} 3 sp",
+				"(concentration; requires earth, sand, or stone) You create a seismic disturbance at a point on the ground that you can see within range. For the duration, an intense tremor rips through the ground in up to a 100-foot-radius circle centered on that point and shakes creatures and structures in contact with the ground in that area.",
+				"The ground in the area becomes difficult terrain. Each creature on the ground that is concentrating must make a Constitution saving throw. On a failed save, the creature’s concentration is broken.",
+				"When you cast this spell and at the end of each turn you spend concentrating on it, each creature on the ground in the area must make a Dexterity saving throw. On a failed save, the creature is knocked prone.",
+				"This spell can have additional effects depending on the terrain in the area, as determined by the GM.",
+				"Fissures: Fissures open throughout the spell’s area at the start of your next turn after you cast the spell. A total of 1d6 such fissures open in locations chosen by the GM. Each is 1d10 × 10 feet deep, 10 feet wide, and extends from one edge of the spell’s area to the opposite side. A creature standing on a spot where a fissure opens must succeed on a Dexterity saving throw or fall in. A creature that successfully saves moves with the fissure’s edge as it opens. A fissure that opens beneath a structure causes it to automatically collapse (see below).",
+				"Structures: The tremor deals 50 bludgeoning damage to any structure in contact with the ground in the area when you cast the spell and at the start of each of your turns until the spell ends. If a structure drops to 0 hit points, it collapses and potentially damages nearby creatures. A creature within half the distance of a structure’s height must make a Dexterity saving throw. On a failed save, the creature takes 5d6 bludgeoning damage, is knocked prone, and is buried in the rubble, requiring a DC 20 Strength (Athletics) check as an action to escape.",
+				"The GM can adjust the DC higher or lower, depending on the nature of the rubble. On a successful save, the creature takes half as much damage and doesn’t fall prone or become buried."
+			]
+		},
+		{
+			"name": "Freezing Geyser (advanced, geomancy, fire, water)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15
+					},
+					"feature": [
+						"Nature (Create Nature, Thermoturgy)"
+					]
+				}
+			],
+			"entries": [
+				"{@b Cost:} 3 sp",
+				"(concentration) You create a burst of boiling water that snap-freezes once it has covered its targets. You create an eruption coming from a 10-foot square of solid ground within range, extending 30 feet into the air. This deals 5d6 fire damage per round to all creatures that start their turn within the affected area. A successful Dexterity saving throw halves the damage.",
+				"Starting in the second round of the geyser’s eruption, the rapidly cooling water begins raining down on all targets within a 30-foot radius of the geyser (but not in the space in which the geyser deals fire damage), lasting for the length of the effect 1d4 rounds. Any creature caught in this freezing downpour takes 2d6 points of cold damage each round and must succeed on a Strength saving throw or be restrained by the layer of frost and ice forming on it. Even creatures affected by the main geyser who failed their Dexterity saving throw but left the area of cold rain find themselves restrained as the water on them freezes.",
+				"Restrained creatures may attempt a Strength saving throw as an action to escape from the ice, or another creature may use an action to break the ice around the trapped creature. The ice melts naturally after one minute on an average day."
+			]
+		},
+		{
+			"name": "Natural Ally (advanced, spirit)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					},
+					"feature": [
+						"Nature (Beast Friend)"
+					]
+				}
+			],
+			"entries": [
+				"{@b Cost:} 3 sp",
+				"(instantaneous) You can call specific creatures of the beast, elemental, fey, or plant type of a kind you designate (provided the creature’s total combined CR is equal to or less than 1/2 your level) which then appears in a place within range at the start of your next turn, and remains for up to 8 hours. You cannot call more creatures than your proficiency bonus. Unlike Beast Friend, this advanced talent does not require that there are creatures of those types in the area. The creatures will aid you to the best of their ability, but unless the caster speaks the creature’s language, only basic communication is possible (attacking an enemy, defending the caster, etc.) The creatures must also be treated fairly and will not give aid that is obviously suicidal. If treated poorly, they may turn on and attack you. You cannot use Natural Ally more than once per long rest."
+			]
+		},
+		{
+			"name": "Persistent Cloud (advanced, geomancy, water)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					},
+					"feature": [
+						"Nature (Fog Mastery)",
+						"Universal (Extended (metasphere))"
+					]
+				}
+			],
+			"entries": [
+				"{@b Augment 2 sp:} The duration of the abilities granted by the Fog Mastery talent becomes permanent. You can spend an action to have the effect move up to 15 feet in any direction. If targeted or otherwise in the area of an ability from the Weather sphere, the caster using the Weather sphere must make a spellcasting ability check against your sphere save DC. If the Weather sphere user is successful, the fog is countered. It is otherwise not subject to the effects of weather not created by magic. You can dismiss an effect made permanent by this augment as an action."
+			]
+		},
+		{
+			"name": "Phoenix Resurgence (advanced, spirit, fire)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					},
+					"feature": [
+						"Nature (Nature's Carapace)"
+					]
+				}
+			],
+			"entries": [
+				"You gain the {@spell phoenix resurgence|spheres-of-power} sphere talent."
+			]
+		},
+		{
+			"name": "Rapid Growth (advanced, geomancy, plant)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15
+					},
+					"feature": [
+						"Nature (Create Nature)"
+					]
+				}
+			],
+			"entries": [
+				"{@b Cost:} 3 sp",
+				"(instantaneous) You can create a massive growth of plantlife. This affects up to a 1 mile area in one of the following ways:",
+				"Change Terrain: You can change the terrain in this area to forest or jungle. This does not cause animals native to the forest or jungle to appear, nor does it guarantee that the terrain type will stay that way indefinitely (some areas such as deserts or high mountains cannot support forests or jungles, and a forest or jungle created in these locations may die out over time) but in all other ways, the terrain changes to the selected type.",
+				"Improve Forest: If used in an area that already contains a forest or jungle, you can cause the area to grow rapidly. Typical trees become massive trees, all areas become covered in undergrowth, and areas already covered in undergrowth gain heavy undergrowth.",
+				"A creature standing in the same square as a typical tree gains half cover, which grants a +2 bonus to Armor Class and Dexterity saving throws. The presence of a tree doesn’t otherwise affect a creature’s fighting space, because it’s assumed that the creature is using the tree to its advantage when it can. Massive trees take up an entire square and provide",
+				"three-quarters cover (+5 AC and Dexterity saving throws) to anyone behind them. Space covered with light undergrowth and difficult terrain and partially obscure creatures in them. Squares with undergrowth are often clustered together. Undergrowth and trees aren’t mutually exclusive; it’s common for a 5-foot square to have both a tree and undergrowth.",
+				"Increase Yield: If used in an area of developed farmland, you double the crop production in that area for the rest of the harvest season. This has no effect if used in winter or other times when crops are not being tended."
+			]
+		},
+		{
+			"name": "Tsunami (advanced, geomancy, water)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15
+					},
+					"feature": [
+						"Nature (Water Mastery)"
+					]
+				}
+			],
+			"entries": [
+				"{@b Cost:} 2 sp",
+				"(concentration; requires water) You create a wave of water within range. You can make the wave up to 300 feet long, 300 feet high, and 50 feet thick. The wave lasts for the duration. When the wave appears, each creature within its area must make a Strength saving throw. On a failed save, a creature takes 6d10 bludgeoning damage, or half as much on a successful save.",
+				"When you first create the wave, choose a direction. At the start of each of your turns after the wave appears, the wave moves 50 feet in the chosen direction. Any Huge or smaller creature inside the wall or whose space the wall enters when it moves must succeed on a Strength saving throw or take 5d10 bludgeoning damage. A creature can take this damage only once per round. At the end of the turn, the wave’s height is reduced by 50 feet, and the damage creatures take from the effect on subsequent rounds is reduced by 1d10. When the wave reaches 0 feet in height, the effect ends.",
+				"A creature caught in the wave can move by swimming. Because of the force of the wave, though, the creature must make a successful Strength (Athletics) check against your sphere DC in order to move at all. If it fails the check, it can’t move. A creature that moves out of the area falls to the ground."
+			]
+		},
+		{
+			"name": "Volcano (advanced, geomancy, fire)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15
+					},
+					"feature": [
+						"Nature (Thermoturgy)"
+					]
+				}
+			],
+			"entries": [
+				"{@b Cost:} 3 sp",
+				"(concentration) You can call lava up from deep within the earth. This lava bursts from a 10 foot wide hole in the ground centered within range and creates a spout up to 100 feet high. Any creature in this area or who enters this area takes 10d6 points of fire damage and is hurled into the air and then tossed to the ground. A successful Dexterity saving throw halves the fire damage and the creature is not tossed into the air, instead moving to the closest square adjacent to the geyser (Large-sized or larger creatures are moved enough so that they are not on top of the geyser but still adjacent to it). This movement does not provoke opportunity attacks and does not count toward the creature’s normal movement. If the creature fails its saving throw, it suffers the full fire damage and also suffers falling damage based upon the height of the volcanic spray (10d6 or less, depending on how high the spout can reach) and lands prone in a random square adjacent to the spout.",
+				"In addition, the volcano sprays lava, smoke, and poison gas in a cylinder around itself. The radius of this cylinder is equal to one half the volcano’s height (e.g., a 100 foot spout has a 50 foot radius cylinder). All creatures within this area, including yourself, are heavily obscured and suffer 2d6 points of fire damage each round as lava cascades on them. They must also succeed on a Constitution saving throw or be poisoned until they start their turn outside of the affected area. Even after a creature leaves the lava-filled area, they suffer 1d6 points of fire damage at the beginning of each turn for 1d3 rounds as the lava already on them cools.",
+				"A volcano must be created on the ground and cannot be created in other places, such as on the 2nd floor of a building. You can choose to make a smaller volcano if an obstruction prevents it from reaching its full height, or if you simply want to create a spread of lava that’s smaller than your maximum."
+			]
+		},
+		{
+			"name": "Whispering Wind (advanced, spirit, air)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"{@b Cost:} 2 sp",
+				"Duration: Instantaneous",
+				"(Requires air) You can send a message or sound on the wind to a designated spot within 1 mile per level. The message has 1 hour per level to reach its destination. The message travels to the destination, provided that the location is familiar to you and that it can find a way to the location. At time of casting, you can prepare the effect to bear a message of no more than 20 + your level words, cause the talent to deliver other sounds for 1 round, or merely have the message seem to be a faint stirring of the air. You can likewise cause the wind carrying the message to move as slowly as 1 mile per hour, or as quickly as 1 mile per 10 minutes.",
+				"When the message reaches its objective, it swirls and remains in place until the message is delivered, at which time the spell is discharged. The message cannot speak verbal components, use command words, or activate magical effects.",
+				"The message is as gentle and unnoticed as a zephyr until it reaches the location. It then delivers its whisper-quiet message or other sound to all creatures within 10 feet of the destination. Note that the message is delivered regardless of whether anyone is present to hear it. The wind then dissipates.",
+				"The affected area increases by feet at 5th level (15 feet), 11th level (20 feet), and 17th level (25 feet)."
+			]
+		},
+		{
+			"name": "Wildfire (advanced, geomancy, fire)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					},
+					"feature": [
+						"Universal (Reaching (metasphere) (3))"
+					]
+				}
+			],
+			"entries": [
+				"{@b Cost:} 3 sp",
+				"{@b Augment 3 sp:} When using affect fire, you can send forth a burst of heat that targets everything within a radius of up to 1000 feet. Creatures and flammable objects caught within the radius of effect are dealt 2d8 fire damage and catch fire. A successful Dexterity saving throw halves the damage and negates catching fire. This damage increases by 1d8 at 11th (3d8) and 17th (4d8) levels.",
+				"{@b Augment 2 sp:} The damage dealt increases to 1d8 + 1d8 per two levels."
+			]
+		},
+		{
+			"name": "Nature Spirit (variant)",
+			"source": "spheres-of-power",
+			"featureType": "Nature",
+			"entries": [
+				"You cannot use geomancy abilities, only (spirit) talents. You must choose a package as normal, but do not gain any of its geomancy abilities, instead only counting as possessing the package for the purpose of qualifying for (spirit) talents. You gain a (spirit) talent of your choice as a bonus talent."
+			]
+		},
+		{
+			"name": "Protection Sphere",
+			"source": "spheres-of-power",
+			"featureType": "Protection",
+			"entries": [
+				"You are a user of the magics of preservation.",
+				"When you first gain the Protection sphere, you gain the {@spell aegis|spheres-of-power}, {@spell succor|spheres-of-power}, and {@spell ward|spheres-of-power} sphere abilities, as well as the {@optfeature armored (aegis)|spheres-of-power} and {@optfeature barrier (ward)|spheres-of-power} talents.",
+				"Talents that are marked (aegis), (succor), or (ward) will grant you new abilities of the respective type, while (barrier) talents will modify the barrier base sphere ability specifically."
+			]
+		},
+		{
+			"name": "Armored (aegis)",
+			"source": "spheres-of-power",
+			"featureType": "Protection",
+			"entries": [
+				"You can create an aegis that wraps the target in protective barriers, granting them a base AC equal to your sphere DC (no benefit from Dexterity modifier). This does not stack with other armor, though the target may still benefit from a shield."
+			]
+		},
+		{
+			"name": "Breathless (aegis)",
+			"source": "spheres-of-power",
+			"featureType": "Protection",
+			"entries": [
+				"You can create an aegis that allows a creature to survive without air. The creature becomes immune to effects that require breathing (such as inhaled poison), can survive underwater, or even in a vacuum. This does not give immunity to cloud or gas attacks that do not require breathing."
+			]
+		},
+		{
+			"name": "Deathless (aegis)",
+			"source": "spheres-of-power",
+			"featureType": "Protection",
+			"entries": [
+				"You can create an aegis that grants the subject resistance to necrotic damage and grants advantage on all saving throws against effects that would kill it instantaneously without dealing damage. The subject is granted a saving throw to negate such effects even if one is not normally allowed. This aegis does not protect against other sorts of attacks, even if those attacks might be lethal. Additionally, the target automatically stabilizes when reduced to 0 hit points and does not have to make death saving throws at the start of its turn."
+			]
+		},
+		{
+			"name": "Energy Resistance (aegis, ward)",
+			"source": "spheres-of-power",
+			"featureType": "Protection",
+			"entries": [
+				"You can create an aegis that grants energy resistance to one damage type of your choice (acid, cold, fire, lightning, radiant, thunder).",
+				"You can also create a ward that suppresses one damage type of your choice. All creatures within the ward benefit from resistance to the chosen damage type for as long as they remain within the ward."
+			]
+		},
+		{
+			"name": "Friendship (aegis)",
+			"source": "spheres-of-power",
+			"featureType": "Protection",
+			"entries": [
+				"You can create an aegis that gives a creature special protection from its allies’ magic. You can designate a number of creatures up to your proficiency bonus; whenever one of the designated creatures uses a spell or sphere ability that covers an area, they may exclude the target of this aegis from the area of effect."
+			]
+		},
+		{
+			"name": "Guardian (aegis)",
+			"source": "spheres-of-power",
+			"featureType": "Protection",
+			"entries": [
+				"You can create an aegis that draws harmful attention to its bearer and away from their allies. Any hostile creature within 10 feet of the bearer of this aegis who decides to target any creature other than the bearer of this aegis suffers disadvantage on their attack roll. Multiple Guardian aegis do not stack; if a creature attacks one creature with this aegis while within the area of another creature with this aegis, they suffer no disadvantage on their attack."
+			]
+		},
+		{
+			"name": "Impartiality (aegis, ward)",
+			"source": "spheres-of-power",
+			"featureType": "Protection",
+			"entries": [
+				"Creatures bearing this aegis or within this ward are treated as having no alignment for all magical effects. Celestials, fiends, or Undead still count as such, but do not detect as such for effects such as a paladin’s divine sense. Effects that detect alignment (such as the Divine Alignment alternate divination from the Divination sphere) do not detect the creature or creatures protected, while those that affect certain alignments have no effect on protected creatures at all. This does not allow a creature to disguise their alignment - they appear as an absence of alignment. This also hides the creature type of fiends, fey, celestials, and undead."
+			]
+		},
+		{
+			"name": "Impedance (aegis, ward)",
+			"source": "spheres-of-power",
+			"featureType": "Protection",
+			"entries": [
+				"You can create an aegis that requires creatures to succeed on a Wisdom saving throw to enter a space within 5 feet of the target. Failure prevents entering such a space until the start of the creature’s next turn, when it can attempt to do so, triggering a new saving throw.",
+				"This talent does not interfere with attacks; only movement. You can create a ward that makes it difficult for creatures to approach the center of the ward. At the beginning of their turn, or when they try to enter the ward, a creature must succeed on a Wisdom saving throw or they are unable to enter or move any closer to the center of the ward until the start of their next turn when it can attempt to do so, triggering a new saving throw.",
+				"{@b Augment 1 sp:} the aegis option affects spaces within 10 feet."
+			]
+		},
+		{
+			"name": "Inner Peace (aegis)",
+			"source": "spheres-of-power",
+			"featureType": "Protection",
+			"entries": [
+				"You can create an aegis that grants resistance to psychic damage and grants the target advantage on saving throws against effects that would cause the charmed or frightened condition or would otherwise manipulate emotions, such as the calm emotions spell or the Hostility (charm) of the Mind sphere."
+			]
+		},
+		{
+			"name": "Obscurity (aegis)",
+			"source": "spheres-of-power",
+			"featureType": "Protection",
+			"entries": [
+				"Creatures with this aegis or within this ward appear unremarkable and unimportant to those around them. Creatures must make an Intelligence saving throw to be able to notice their presence. This is before any Wisdom (Perception) checks are made. A successful save allows them to see the obscured creatures normally (assuming they can see the creatures normally), until they have left the sight of the creature by either moving out of line-of-sight or making a successful Dexterity (Stealth) check. Creatures who are specifically looking for the protected creatures and are aware of their identity (like those who have been told you are there by someone else), or who are engaged in combat with them automatically succeed on this saving throw."
+			]
+		},
+		{
+			"name": "Obstruction (aegis)",
+			"source": "spheres-of-power",
+			"featureType": "Protection",
+			"entries": [
+				"You can create an aegis that absorbs damage. The target gains resistance to nonmagical bludgeoning, piercing, and slashing damage."
+			]
+		},
+		{
+			"name": "Punishment (aegis, succor)",
+			"source": "spheres-of-power",
+			"featureType": "Protection",
+			"entries": [
+				"You can create an aegis that inflicts pain on creatures that hurt its bearer. Whenever a creature successfully hits the bearer of this aegis with a melee or ranged attack, that creature suffers 1d4 points of psychic damage, increasing by 1d4 at 5th (2d4), 11th (3d4), and 17th (4d4) levels.",
+				"As a succor, when an ally under the effects of your aegis takes damage from an attack, you can dismiss an aegis to deal 1d6 points of psychic damage, increasing by 1d6 at 5th (2d6), 11th (3d6), and 17th (4d6) levels to the attacking creature. This damage stacks with that from the Punishment aegis."
+			]
+		},
+		{
+			"name": "Peacebound (aegis, ward)",
+			"source": "spheres-of-power",
+			"featureType": "Protection",
+			"entries": [
+				"You can create an aegis that makes the target immune to violent actions or magic. Any such action made against the target requires the attacker to pass a Wisdom saving throw or lose that action, including any spell points or spell slots spent. If a creature succeeds at this saving throw (or the bearer of the peacebound aegis takes an offensive action against any creature) the aegis immediately ends.",
+				"You can create a ward that renders all creatures incapable of causing violence. Any violent action or targeted offensive magical effect created within the ward requires a successful Wisdom saving throw or else the action is wasted, including any spell points or spell slots spent. If any creature succeeds at this saving throw, the ward’s effect immediately ends for all. When a peacebound ward is broken in this fashion, all creatures within become immune to that caster’s peacebound ward until the next dawn."
+			]
+		},
+		{
+			"name": "Protected Health (aegis, ward)",
+			"source": "spheres-of-power",
+			"featureType": "Protection",
+			"entries": [
+				"You can create an aegis that grants a target resistance to poison damage and advantage on saving throws against all poisons and diseases, both magical and mundane. You can create a ward that grants this benefit to all within its area."
+			]
+		},
+		{
+			"name": "Resistance (aegis)",
+			"source": "spheres-of-power",
+			"featureType": "Protection",
+			"entries": [
+				"You can create an aegis that grants the target the ability to spend a reaction to grant itself advantage on a saving throw."
+			]
+		},
+		{
+			"name": "Shield (aegis)",
+			"source": "spheres-of-power",
+			"featureType": "Protection",
+			"entries": [
+				"You can create an aegis that grants the target with a shield of translucent force. This shield acts as a normal shield except it is weightless and does not interfere with the target providing material and somatic spell components. If the target takes another object in the hand the shield occupies (except for manipulating spell components), the shield is suppressed and provides no benefit until the start of the next turn in which the target has a free hand.",
+				"{@b Augment 1 sp:} The target is always considered proficient with the shield."
+			]
+		},
+		{
+			"name": "Slippery (aegis)",
+			"source": "spheres-of-power",
+			"featureType": "Protection",
+			"entries": [
+				"You can create an aegis that protects a creature from being physically restrained or manipulated. The bearer of this aegis gains advantage on saving throws to resist being restrained or moved, or ability checks made to avoid being shoved, escape a grapple, squeeze through a tight space, or escape bonds."
+			]
+		},
+		{
+			"name": "Spell Ward (aegis, ward)",
+			"source": "spheres-of-power",
+			"featureType": "Protection",
+			"entries": [
+				"{@b Cost:} 1 sp",
+				"You create an aegis that grants the target advantage on all saving throws against magic.",
+				"{@b Cost:} 1 sp",
+				"You can create a ward that represses all magic within its area of effect. Make one spellcasting ability check against each magical effect, magic item, or summoned creature within the area. If your check exceeds the spell save DC or sphere DC of the magical effect, item, or caster who summoned the creature, the effect is suppressed, the magic item ceases to function, or the summoned creature temporarily disappears. Time spent suppressed counts toward a magical effect’s total duration. Any caster attempting to use a magical ability in or targeted within this area, or any summoned creature attempting to enter this area, must pass a spellcasting ability check against your sphere DC. On a success, the magical effect is unimpeded, and the summoned creature is not banished by that spell ward."
+			]
+		},
+		{
+			"name": "Continuous (barrier)",
+			"source": "spheres-of-power",
+			"featureType": "Protection",
+			"entries": [
+				"{@b Augment 0 sp:} You can form your barrier as a hemispherical dome or a sphere; regardless of form, this barrier is completely sealed. If creating the barrier would cause it to go through another object, the barrier cuts harmlessly through the material (without compromising the integrity of the object, but preventing the object from being moved). If creating the barrier would cause it to go through a creature or animated object, the barrier shunts the creature as usual. These modifications to your barriers make it so that ethereal creatures, or creatures with unusual movement modes such as burrowing cannot enter the warded area by going around the barrier, but must instead destroy the barrier to enter or exit.",
+				"This ability can be combined with the Greater (barrier) talent to allow your barrier wall to pass through objects."
+			]
+		},
+		{
+			"name": "Greater (barrier)",
+			"source": "spheres-of-power",
+			"featureType": "Protection",
+			"entries": [
+				"{@b Augment 0 sp:} You can fashion your barrier into a flat, vertical plane if you so choose. This wall must be contiguous and be adjacent to you at one point, although it may extend as far out as 30 feet (if you possess the Reaching (metasphere) talent from the Universal sphere, it must be within range of you at one point, although it may extend as far as twice your range), and formed of a maximum number of 10-foot-by-10- foot panels equal to twice your proficiency bonus.",
+				"{@b Augment 1 sp:} You can increase your barrier’s Hit Points to 10 per level and increase the DC of shoving or overrunning the barrier by 5. The barrier’s hit points do not replenish, even if maintained through concentration",
+				"{@b Augment 1 sp:} The maximum number of panels you can create increases to four times your proficiency bonus. Augment 2 sp:} The maximum size of your panels increases to 20-foot-by-20-foot.",
+				"You also gain the {@spell buttress|spheres-of-power} sphere ability."
+			]
+		},
+		{
+			"name": "Bulwark (succor))",
+			"source": "spheres-of-power",
+			"featureType": "Protection",
+			"entries": [
+				"When an ally is targeted by an attack roll, you can dismiss an aegis on that ally to give them resistance to all damage from the triggering attack as a reaction."
+			]
+		},
+		{
+			"name": "Luck (succor)",
+			"source": "spheres-of-power",
+			"featureType": "Protection",
+			"entries": [
+				"You can dismiss an aegis on a target to allow them to reroll a saving throw they have just made. They must take the second result, even if it is worse."
+			]
+		},
+		{
+			"name": "Clarity (ward)",
+			"source": "spheres-of-power",
+			"featureType": "Protection",
+			"entries": [
+				"Within the area of this ward, attempts to conceal, obfuscate, or disguise oneself are hindered. Any creature within the ward must make a Wisdom saving throw or they become unable to use any abilities to disguise or conceal themselves. Likewise, any spell, sphere effect, or other ability that creates illusions or makes it difficult to sense physical phenomena is more difficult to use. When the ward is first created, the user makes a single spellcasting ability check against every illusion or magical concealing effect. If your check succeeds, the effect is suppressed or the magic item ceases to function, respectively. Time spent suppressed counts toward a magical effect’s total duration. Any additional attempt to create an illusion or concealment effect requires the caster succeed on a spellcasting ability check against your sphere DC. They must do this even if they passed their Wisdom saving throw."
+			]
+		},
+		{
+			"name": "Exclusion (ward)",
+			"source": "spheres-of-power",
+			"featureType": "Protection",
+			"entries": [
+				"You can create a ward that prevents entry of a common material or element chosen when you create the ward. You can choose an element based on their physical material (such as stone, metal, water, or acid), form of energy (such as fire or light), or based on their physical properties (such as poisonous materials or living materials). Magical and non-magical materials excluded have great difficulty entering the ward, but are unaffected once inside.",
+				"Creatures made of or carrying the material with them must make a Strength check against your Protection sphere DC to cross the threshold of the ward, or they can simply drop any of the warded material they are carrying. An attack from outside the ward that crosses into the ward that is composed of the excluded material receives disadvantage on the attack roll."
+			]
+		},
+		{
+			"name": "Repel Alignment (ward)",
+			"source": "spheres-of-power",
+			"featureType": "Protection",
+			"entries": [
+				"You can create a ward that repels creatures of the fiend, celestial, fey, and undead creature types. Any creatures of these types cannot cross the edge of this ward unless they succeed at a Charisma saving throw. Once a creature has succeeded at this saving throw, they may cross the barrier without trouble and are immune to your Repel Alignment ward until the next dawn. If a creature is already within this warded area when it is created, or if the ward is moved into their space, they instantly become immune to the ward, as if they had succeeded at their saving throw."
+			]
+		},
+		{
+			"name": "Community",
+			"source": "spheres-of-power",
+			"featureType": "Protection",
+			"entries": [
+				"Whenever a creature under your aegis takes damage, you can transfer up to half of that damage to any other willing creature under one of your aegis as a free action. The transferred damage is of the same type and cannot be further redirected by any means."
+			]
+		},
+		{
+			"name": "Status",
+			"source": "spheres-of-power",
+			"featureType": "Protection",
+			"entries": [
+				"You always know the direction and distance to all creatures benefiting from your aegis and are aware of any conditions affecting them (unharmed, wounded, disabled, frightened, unconscious, dying, poisoned, stunned, poisoned, diseased, confused, etc.). If the target dies or moves to another plane of existence, this effect ceases to function."
+			]
+		},
+		{
+			"name": "Adaptation (advanced)",
+			"source": "spheres-of-power",
+			"featureType": "Protection",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					},
+					"feature": [
+						"Protection (Breathless, Energy Resistance)"
+					]
+				}
+			],
+			"entries": [
+				"{@b Augment 4 sp:} When applying the Breathless aegis, you can make them immune to most environmental conditions. They become immune to extreme temperatures, toxicity in the air, and can breath underwater or in a vacuum. In addition, the target gains Resistance to acid, cold, fire, lightning, radiant, and thunder damage. The target also gains resistance to necrotic if you possess Deathless, psychic if you possess Inner Peace, and poison if you possess Protected Health."
+			]
+		},
+		{
+			"name": "Anti-Magic Aura (advanced)",
+			"source": "spheres-of-power",
+			"featureType": "Protection",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					},
+					"feature": [
+						"Protection (Spell Ward)"
+					]
+				}
+			],
+			"entries": [
+				"{@b Augment 2 sp:} When creating a ward with Spell Ward, you can improve its abilities: the ward stops all magic and summoned creatures without the need for a spellcasting ability check. This ward cannot be centered anywhere other than on yourself."
+			]
+		},
+		{
+			"name": "Unplottable (advanced, aegis)",
+			"source": "spheres-of-power",
+			"featureType": "Protection",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15
+					},
+					"feature": [
+						"Protection (Obscurity)"
+					]
+				}
+			],
+			"entries": [
+				"{@b Augment 3 sp:} When granting a target the Obscurity aegis, you can make them undetectable through divination magic of any sort. Any magical attempt to gather information on the target (including scrying, effects that detect invisibility, detect alignment, or even miracle and wish spells when used in a similar manner) automatically fails. In the case of scrying that does not directly view the bearer of this aegis (such as instead scanning the area they happen to be in), the spell or effect works normally, but the creature isn’t detected."
+			]
+		},
+		{
+			"name": "Limited Protection (variant)",
+			"source": "spheres-of-power",
+			"featureType": "Protection",
+			"entries": [
+				"Choose either ward or aegis; you only gain the chosen ability. If you select aegis, you can still take and benefit from (succor) talents. You gain a bonus talent of the selected type."
+			]
+		},
+		{
+			"name": "Protected Soul",
+			"source": "spheres-of-power",
+			"featureType": "Protection",
+			"entries": [
+				"You cannot target other creatures with your aegis, only yourself. Any ward you create immediately ends if you end your turn outside of it. You gain either a (ward) or (aegis) talent of your choice as a bonus talent."
+			]
+		},
+		{
+			"name": "Telekinesis Sphere",
+			"source": "spheres-of-power",
+			"featureType": "Telekinesis",
+			"entries": [
+				"You can lift and move objects through magic.",
+				"When you first gain the Telekinesis sphere, you gain the catch, levitate, and projectile sphere abilities. Some telekinesis abilities target a creature or object up to your telekinesis size. Your telekinesis size is a Tiny-sized target, with the maximum size of the target increasing by 1 step at 5th level (Small), 11th level (Medium), and 17th level (Large).",
+				"Every sphere ability in the Telekinesis sphere gains the following Augment:",
+				"{@b Augment 1 sp:} Your telekinesis size increases by 2 sizes. If you are lifting an object into the air, a creature up to your maximum size can hang from the floating object, and must use an Action to make a Strength (Athletics) check against your sphere DC to move it up to 10 feet against your will. Creatures larger than your maximum size can move objects with no issue. If you use telekinesis to lift something into the air and drop on a target, utilize the rules found in the Creation sphere.",
+				"Generally one-handed weapons or pieces of ammunition are two sizes smaller than the creature it was designed for, while armor, shields, and two-handed weapons are one size smaller. If you gain the ability to affect multiple targets at once, two creatures or objects of a similar size count as one size larger (2 small objects equals a medium, 2 mediums, equal a large, etc.)",
+				"Some talents are marked (catch), or (levitate), or (projectile). While these talents may interact with or offer other Telekinesis sphere abilities, they mainly augment the ability they are marked as. Talents that are marked (gravity) focus more on magic that manipulates density, force, and mass."
+			]
+		},
+		{
+			"name": "Greater Catch (catch)",
+			"source": "spheres-of-power",
+			"featureType": "Telekinesis",
+			"entries": [
+				"You gain the following augments for catch. You cannot add both augments to the same catch.",
+				"{@b Augment 1 sp:} When you cast catch, you don’t have to immediately choose which projectiles you target. Until the start of your next turn, you can attempt to catch a number of targets up to 1 plus your proficiency bonus. Targeting a projectile in this way does not require an action.",
+				"{@b Augment 1 sp:} Instead of targeting projectiles directly, you can create a kinetic field—a stationary flat surface to catch all projectiles and thrown objects passing through it until the beginning of your next turn. Any object that strikes the field immediately loses momentum and drops to the ground if the originator of the attack fails a Wisdom saving throw. This field is made up of no more than two 10-foot-by-10-foot panels. Each panel must be contiguous with another panel. The field can only stop valid targets of your catch, and does not block line of sight or line of effect. The field gains up to an additional panel at 5th level (3 panels), 11th level (4 panels), and 17th level (5 panels).",
+				"You may concentrate to sustain a kinetic field for up to 10 minutes, and may move the field with you as you move. This can be combined with Telekinetic Maneuver to grapple targets that attempt to move through it until the beginning of their next turn (at which point they can try again)."
+			]
+		},
+		{
+			"name": "Parry (catch)",
+			"source": "spheres-of-power",
+			"featureType": "Telekinesis",
+			"entries": [
+				"You can use catch to block attacks with melee weapons, though the wielder retains its hold on their weapon even if you successfully block their attack. However, if you also possess the Steal talent, you can immediately apply it to a manufactured weapon as part of changing a catch into a levitate. Your telekinesis must be specially tuned towards the task, so if you ready an action to cast catch, you must specify whether you are attempting to intercept melee or ranged attacks."
+			]
+		},
+		{
+			"name": "Return (catch)",
+			"source": "spheres-of-power",
+			"featureType": "Telekinesis",
+			"entries": [
+				"{@b Augment 0 sp:} When you stop an attack with catch, you can immediately fling it back at the attacker if they’re in range. Resolve this attack as if it were a projectile, using the object you were attacked with. Doing so does not interfere with concentrating on other effects.",
+				"{@b Augment 0 sp:} When you miss with a ranged weapon attack, a thrown weapon, or a telekinetic projectile, you can as a reaction make the projectile return back to you. You can automatically catch it when it returns without spending an action."
+			]
+		},
+		{
+			"name": "Telekinetic Maneuver (catch)",
+			"source": "spheres-of-power",
+			"featureType": "Telekinesis",
+			"entries": [
+				"{@b Augment 1 sp:} You can target any moving creature or object within your size limit, not just projectiles and thrown objects. If the target is unwilling, make a spell attack roll opposed by the target’s Strength (Athletics) or Dexterity (Acrobatics) check (their choice). On a success, you may either knock the target prone or give them the grappled condition until the beginning of your next turn. Being grappled by this ability can stop a creature from moving up or down as well, such as when used to stop an ally from falling. You can transform this ability into levitate without spending any additional spell points to target an unwilling creature."
+			]
+		},
+		{
+			"name": "Gravity Shift (gravity)",
+			"source": "spheres-of-power",
+			"featureType": "Telekinesis",
+			"entries": [
+				"You gain the {@spell gravity shift|spheres-of-power} sphere ability."
+			]
+		},
+		{
+			"name": "Gravity Well (gravity)",
+			"source": "spheres-of-power",
+			"featureType": "Telekinesis",
+			"entries": [
+				"You gain the {@spell gravity well|spheres-of-power} sphere ability."
+			]
+		},
+		{
+			"name": "Speed Zone (gravity)",
+			"source": "spheres-of-power",
+			"featureType": "Telekinesis",
+			"entries": [
+				"You gain the {@spell friction field|spheres-of-power} and {@spell momentum line|spheres-of-power} sphere ability."
+			]
+		},
+		{
+			"name": "Tether (gravity)",
+			"source": "spheres-of-power",
+			"featureType": "Telekinesis",
+			"entries": [
+				"You gain the {@spell tether|spheres-of-power} sphere ability."
+			]
+		},
+		{
+			"name": "Dancing Weapon (levitate)",
+			"source": "spheres-of-power",
+			"featureType": "Telekinesis",
+			"entries": [
+				"Your levitate ability gains the following augments, only one of which can be used at a time:",
+				"{@b Augment 0 sp:} When using levitate on an object smaller than yourself, you can treat what you are lifting as a shield under your control. The object grants a +1 AC bonus (or its usual bonus, if it is an actual shield) to anything in its space, though creatures may still only benefit from a single shield at a time. The shield can be augmented by fighting styles, feats, and talents that affect shields, and if using a creature as a shield, attacks that miss the guarded target are instead redirected against the creature being levitated using the same attack roll.",
+				"{@b Augment 0 sp:} When using levitate to move an object smaller than yourself, that object counts as a melee or ranged weapon (or improvised weapon) under your control. Your allies may count it as an allied creature occupying its space, you can use it to make attacks, opportunity attacks, and may apply weapon-based abilities (such as fighting styles, feats, and talents) to your actions with that weapon, as if you were wielding it in your hands. You may use your key ability modifier in place of Strength or Dexterity when making attacks with your dancing weapon, but otherwise it deals damage as normal for a weapon or improvised weapon of its type."
+			]
+		},
+		{
+			"name": "Finesse (levitate)",
+			"source": "spheres-of-power",
+			"featureType": "Telekinesis",
+			"entries": [
+				"{@b Augment 0 sp:} Instead of moving a target to a different location, you can use levitate to perform fine manipulations, such as turning a key in a lock, unrolling a scroll, tying a knot, or using tools. You can make Dexterity checks at a distance, as well as making Wisdom (Medicine) checks to stabilize a creature. When performing an action at a distance, you can use your key ability modifier in place of the normal ability modifier, but you also suffer disadvantage on the check.",
+				"When augmenting levitate to be maintained without concentration, you can use levitate to maintain complicated, non-combat procedures such as having cutlery prepare dinner, make a lute play itself, or making a shovel dig a ditch, all without spending the bonus action usually required to move the target."
+			]
+		},
+		{
+			"name": "Orbit (levitate)",
+			"source": "spheres-of-power",
+			"featureType": "Telekinesis",
+			"entries": [
+				"{@b Augment 0 sp:} When you levitate a creature or object and move it into your space (or immediately after catching an object targeting you), you can place it in a passive orbit around you. An object in orbit drifts slowly around you, moving with you when you move as if you carried it, and does not require concentration to remain in orbit, though it does nothing except drift passively. At any point you can begin concentrating on it again to move it with levitate. You can have multiple objects around you at one time so long as their total size does not exceed your telekinesis maximum. If you possess the Dancing Weapon talent, you count as levitating anything in your orbit for the purposes of that talent.",
+				"If the total size of the objects in your orbit is equal or greater than your size and are not being used with Dancing Weapon, you can grant yourself half cover (granting a +2 bonus to AC and Dexterity saving throws as usual) until the start of your next turn as a bonus action.",
+				"If the total size of the objects in your orbit is at least 2 sizes greater than your size and are not being used with Dancing Weapon, you can grant yourself three-quarters cover (granting a +5 bonus to AC and Dexterity saving throws as usual) until the start of your next turn as an action."
+			]
+		},
+		{
+			"name": "Quick Motion (levitate)",
+			"source": "spheres-of-power",
+			"featureType": "Telekinesis",
+			"entries": [
+				"Your levitate gains the following augment:",
+				"{@b Augment 0 sp:} When using levitate you no longer need to spend a bonus action to move the target, although you may still only do so once per round."
+			]
+		},
+		{
+			"name": "Steal (levitate)",
+			"source": "spheres-of-power",
+			"featureType": "Telekinesis",
+			"entries": [
+				"{@b Augment 0 sp:} You can use levitate on a creature’s worn or carried objects. You must make a ranged spell attack roll or Dexterity (Sleight of Hand) check contested by that creature’s Strength (Athletics) or Dexterity (Acrobatics) check. If you succeed, you pull the object away from that creature and can move it up to your levitate movement in any direction. If an object is secured firmly or held in two hands, you have disadvantage on this check. This ability does not require being further augmented to target objects attended to by unwilling creatures."
+			]
+		},
+		{
+			"name": "Crater (projectile)",
+			"source": "spheres-of-power",
+			"featureType": "Telekinesis",
+			"entries": [
+				"{@b Augment 1 sp:} Instead of making an attack roll against a target, your projectile targets an area based on the size of the projectile: Tiny (5-foot square), Small or Medium (10-foot square), Large (20-foot square), Huge (30-foot square), Gargantuan (40-foot square). Creatures and unattended objects inside the area who succeed on a Dexterity saving throw take half damage from the projectile."
+			]
+		},
+		{
+			"name": "Homing (projectile)",
+			"source": "spheres-of-power",
+			"featureType": "Telekinesis",
+			"entries": [
+				"You gain the {@spell homing|spheres-of-power} sphere ability."
+			]
+		},
+		{
+			"name": "Kinetic Weapon (projectile)",
+			"source": "spheres-of-power",
+			"featureType": "Telekinesis",
+			"entries": [
+				"You can add your key ability modifier to all damage rolls made with a projectile. In addition, beginning at 5th level, when using a weapon as a projectile, you deal an additional 1d6 damage. The weapon must be one that you are proficient with and that is properly sized for you. This damage increases by 1d6 at 11th level (2d6) and 17th level (3d6)."
+			]
+		},
+		{
+			"name": "Manifest Force (projectile)",
+			"source": "spheres-of-power",
+			"featureType": "Telekinesis",
+			"entries": [
+				"{@b Augment 0 sp:} You can attack your enemies with a visible manifestation of pure telekinetic force. When using your projectile ability in this way you do not need to target a creature or object as your projectile, instead dealing damage as if lifting your maximum-sized object. This projectile deals force damage instead of bludgeoning, piercing, or slashing."
+			]
+		},
+		{
+			"name": "Mobile Projectile (projectile)",
+			"source": "spheres-of-power",
+			"featureType": "Telekinesis",
+			"entries": [
+				"{@b Augment 1 sp:} When using projectile you can make two attack rolls with the same projectile against the same or different targets within range. This cannot be combined with other options that would add multiple attacks to a projectile, such as the Mass (metasphere) talent, or talents that change the nature of the attack, such as Crater or Linear Acceleration."
+			]
+		},
+		{
+			"name": "Dampening Field",
+			"source": "spheres-of-power",
+			"featureType": "Telekinesis",
+			"entries": [
+				"You gain the {@spell inertial armor|spheres-of-power} ability. In addition, levitate and projectile gain the following augment:",
+				"{@b Augment 0 sp:} Objects you are levitating or using as a projectile gain the benefit of your inertial armor. Creatures, even constructs, never gain the benefits of this augment."
+			]
+		},
+		{
+			"name": "Pushed Movement",
+			"source": "spheres-of-power",
+			"featureType": "Telekinesis",
+			"entries": [
+				"You gain the {@spell fly|spheres-of-power} and {@spell help/hinder|spheres-of-power} sphere abilities."
+			]
+		},
+		{
+			"name": "Kinetic Sense",
+			"source": "spheres-of-power",
+			"featureType": "Telekinesis",
+			"entries": [
+				"{@b Augment 0 sp:} You no longer need to see a target to affect it with your Telekinesis sphere abilities. Instead, you may target a 5 ft. square, discovering and affecting whatever might be there. If nothing is in the space, your action is wasted though you retain any spell points you would have spent.",
+				"In addition, you gain the {@spell touchsense|spheres-of-power} sphere ability."
+			]
+		},
+		{
+			"name": "Telekinetic Crush",
+			"source": "spheres-of-power",
+			"featureType": "Telekinesis",
+			"entries": [
+				"You gain the following augments:",
+				"{@b Augment 0 sp:} If you are using projectile in an attempt to break an object (for example, smashing someone through a wall) you deal double damage to the object or objects. If an ability check is called for by the GM, you have proficiency on this check.",
+				"{@b Augment 0 sp:} When using levitate on a target, you can crush it with your grip. Every round you maintain concentration you can deal 1d6 force damage, increasing by 1d6 at 5th level (2d6), 11th level (3d6), and 17th level (4d6). You can cease or resume this damage on your turn with no action required."
+			]
+		},
+		{
+			"name": "Whirlwind Assembly",
+			"source": "spheres-of-power",
+			"featureType": "Telekinesis",
+			"entries": [
+				"You gain the following Telekinesis sphere abilities:",
+				"{@b Call to Hand:} As a bonus action, you can call a single object up to your telekinesis size within 30 feet of yourself that is either unattended or carried by (but not secured to) a willing creature that you can see within range instantly to your hand.",
+				"{@b Telekinetic Swap:} You can use your telekinesis to ready yourself for any given situation. You can draw up to two sheathed weapons or items you are carrying (even if it is stored in a backpack or similar container) and put away up to two objects you are holding in your hands. In addition, you can don a single set of armor or robes and put away any robes or armor you are currently wearing, or swap out any number of smaller worn items (such as gloves, hats, or rings). Each individual item equipped or put away must be up to your telekinesis size, and must be within 30 feet of you."
+			]
+		},
+		{
+			"name": "Affix (advanced, levitation)",
+			"source": "spheres-of-power",
+			"featureType": "Telekinesis",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					},
+					"feature": [
+						"Telekinesis (Tether)"
+					]
+				}
+			],
+			"entries": [
+				"{@b Augment 3 sp:} With no action required, you can permanently affix a single target of your levitation to a specific point in space. This is an instantaneous effect that end the levitation and binds the target to that specific point, preventing it from moving in any direction, even down.",
+				"An unwilling creature may make a Dexterity saving throw to avoid being fixed in place. A creature affected by Affix can still take actions and can freely move their limbs, but cannot move away from the point they have been affixed to, even with teleportation effects.",
+				"Since this is an instantaneous effect, it cannot be dispelled. However, a successful application of telekinesis or brute force from a creature or force 2 or more sizes larger than your telekinesis size, or requiring a Strength check made with disadvantage against your sphere DC, can end the effect. A creature cannot attempt this check on themselves without something to hold on to, such as a wall. If applying your own telekinesis against an object you’ve affixed, you automatically succeed on your key ability check."
+			]
+		},
+		{
+			"name": "Effortless Telekinesis (advanced)",
+			"source": "spheres-of-power",
+			"featureType": "Telekinesis",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					}
+				}
+			],
+			"entries": [
+				"{@b Augment 1 sp:} Your Telekinesis sphere abilities persist for 8 hours instead of 10 minutes."
+			]
+		},
+		{
+			"name": "Gravity Manipulation (advanced, gravity)",
+			"source": "spheres-of-power",
+			"featureType": "Telekinesis",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15
+					},
+					"feature": [
+						"Telekinesis (Gravity Shift)"
+					]
+				}
+			],
+			"entries": [
+				"{@b Augment 2 sp:} When you use Gravity Shift, you have greater control over gravity. You can create or manipulate areas of no gravity or subjective gravity, and may apply any gravity trait to any area. Creatures in the area may make a Dexterity saving throw to hang onto an adjacent surface whenever you change gravity.",
+				"{@i No Gravity:} Individuals in an area of no gravity merely float in space, unless other resources are available to provide a direction for gravity’s pull.",
+				"{@i Objective Directional Gravity:} The strength of objective directional gravity is the same as normal, but the direction is not the traditional “down” toward the ground. It may be down towards any solid object, at an angle to the surface of the ground itself, or even upward."
+			]
+		},
+		{
+			"name": "Linear Acceleration (advanced, levitate)",
+			"source": "spheres-of-power",
+			"featureType": "Telekinesis",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					}
+				}
+			],
+			"entries": [
+				"{@b Augment 3 sp:} When using projectile, you can fling the creature or object at immense speeds, firing it towards any target in line of sight up to 1 mile away and dealing double damage.",
+				"Whether the attack succeeds or fails, the object’s impact into the area releases a powerful shockwave and everyone within a 30-foot radius sphere of the target square, including the initial target itself, take 2d6 thunder damage and are stunned until the end of your next turn. A Constitution saving throw negates the stunned condition."
+			]
+		},
+		{
+			"name": "Puppet (advanced, levitate)",
+			"source": "spheres-of-power",
+			"featureType": "Telekinesis",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					},
+					"feature": [
+						"Telekinesis (Finesse, Telekinetic Maneuver)"
+					]
+				}
+			],
+			"entries": [
+				"{@b Augment 2 sp:} When you use levitate on a creature, you can take precise control over their physical form. You can force them to run, jump, manipulate objects, and wield weapons, but you cannot force them to use special abilities such as class powers or spells that are not a function of bodily movement, and cannot take control of their vocal cords, though you can prevent them from making sounds. Any actions you force the target to make cost identical actions of your own; if you force them to use an action, it also costs you an action. If you force the subject to engage in combat or use any skill, use your key ability modifier in place of their Strength or Dexterity modifier, and use your own skill and weapon proficiencies when determining the bonus for their attacks or actions.",
+				"Since the subject is only under your physical control, on their turn they can still take purely mental actions."
+			]
+		},
+		{
+			"name": "Gyrokinesis (variant)",
+			"source": "spheres-of-power",
+			"featureType": "Telekinesis",
+			"entries": [
+				"Your telekinesis operates entirely by manipulating the gravity on objects. Your projectile and levitate abilities may only move objects up and down, not laterally or sideways. You gain a bonus (gravity) talent from the Telekinesis sphere."
+			]
+		},
+		{
+			"name": "Limited Telekinesis (variant)",
+			"source": "spheres-of-power",
+			"featureType": "Telekinesis",
+			"entries": [
+				"You can only use your Telekinesis sphere abilities on one type of material (water, metal, stone, etc.) chosen when you gain this variant. If you choose flesh as the material, you can use your telekinesis on beasts, humanoids, and monstrosities (or their corpses). Other suitable creatures (such as a flesh golem) may also be affected at the DM’s discretion. You gain a bonus talent from the Telekinesis sphere."
+			]
+		},
+		{
+			"name": "Manifestation (variant)",
+			"source": "spheres-of-power",
+			"featureType": "Telekinesis",
+			"entries": [
+				"Your Telekinesis sphere abilities manifest visibly as a translucent construct, with an appearance chosen when you take this variant. This manifestation links you to the effect, but does not impede movement or sight. Creatures may attack this manifestation, either at the area of effect or anywhere along the shortest unimpeded line from you to the effect. The manifestation has an AC equal to 10 + your key ability modifier and 3 hit points per level. If it is reduced to 0 hit points, the effect ends immediately. These hit points are restored at the start of each of your turns. You gain a bonus talent from the Telekinesis sphere."
+			]
 		}
+		
 		
 		
 		
